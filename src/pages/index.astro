@@ -1,13 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import TestComp from '../components/test-comp';
+import Section from '../components/section';
+import Navbar from '../components/navbar';
+import WelcomeContent from '../components/welcome-content';
+import AboutContent from '../components/about-content';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-    <TestComp />
-    <div class="bg-red-500">test</div>
+<Layout title="Atix Digital">
+  <main>
+      <Section
+        heightMode="screen"
+        contentHeight="100%"
+        background="backgrounds/welcome.png"
+      >
+        <Navbar />
+        <WelcomeContent />
+      </Section>
+      <Section
+        heightMode="auto"
+        contentHeight="409px"
+        background="backgrounds/dots.svg"
+      >
+        <AboutContent />
+      </Section>
   </main>
 </Layout>
 
