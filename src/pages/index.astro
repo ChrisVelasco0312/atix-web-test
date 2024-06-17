@@ -6,6 +6,9 @@ import WelcomeContent from '../components/welcome-content';
 import AboutContent from '../components/about-content';
 import ProductsContent from '../components/products-content';
 import FocusContent from '../components/focus-content';
+import MagicalContent from '../components/magical-content';
+import BrandContent from '../components/brand-content';
+import TrustedContent from '../components/trusted-content';
 ---
 
 <Layout title="Atix Digital">
@@ -38,6 +41,28 @@ import FocusContent from '../components/focus-content';
       background="backgrounds/focus-background.png"
     >
       <FocusContent />  
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="409px"
+      background="backgrounds/magical-background.png"
+    >
+      <MagicalContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="270px"
+      background=""
+    >
+     <BrandContent /> 
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      background=""
+      backgroundColor="#F8F8FA"
+    >
+      <TrustedContent /> 
     </Section>
   </main>
 </Layout>

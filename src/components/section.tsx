@@ -1,5 +1,6 @@
 interface SectionProps {
   background: string;
+  backgroundColor?: string;
   heightMode: "h-auto" | "h-screen" | "h-fit";
   contentHeight: string;
   children: React.ReactNode;
@@ -10,6 +11,7 @@ const Section = ({
   heightMode = "h-auto",
   contentHeight = "100%",
   children,
+  backgroundColor = "none",
 }: SectionProps) => {
   return (
     <section
@@ -17,6 +19,7 @@ const Section = ({
       style={{
         backgroundImage: background && `url(${background})`,
         backgroundSize: "cover",
+        backgroundColor,
       }}
     >
       <div className={`w-[1340px] h-[${contentHeight}]`}>{children}</div>
