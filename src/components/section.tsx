@@ -1,21 +1,21 @@
 interface SectionProps {
   background: string;
-  heightMode: "auto" | "screen" | "fit";
+  heightMode: "h-auto" | "h-screen" | "h-fit";
   contentHeight: string;
   children: React.ReactNode;
 }
 
 const Section = ({
   background,
-  heightMode = "auto",
+  heightMode = "h-auto",
   contentHeight = "100%",
   children,
 }: SectionProps) => {
   return (
     <section
-      className={`w-full h-${heightMode} min-w-[1340px] flex flex-col items-center`}
+      className={`w-full ${heightMode} min-w-[1340px] flex flex-col items-center`}
       style={{
-        backgroundImage: `url(${background})`,
+        backgroundImage: background && `url(${background})`,
         backgroundSize: "cover",
       }}
     >

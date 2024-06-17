@@ -4,12 +4,14 @@ import Section from '../components/section';
 import Navbar from '../components/navbar';
 import WelcomeContent from '../components/welcome-content';
 import AboutContent from '../components/about-content';
+import ProductsContent from '../components/products-content';
+import FocusContent from '../components/focus-content';
 ---
 
 <Layout title="Atix Digital">
   <main>
       <Section
-        heightMode="screen"
+        heightMode="h-screen"
         contentHeight="100%"
         background="backgrounds/welcome.png"
       >
@@ -17,12 +19,26 @@ import AboutContent from '../components/about-content';
         <WelcomeContent />
       </Section>
       <Section
-        heightMode="auto"
+        heightMode="h-auto"
         contentHeight="409px"
         background="backgrounds/dots.svg"
       >
         <AboutContent />
       </Section>
+     <Section
+        heightMode="h-fit"
+        contentHeight="100%"
+        background=""
+     >
+      <ProductsContent />
+     </Section>
+    <Section
+      heightMode="h-screen"
+      contentHeight="100%"
+      background="backgrounds/focus-background.png"
+    >
+      <FocusContent />  
+    </Section>
   </main>
 </Layout>
 
