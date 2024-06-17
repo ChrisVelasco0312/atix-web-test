@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <main>
       <Section
-        heightMode="screen"
+        heightMode="h-screen"
         contentHeight="100%"
         background="backgrounds/welcome.png"
       >
