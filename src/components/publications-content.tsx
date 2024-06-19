@@ -4,9 +4,14 @@ const PublicationsContent = () => (
   <div className="relative h-[481px] grid justify-center">
     <SectionTitle title="PUBLICATIONS" iconColor="#1C7FC1" topDistance="54px" />
     <div className="grid grid-flow-col gap-x-10 place-items-center">
-      <div className="grid justify-center w-[351px] gap-4">
+      <div
+        style={{
+          gridTemplateRows: "200px 1fr",
+        }}
+        className="grid justify-center w-[351px] gap-4"
+      >
         <img
-          className="w-[351px] h-[126px]"
+          className="w-[351px] h-[126px] self-center"
           src="logos/cience-direct-logo.png"
           alt="cience-direct-logo"
         />
@@ -18,9 +23,14 @@ const PublicationsContent = () => (
           convolutional networks”
         </a>
       </div>
-      <div className="grid justify-center w-[351px] gap-4">
+      <div
+        style={{
+          gridTemplateRows: "200px 1fr",
+        }}
+        className="grid justify-center w-[351px] gap-4"
+      >
         <img
-          className="w-[344px] h-[99px]"
+          className="w-[344px] h-[99px] self-center relative top-[15px]"
           src="logos/springer-link-logo.png"
           alt="springer-link-logo"
         />
