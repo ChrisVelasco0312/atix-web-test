@@ -14,7 +14,7 @@ const ProductsContent = () => {
         <h1 className="font-integralCF text-purple500 text-[40px] leading-[98%]">
           AUTOMATED DOCUMENT PROCESSING
         </h1>
-        <p className="w-[676px]">
+        <p className="w-[676px] text-[20px] text-purple500">
           Empower your frontline workforce, minimize hiring requirements,
           maintain employee satisfaction and revolutionize customer experiences!
         </p>

@@ -3,7 +3,7 @@ import SectionTitle from "./section-title";
 const PublicationsContent = () => (
   <div className="relative h-[481px] grid justify-center">
     <SectionTitle title="PUBLICATIONS" iconColor="#1C7FC1" topDistance="54px" />
-    <div className="grid grid-flow-col gap-x-10 place-items-center">
+    <div className="grid grid-flow-col gap-x-[130px] place-items-center">
       <div
         style={{
           gridTemplateRows: "200px 1fr",

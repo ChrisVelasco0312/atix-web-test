@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {},
     colors: {
+      whiteBone: "#FCFCFC",
       white: "#FFFFFF",
       gray500: "#6B7280",
       gray400: "#9CA3AF",
