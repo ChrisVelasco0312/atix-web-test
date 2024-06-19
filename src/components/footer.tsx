@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer className="flex justify-center bg-petroleo500">
-      <div className="grid items-center content-center gap-5 bg-base-300 text-base-content h-[480px] w-[1440px]">
-        <div className="flex justify-between bg-petroleo500 text-white p-4 bg-base-300 text-base-content">
+      <div className="grid items-center content-center gap-10 h-[480px] w-[1440px]">
+        <div className="flex justify-between bg-petroleo500 text-white">
           <div className="flex flex-col gap-10">
             <img
               className="w-[103px] h-[42px]"
@@ -68,14 +68,12 @@ const Footer = () => {
           <div className="h-full bg-white w-[100%]" />
         </div>
         <div className="flex justify-between text-[14px]">
-          <p className="text-white p-4 bg-petroleo500">
+          <p className="text-white bg-petroleo500">
             © 2022 Atix. Todos los derechos reservados.
           </p>
           <div className="flex gap-4">
-            <p className="text-white p-4 bg-petroleo500">Privacy Policy</p>
-            <p className="text-white p-4 bg-petroleo500">
-              Terms and Conditions
-            </p>
+            <p className="text-white">Privacy Policy</p>
+            <p className="text-white">Terms and Conditions</p>
           </div>
         </div>
       </div>
