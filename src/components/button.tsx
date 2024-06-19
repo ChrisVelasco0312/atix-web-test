@@ -1,5 +1,4 @@
-import ChevronsRight from "./icons/chevrons-right";
-
+import ChevronsRightSolid from "./icons/chevrons-right-solid";
 interface ButtonProps {
   onClick: () => void;
   text: string;
@@ -25,7 +24,7 @@ const Button = ({
     >
       {text}
       <div>
-        <ChevronsRight color="white" />
+        <ChevronsRightSolid />
       </div>
     </button>
   );

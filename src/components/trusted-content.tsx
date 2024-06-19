@@ -10,7 +10,7 @@ const TrustedContent = () => {
         iconColor="#1C7FC1"
       />
       <div className="grid justify-center gap-10 pt-[170px] pb-[150px]">
-        <h1 className="font-integralCF text-[40px] text-center">
+        <h1 className="font-integralCF text-purple500 text-[40px] text-center">
           Read what our clients say about us
         </h1>
         <div className="grid grid-flow-col gap-8">
