@@ -1,49 +1,49 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Section from '../components/section';
-import Navbar from '../components/navbar';
-import WelcomeContent from '../components/welcome-content';
-import AboutContent from '../components/about-content';
-import ProductsContent from '../components/products-content';
-import FocusContent from '../components/focus-content';
-import MagicalContent from '../components/magical-content';
-import BrandContent from '../components/brand-content';
-import TrustedContent from '../components/trusted-content';
-import PublicationsContent from '../components/publications-content';
-import Footer from '../components/footer';
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/shared/section";
+import Navbar from "../components/navbar";
+import WelcomeContent from "../components/index-components/welcome-content";
+import AboutContent from "../components/index-components/about-content";
+import ProductsContent from "../components/index-components/products-content";
+import FocusContent from "../components/index-components/focus-content";
+import MagicalContent from "../components/index-components/magical-content";
+import BrandContent from "../components/index-components/brand-content";
+import TrustedContent from "../components/index-components/trusted-content";
+import PublicationsContent from "../components/index-components/publications-content";
+import Footer from "../components/footer";
 ---
 
 <Layout title="Atix Digital">
   <main>
-      <Section
-        heightMode="h-screen"
-        contentHeight="100%"
-        background="backgrounds/welcome.png"
-      >
-        <Navbar />
-        <WelcomeContent />
-      </Section>
-      <Section
-        heightMode="h-auto"
-        contentHeight="409px"
-        background="backgrounds/dots.svg"
-      >
-        <AboutContent />
-      </Section>
-     <Section
-        heightMode="h-fit"
-        contentHeight="100%"
-        backgroundColor="#FCFCFC"
-        background=""
-     >
+    <Section
+      heightMode="h-screen"
+      contentHeight="100%"
+      background="backgrounds/welcome.png"
+    >
+      <Navbar />
+      <WelcomeContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="409px"
+      background="backgrounds/dots.svg"
+    >
+      <AboutContent />
+    </Section>
+    <Section
+      heightMode="h-fit"
+      contentHeight="100%"
+      backgroundColor="#FCFCFC"
+      background=""
+    >
       <ProductsContent />
-     </Section>
+    </Section>
     <Section
       heightMode="h-fit"
       contentHeight="940px"
       background="backgrounds/focus-background.png"
     >
-      <FocusContent />  
+      <FocusContent />
     </Section>
     <Section
       heightMode="h-auto"
@@ -52,12 +52,8 @@ import Footer from '../components/footer';
     >
       <MagicalContent />
     </Section>
-    <Section
-      heightMode="h-auto"
-      contentHeight="270px"
-      background=""
-    >
-     <BrandContent /> 
+    <Section heightMode="h-auto" contentHeight="270px" background="">
+      <BrandContent />
     </Section>
     <Section
       heightMode="h-auto"
@@ -65,18 +61,11 @@ import Footer from '../components/footer';
       background=""
       backgroundColor="#F8F8FA"
     >
-      <TrustedContent /> 
+      <TrustedContent />
     </Section>
-    <Section
-      heightMode="h-auto"
-      contentHeight="100%"
-      background=""
-    >
+    <Section heightMode="h-auto" contentHeight="100%" background="">
       <PublicationsContent />
     </Section>
     <Footer />
   </main>
 </Layout>
-
-<style>
-</style>

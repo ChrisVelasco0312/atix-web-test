@@ -1,4 +1,4 @@
-import SectionTitle from "./section-title";
+import SectionTitle from "../shared/section-title";
 import TrustedStripCard from "./trusted-strip-card";
 
 const TrustedContent = () => {

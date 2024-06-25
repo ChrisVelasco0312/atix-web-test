@@ -1,4 +1,4 @@
-import Button from "./button";
+import Button from "../shared/button";
 
 const MagicalContent = () => {
   return (
@@ -23,7 +23,6 @@ const MagicalContent = () => {
       <Button
         style={{ width: "200px" }}
         text="Drop us a line"
-        onClick={() => {}}
         styleType="outline-white"
       />
     </div>
