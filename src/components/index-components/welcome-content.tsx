@@ -1,4 +1,4 @@
-import Button from "./button";
+import Button from "../shared/button";
 
 const WelcomeContent = () => {
   return (
@@ -16,11 +16,7 @@ const WelcomeContent = () => {
           technologies, to help you enhance the effectiveness of your
           organization{" "}
         </p>
-        <Button
-          style={{ marginTop: "40px" }}
-          onClick={() => {}}
-          text="Learn more"
-        />
+        <Button style={{ marginTop: "40px" }} text="Learn more" />
       </div>
     </article>
   );

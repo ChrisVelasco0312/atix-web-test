@@ -1,4 +1,4 @@
-import SectionTitle from "./section-title";
+import SectionTitle from "../shared/section-title";
 
 const PublicationsContent = () => (
   <div className="relative h-[481px] grid justify-center">

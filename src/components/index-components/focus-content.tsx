@@ -1,5 +1,5 @@
 import FocusCard from "./focus-card";
-import SectionTitle from "./section-title";
+import SectionTitle from "../shared/section-title";
 
 const FocusContent = () => {
   return (

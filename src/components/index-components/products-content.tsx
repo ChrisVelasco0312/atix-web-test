@@ -1,5 +1,5 @@
 import ProductCard from "./product-card";
-import SectionTitle from "./section-title";
+import SectionTitle from "../shared/section-title";
 
 const ProductsContent = () => {
   return (
@@ -25,12 +25,14 @@ const ProductsContent = () => {
           title="easily automate any document processing workflow"
           description="Boost efficiencies, unlock savings, and streamline operations with seamless AI-powered document workflow automation."
           exampleSrc="images/seiz-example.png"
+          goTo="/seiz"
         />
         <ProductCard
           logoSrc="logos/logo-notery.svg"
           title="the hero who reads and makes up to 200 DECISIONS PeR MINUTe"
           description="Conquer the document chaos and achieve maximum efficiency with a digital administrative assistant by your side!"
           exampleSrc="images/notery-example.png"
+          goTo="/notery"
         />
       </div>
     </article>

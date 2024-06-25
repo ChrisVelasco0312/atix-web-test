@@ -1,5 +1,5 @@
-import Button from "./button";
-import SectionTitle from "./section-title";
+import Button from "../shared/button";
+import SectionTitle from "../shared/section-title";
 
 const AboutContent = () => {
   return (
@@ -14,11 +14,7 @@ const AboutContent = () => {
         <h1 className="font-integralCF text-purple500 text-[40px] leading-[98%]">
           We are proud to be solution oriented not problem oriented
         </h1>
-        <Button
-          style={{ marginTop: "40px" }}
-          onClick={() => {}}
-          text="Get to know us"
-        />
+        <Button style={{ marginTop: "40px" }} text="Get to know us" />
       </div>
     </article>
   );
