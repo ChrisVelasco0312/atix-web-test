@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Section from "../components/shared/section";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import WecomeContent from "../components/seiz-components/welcome-seiz-content";
+import StepsContent from "../components/seiz-components/steps-content";
 ---
 
 <Layout title="Seiz">
@@ -10,9 +12,18 @@ import Footer from "../components/footer";
     <Section
       heightMode="h-screen"
       contentHeight="100%"
-      background="backgrounds/welcome.png"
+      background="backgrounds/seiz-background.png"
     >
       <Navbar />
+      <WecomeContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="410px"
+      background="backgrounds/seiz-dots-background.png"
+      backgroundColor="#F4F4F4" 
+    >
+      <StepsContent />
     </Section>
     <Footer />
   </main>

@@ -3,7 +3,7 @@ import SectionTitle from "../shared/section-title";
 
 const ProductsContent = () => {
   return (
-    <article className="relative grid">
+    <article id="products" className="relative grid">
       <SectionTitle
         title="ATIX PRODUCTS"
         iconColor="#1C7FC1"

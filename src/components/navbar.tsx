@@ -1,18 +1,20 @@
 const Navbar = () => {
   return (
     <nav className="flex justify-between py-[22px]">
-      <img src="logos/logo-atix.svg" alt="logo" />
-      <ul className="flex gap-4 text-white">
-        <li>
-          <a className="text-white" href="#">
+      <a href="/">
+        <img src="logos/logo-atix.svg" alt="logo" />
+      </a>
+      <ul className="flex items-center gap-[23px] text-white">
+        <li className="p-4">
+          <a className="text-white" href="#products">
             Products
           </a>
         </li>
-        <li>
-          <a href="#">About</a>
+        <li className="p-4">
+          <a href="/about">About</a>
         </li>
-        <li>
-          <a href="#">Contact</a>
+        <li className="p-4">
+          <a href="/contact">Contact</a>
         </li>
       </ul>
     </nav>
