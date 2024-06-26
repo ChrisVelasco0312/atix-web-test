@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      textStroke: {
+        green: '1px #B5C715'
+      }
+    },
     colors: {
       whiteBone: "#FCFCFC",
       white: "#FFFFFF",
@@ -43,5 +47,16 @@ export default {
       jakartaSansBold: ["Plus Jakarta Sans Bold", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.text-stroke-green': {
+          '-webkit-text-stroke': '1px #B5C715',
+          'text-stroke': '1px #B5C715',
+          'color': 'transparent',
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 };

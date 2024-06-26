@@ -5,6 +5,8 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import WecomeContent from "../components/seiz-components/welcome-seiz-content";
 import StepsContent from "../components/seiz-components/steps-content";
+import SinseizContent from "../components/seiz-components/sinseiz-content";
+import BenefitsContent from "../components/seiz-components/benefits-content";
 ---
 
 <Layout title="Seiz">
@@ -24,6 +26,19 @@ import StepsContent from "../components/seiz-components/steps-content";
       backgroundColor="#F4F4F4" 
     >
       <StepsContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+    >
+      <SinseizContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      backgroundColor="#CCCCCC36"
+    >
+      <BenefitsContent />
     </Section>
     <Footer />
   </main>
