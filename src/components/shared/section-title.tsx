@@ -15,7 +15,7 @@ const SectionTitle = ({
       className="absolute flex gap-2 items-center select-none"
     >
       <ChevronsRight color={iconColor} />
-      <h1 className="text-petroleo500 text-[14px] leading-[2.8px]">{title}</h1>
+      <h1 className="text-petroleo500 text-[14px] leading-[2.8px] tracking-[2.8px]">{title}</h1>
     </div>
   );
 };

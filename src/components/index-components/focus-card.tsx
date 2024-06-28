@@ -15,7 +15,7 @@ const FocusCard = ({
 }: FocusCardProps) => {
   if (!open) {
     return (
-      <div className="grid grid-flow-col justify-start gap-4 content-center px-[36px] h-[115px] w-[590px] border-b-gray200 border-solid border-b">
+      <div className="grid cursor-pointer grid-flow-col justify-start gap-4 content-center px-[36px] h-[115px] w-[590px] border-b-gray200 border-solid border-b">
         <img className="mt-[5px] self-start" src={iconSrc} alt="icon" />
         <h1 className="font-jakartaSansBold text-petroleo500 text-[16px]">
           {title}

@@ -14,39 +14,44 @@ const Footer = () => {
               organization.
             </p>
             <div className="flex gap-x-4">
-              <a href="https://www.facebook.com/">
-                <div
-                  style={{
-                    backgroundImage: "url('icons/Facebook.svg')",
-                    backgroundPositionX: "50%",
-                    backgroundPositionY: "6%",
-                  }}
-                  className="h-[40px] w-[40px]"
-                ></div>
-              </a>
-              <a href="https://twitter.com/">
-                <div
-                  style={{
-                    backgroundImage: "url('icons/Twitter.svg')",
-                    backgroundPositionX: "50%",
-                    backgroundPositionY: "6%",
-                  }}
-                  className="h-[40px] w-[40px]"
-                ></div>
-              </a>
-              <a href="https://www.instagram.com/">
-                <div
-                  style={{
-                    backgroundImage: "url('icons/Instagram.svg')",
-                    backgroundPositionX: "50%",
-                    backgroundPositionY: "6%",
-                  }}
-                  className="h-[40px] w-[40px]"
-                ></div>
+              {/*
+                <a href="https://www.facebook.com/">
+                  <div
+                    style={{
+                      backgroundImage: "url('icons/Facebook.svg')",
+                      backgroundPositionX: "50%",
+                      backgroundPositionY: "6%",
+                    }}
+                    className="h-[40px] w-[40px]"
+                  ></div>
+                </a>
+                  <a href="https://twitter.com/">
+                    <div
+                      style={{
+                        backgroundImage: "url('icons/Twitter.svg')",
+                        backgroundPositionX: "50%",
+                        backgroundPositionY: "6%",
+                      }}
+                      className="h-[40px] w-[40px]"
+                    ></div>
+                      </a>
+                      <a href="https://www.instagram.com/">
+                        <div
+                          style={{
+                            backgroundImage: "url('icons/Instagram.svg')",
+                            backgroundPositionX: "50%",
+                            backgroundPositionY: "6%",
+                          }}
+                          className="h-[40px] w-[40px]"
+                        ></div>
+                      </a>
+              */}
+              <a href="https://www.linkedin.com/company/atix-digital" target="_blank">
+                <img src="icons/Linkedin.svg" alt="linkedin" />
               </a>
             </div>
           </div>
-          <div className="flex gap-[90px]">
+          <div className="hidden gap-[90px]">
             <div className="flex flex-col gap-y-8">
               <h1 className="font-jakartaSansBold text-[20px]">Products</h1>
               <ul className="grid gap-y-8">
@@ -69,9 +74,9 @@ const Footer = () => {
         </div>
         <div className="flex justify-between text-[14px]">
           <p className="text-white bg-petroleo500">
-            © 2022 Atix. Todos los derechos reservados.
+            ©2024  ATIX DIGITAL. All rights reserved
           </p>
-          <div className="flex gap-4">
+          <div className="hidden gap-4 ">
             <p className="text-white">Privacy Policy</p>
             <p className="text-white">Terms and Conditions</p>
           </div>
