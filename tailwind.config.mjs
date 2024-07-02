@@ -35,6 +35,7 @@ export default {
       turquesa300: "#7AD3DD",
       turquesa200: "#B8E4EA",
       turquesa100: "#D0EBEE",
+      green600: "#B5C715",
       green500: "#9ADD19",
       green400: "#B6E55C",
       green300: "#C7E987",

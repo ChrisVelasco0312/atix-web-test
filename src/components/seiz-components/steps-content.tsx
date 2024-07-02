@@ -32,7 +32,7 @@ const StepsContent = () => {
         </h1>
         <div className="grid grid-flow-col gap-4 items-center w-[956px]">
           {steps.map((step, index) => (
-            <>
+            <div key={step.id}>
               <div className="grid justify-items-center">
                 <img src={step.img} alt="step" />
                 <p className="text-[20px] font-jakartaSansRegular">{step.name}</p>
@@ -41,7 +41,7 @@ const StepsContent = () => {
                 index < steps.length - 1
                 && <img className="w-[60px]" src="icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
               }
-            </>
+            </div>
           ))}
         </div>
       </div>

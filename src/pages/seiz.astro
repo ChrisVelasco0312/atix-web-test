@@ -8,6 +8,8 @@ import StepsContent from "../components/seiz-components/steps-content";
 import SinseizContent from "../components/seiz-components/sinseiz-content";
 import BenefitsContent from "../components/seiz-components/benefits-content";
 import HowitworksContent from "../components/seiz-components/howitworks-content";
+import DocumentContent from "../components/seiz-components/document-content";
+import WhySeizContent from "../components/seiz-components/whyseiz-content";
 ---
 
 <Layout title="Seiz">
@@ -24,15 +26,11 @@ import HowitworksContent from "../components/seiz-components/howitworks-content"
       heightMode="h-auto"
       contentHeight="410px"
       background="backgrounds/seiz-dots-background.png"
-      backgroundColor="#F4F4F4" 
+      backgroundColor="#F4F4F4"
     >
       <StepsContent />
     </Section>
-    <Section
-      heightMode="h-auto"
-      contentHeight="100%"
-      background=""
-    >
+    <Section heightMode="h-auto" contentHeight="100%" background="">
       <SinseizContent />
     </Section>
     <Section
@@ -49,6 +47,17 @@ import HowitworksContent from "../components/seiz-components/howitworks-content"
       background="backgrounds/seiz-howitworks-background.png"
     >
       <HowitworksContent />
+    </Section>
+    <Section heightMode="h-auto" contentHeight="100%" background="">
+      <DocumentContent client:load />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      background=""
+      backgroundColor="#B5C71515"
+    >
+      <WhySeizContent />
     </Section>
     <Footer />
   </main>
