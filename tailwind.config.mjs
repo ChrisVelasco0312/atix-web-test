@@ -20,6 +20,7 @@ export default {
       petroleo300: "#868691",
       petroleo200: "#BEBEC4",
       petroleo100: "#D3D3D7",
+      purple600: "#BAA2FF",
       purple500: "#25255C",
       purple400: "#64648A",
       purple300: "#8D8DA8",

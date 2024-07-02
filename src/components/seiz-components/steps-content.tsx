@@ -30,16 +30,20 @@ const StepsContent = () => {
         <h1 className="font-integralCF text-[40px]">
           Save up to <span className="text-green400"> 60% </span> on costs and time spent on
         </h1>
-        <div className="grid grid-flow-col gap-4 items-center w-[956px]">
+        <div className="grid grid-flow-col items-center w-[956px]">
           {steps.map((step, index) => (
-            <div key={step.id}>
+            <div key={step.id} className="grid grid-cols-2 items-center content-center">
               <div className="grid justify-items-center">
                 <img src={step.img} alt="step" />
                 <p className="text-[20px] font-jakartaSansRegular">{step.name}</p>
               </div>
               {
                 index < steps.length - 1
-                && <img className="w-[60px]" src="icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
+                && (
+                  <div className="grid items-center justify-items-center">
+                    <img className="w-[60px]" src="icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
+                  </div>
+                )
               }
             </div>
           ))}

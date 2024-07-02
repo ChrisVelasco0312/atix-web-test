@@ -3,16 +3,42 @@ import Layout from "../layouts/Layout.astro";
 import Section from "../components/shared/section";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import IntroContent from "../components/notery-components/intro-content";
+import ProblemContent from "../components/notery-components/problem-content";
+import WithNoteryContent from "../components/notery-components/withnotery-content";
 ---
 
 <Layout title="Seiz">
   <main>
     <Section
-      heightMode="h-screen"
+      heightMode="h-auto"
       contentHeight="100%"
-      background="backgrounds/welcome.png"
+      background="backgrounds/notery-intro-background.png"
+      additionalBg="images/notery-intro.png"
+      additionalStyles={{
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPositionX: "right",
+        backgroundPositionY: "-80px"
+      }}
     >
       <Navbar />
+      <IntroContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      background="backgrounds/notery-problem-background.png"
+      backgroundColor="#8D8DA8"
+    >
+      <ProblemContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      background="backgrounds/withnotery-background.png"
+    >
+      <WithNoteryContent />
     </Section>
     <Footer />
   </main>
