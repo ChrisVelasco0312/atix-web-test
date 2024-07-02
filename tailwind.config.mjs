@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       textStroke: {
-        green: '1px #B5C715'
+        green: '1px #B5C715',
+        purple: '1.5px #25255C'
       }
     },
     colors: {
@@ -57,6 +58,11 @@ export default {
           'text-stroke': '1px #B5C715',
           'color': 'transparent',
         },
+        '.text-stroke-purple': {
+          '-webkit-text-stroke': '1.5px #25255C',
+          'text-stroke': '1.5px #25255C',
+          'color': 'transparent',
+        }
       }
       addUtilities(newUtilities)
     }
