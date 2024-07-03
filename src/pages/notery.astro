@@ -8,6 +8,7 @@ import ProblemContent from "../components/notery-components/problem-content";
 import WithNoteryContent from "../components/notery-components/withnotery-content";
 import HowItWorksContent from "../components/notery-components/howitworks-content";
 import TemplateContent from "../components/notery-components/template-content";
+import ExtractionStatsContent from "../components/notery-components/extraction-stats-content";
 ---
 
 <Layout title="Seiz">
@@ -56,6 +57,20 @@ import TemplateContent from "../components/notery-components/template-content";
       background="backgrounds/notery-template-background.png"
     >
       <TemplateContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      background="backgrounds/notery-problem-background.png"
+      additionalBg="images/notery-extract.png"
+      additionalStyles={{
+        backgroundSize: "50%",
+        backgroundRepeat: "no-repeat",
+        backgroundPositionX: "right",
+        backgroundPositionY: "20%"
+      }}
+    >
+      <ExtractionStatsContent />
     </Section>
     <Footer />
   </main>
