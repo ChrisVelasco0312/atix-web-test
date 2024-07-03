@@ -1,6 +1,6 @@
 const TemplateContent = () => {
   return (
-    <article className="h-[316px] grid text-white grid-cols-2 items-center justify-items-center">
+    <article className="h-[351px] grid text-white grid-cols-2 items-center justify-items-center">
       <div className="grid gap-6">
         <h1 className="font-integralCF text-[40px]">COLLABORATIVE TEMPLATES</h1>
         <p className="text-[20px]">Enhance team efficiency</p>

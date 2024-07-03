@@ -28,7 +28,7 @@ const StepsContent = () => {
     <article className="h-[410px] grid pt-[70px] pb-[72px]">
       <div className="grid gap-4 justify-items-center">
         <h1 className="font-integralCF text-[40px]">
-          Save up to <span className="text-green400"> 60% </span> on costs and time spent on
+          Save up to <span className="text-green600"> 60% </span> on costs and time spent on
         </h1>
         <div className="grid grid-flow-col items-center w-[956px]">
           {steps.map((step, index) => (

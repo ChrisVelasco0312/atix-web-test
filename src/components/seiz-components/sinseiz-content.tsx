@@ -1,12 +1,12 @@
 const SinseizContent = () => {
   return (
     <article
-      className="relative h-[870px] bg-[url('backgrounds/x-seiz.svg')] bg-no-repeat bg-[600px]">
+      className="relative h-[870px]">
       <div className="absolute left-[101px] top-[76px] h-[870px]">
         <div className="absolute top-[20px] left-[-90px]">
-          <h1 className="w-[567px] font-integralCF text-[40px] text-[#0E2B3D]">
+          <h1 className="w-[567px] font-integralCF text-[40px] text-[#0E2B3D] leading-[120%]">
             Wasting valuable
-            <span className="text-green400 block leading-[100%]"> 5 to 15 minutes </span>
+            <span className="text-green600 block"> 5 to 15 minutes </span>
             extracting data from
             ONE single document?
           </h1>

@@ -10,7 +10,7 @@ const WorkStep = ({
   return (
     <div className="grid items-center grid-cols-[79.6px_1fr] gap-4 pl-4 pr-16 h-[115px] relative bg-white rounded-[16px]">
       <div className="grid place-items-center w-[79.6px] h-[92.87px] rounded-[8px] bg-[#F1EFFC]">
-        <h1 className="absolute bottom-[12px] font-integralCF text-[70px] text-stroke-purple">
+        <h1 className="font-integralCF text-[70px] text-stroke-purple leading-[0%]">
           {stepNumber}
         </h1>
       </div>

@@ -8,8 +8,9 @@ const WelcomeContent = () => {
         <h6 className="text-white mb-[10px] tracking-[2.8px]">
           WELCOME TO ATIX
         </h6>
+        {/*ADD OUTLINE*/}
         <h1 className="font-integralCF text-white text-[76px] leading-[98%]">
-          SMART BUSINESS SOLUTIONS
+          SMART <br /> BUSINESS <br /> SOLUTIONS
         </h1>
         <p className="text-white text-[18px] mt-[26px] leading-[150%] w-[449px]">
           We digitize & automate administrative processes with modern
