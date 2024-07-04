@@ -5,7 +5,8 @@ export default {
     extend: {
       textStroke: {
         green: '1px #B5C715',
-        purple: '1.5px #25255C'
+        purple: '1.5px #25255C',
+        white: '1px #FFFFFF'
       }
     },
     colors: {
@@ -62,6 +63,11 @@ export default {
           '-webkit-text-stroke': '1.5px #25255C',
           'text-stroke': '1.5px #25255C',
           'color': 'transparent',
+        },
+        ".text-stroke-white": {
+          "-webkit-text-stroke": "1px #FFFFFF",
+          "text-stroke": "1px #FFFFFF",
+          "color": "transparent",
         }
       }
       addUtilities(newUtilities)
