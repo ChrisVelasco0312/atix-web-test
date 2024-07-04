@@ -37,14 +37,14 @@ const DocumentTabDashboard = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto shadow-[2px_4px_20px_0px_rgba(181,199,21,0.15)]">
       <div className="grid grid-cols-3 h-[72px] mb-4 w-full">
-        {tabs.map((tab) => (
+        {tabs.map((tab, index) => (
           <button
             key={tab}
-            className={`py-2 px-4 font-semibold ${activeTab === tab
-              ? 'bg-green500 text-white'
-              : 'bg-green200 text-gray-700'
+            className={`py-2 px-4 font-jakartaSansBold text-[20px] ${activeTab === tab
+              ? 'bg-green600 text-white'
+              : `${index === tabs.length - 1 ? 'bg-[#B5C71512]' : 'bg-[#B5C71520]'} text-gray-700`
               }`}
             onClick={() => setActiveTab(tab)}
           >
