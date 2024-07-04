@@ -35,7 +35,7 @@ const TrustedStripCard = ({
       <div className="relative bg-white w-[360px] h-[411px] rounded-[16px] p-[30px] text-center">
         <img className="absolute top-[40px] left-0" src="icons/trusted-sign.svg" alt="trusted-sign" />
         <img className="absolute bottom-0 right-0 rotate-180" src="icons/trusted-sign.svg" alt="trusted-sign" />
-        <div className="relative z-1 grid gap-8 grid-rows-[40px_1fr] py-[40px] place-items-center content-center h-[100%]">
+        <div className="relative z-1 grid grid-rows-[40px_1fr] py-[40px] place-items-center content-center h-[100%]">
           <img className="self-center justify-self-center" src={logoSrc} alt="logo" />
           <p className="w-[295px]">{processedDescription}</p>
         </div>
