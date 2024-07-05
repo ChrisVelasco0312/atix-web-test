@@ -48,7 +48,11 @@ const BenefitsContent = () => {
     <article className="h-[644px] grid gap-10 pt-[81px] pb-[85px]">
       <div className="flex items-center justify-center gap-4">
         <h1 className="inline-block font-integralCF text-[64px] text-stroke-green">WITH</h1>
-        <img className="relative top-2 inline-block w-[180px] h-[56px]" src="logos/logo-seiz.svg" alt="benefits" />
+        <img
+          className="relative top-2 inline-block w-[180px] h-[56px]"
+          src="logos/logo-seiz-clean.svg"
+          alt="benefits"
+        />
       </div>
       <div className="flex flex-wrap justify-center gap-[34px]">
         {benefits.map((benefit) => (
