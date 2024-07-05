@@ -9,8 +9,8 @@ const WorkStep = ({
 }) => {
   return (
     <div className="grid items-center grid-cols-[79.6px_1fr] gap-4 pl-4 pr-16 h-[115px] relative bg-white rounded-[16px]">
-      <div className="grid place-items-center w-[79.6px] h-[92.87px] rounded-[8px] bg-[#F1EFFC]">
-        <h1 className="font-integralCF text-[70px] text-stroke-purple leading-[0%]">
+      <div className="grid place-items-center content-center w-[79.6px] h-[92.87px] rounded-[8px] bg-[#F1EFFC]">
+        <h1 className="relative bottom-[6px] font-integralCF text-[70px] text-stroke-purple">
           {stepNumber}
         </h1>
       </div>
@@ -50,7 +50,7 @@ const HowItWorksContent = () => {
 
   return (
     <article className="h-[769px] grid grid-cols-2 content-center justify-items-center items-center">
-      <div className="relative grid gap-5">
+      <div className="relative grid gap-[25px]">
         <div className="absolute w-[16px] h-[100%] bg-[#4E2370] left-[50px]" />
         {
           steps.map((step, index) => {
