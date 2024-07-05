@@ -1,4 +1,5 @@
-import type React from "react";
+import React from "react";
+import { useState } from "react";
 
 const Stat = ({
   statNumber,
@@ -18,6 +19,15 @@ const Stat = ({
 };
 
 const ExtractionStatsContent = () => {
+  const [currentImage, setCurrentImage] = useState("notery-extract.png");
+
+  const handleImageChange = (imageId: string) => {
+    setCurrentImage(imageId);
+  };
+
+  const getTextColor = (imageId: string) => {
+    return currentImage === imageId ? "text-[#272443]" : "text-[#C4C4C4]";
+  };
 
   const stats = [
     {
@@ -52,34 +62,47 @@ const ExtractionStatsContent = () => {
     }
   ];
 
-
   return (
     <article className="h-[1130px] grid justify-items-center content-center gap-8">
       <div className="grid grid-cols-2 content-center items-center">
         <div className="relative leading-[450%] text-right right-[200px]">
-          <h2 className="realative text-[30px] leading-[130%]">Extract any type of data</h2>
-          <h1 className="font-integralCF text-[64px] text-[#C4C4C4]">TABLES</h1>
-          <h1 className="font-integralCF text-[64px] text-[#C4C4C4]">TEXTS</h1>
-          <h1 className="font-integralCF text-[64px] text-[#272443]">IMAGES</h1>
+          <h2 className="relative text-[30px] leading-[130%]">Extract any type of data</h2>
+          <h1
+            onClick={() => handleImageChange("notery-extract-1.png")}
+            className={`font-integralCF text-[64px] cursor-pointer transition-colors duration-300 ${getTextColor("notery-extract-1.png")}`}
+          >
+            TABLES
+          </h1>
+          <h1
+            onClick={() => handleImageChange("notery-extract-2.png")}
+            className={`font-integralCF text-[64px] cursor-pointer transition-colors duration-300 ${getTextColor("notery-extract-2.png")}`}
+          >
+            TEXTS
+          </h1>
+          <h1
+            onClick={() => handleImageChange("notery-extract-3.png")}
+            className={`font-integralCF text-[64px] cursor-pointer transition-colors duration-300 ${getTextColor("notery-extract-3.png")}`}
+          >
+            IMAGES
+          </h1>
           <h2 className="text-[30px]">in seconds!</h2>
         </div>
-        <img className="relative max-w-none right-[200px]" src="images/notery-extract.png" alt="Notery Extraction" />
+        <img
+          className="relative max-w-none right-[200px] transition-opacity duration-300 ease-in-out"
+          src={`images/${currentImage}`}
+          alt="Notery Extraction"
+        />
       </div>
       <div className="relative flex gap-10 items-center justify-center w-[1218.773px] h-[206px] bg-white rounded-[16px] filter drop-shadow-[0_1px_15px_rgba(0,0,0,0.08)]">
-        {
-          stats.map((stat, index) => {
-            return (
-              <>
-                <Stat
-                  key={index}
-                  statNumber={stat.statNumber}
-                  statDescription={stat.statDescription}
-                />
-                {index !== stats.length - 1 ? <img src="images/notery-stats-divider.svg" alt="Notery Stats Separator" /> : null}
-              </>
-            );
-          })
-        }
+        {stats.map((stat, index) => (
+          <React.Fragment key={index}>
+            <Stat
+              statNumber={stat.statNumber}
+              statDescription={stat.statDescription}
+            />
+            {index !== stats.length - 1 && <img src="images/notery-stats-divider.svg" alt="Notery Stats Separator" />}
+          </React.Fragment>
+        ))}
       </div>
     </article>
   );
