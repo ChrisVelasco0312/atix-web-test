@@ -25,17 +25,17 @@ const WhySeizContent = () => {
   ];
 
   return (
-    <article className="grid items-center h-[471px]">
-      <div className="flex gap-4 items-center content-center justify-center">
+    <article className="grid items-center h-[471px] content-center gap-12">
+      <div className="flex gap-4 items-center content-center justify-center pr-[100px]">
         <h1 className="font-integralCF  text-[40px]">WHY</h1>
-        <img className="w-[167px] h-[52px]" src="logos/logo-seiz.svg" alt="logo" />
+        <img className="w-[167px] h-[52px]" src="logos/logo-seiz-clean.svg" alt="logo" />
       </div>
 
-      <div className="flex gap-8 items-center justify-center">
+      <div className="flex gap-[95px] items-center justify-center">
         {
           infoLines.map((infoLine, index) => (
             <>
-              <div className="text-center">
+              <div className="grid gap-[15px] text-center">
                 <h1 className="font-integralCF text-green600 text-[40px]">{infoLine.title}</h1>
                 <p>{infoLine.description}</p>
               </div>

@@ -2,9 +2,9 @@ import Button from "../shared/button";
 
 const WelcomeContent = () => {
   return (
-    <article className="grid grid-cols-2 w-full">
+    <article className="grid grid-cols-2 w-full content-center h-[90%]">
       <div />
-      <div className="relative mt-[176px]">
+      <div className="relative">
         <h6 className="text-white mb-[10px] tracking-[2.8px]">
           WELCOME TO ATIX
         </h6>
