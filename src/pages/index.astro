@@ -18,7 +18,15 @@ import Footer from "../components/footer";
     <Section
       heightMode="h-screen"
       contentHeight="100%"
-      background="backgrounds/welcome.png"
+      background="backgrounds/welcome-page-background.png"
+      additionalBg="images/index-isotipo.svg"
+      additionalStyles={{
+        backgroundSize: "80%",
+        backgroundRepeat: "no-repeat",
+        backgroundPositionX: "-300px",
+        backgroundPositionY: "-120px",
+      }}
+      additionalBgOpacity="50" 
     >
       <Navbar />
       <WelcomeContent />

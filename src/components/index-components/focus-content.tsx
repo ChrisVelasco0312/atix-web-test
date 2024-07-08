@@ -12,6 +12,7 @@ interface FocusCardData {
 
 const FocusContent: React.FC = () => {
   const [openCardIndex, setOpenCardIndex] = useState<number>(0);
+  const [animatingCardIndex, setAnimatingCardIndex] = useState<number | null>(null);
 
   const focusCards: FocusCardData[] = [
     {
@@ -38,19 +39,31 @@ const FocusContent: React.FC = () => {
   ];
 
   const handleCardClick = (index: number) => {
-    setOpenCardIndex(index);
+    setAnimatingCardIndex(index);
+    setTimeout(() => {
+      setOpenCardIndex(index);
+      setAnimatingCardIndex(null);
+    }, 100);
   };
 
   return (
     <div className="relative grid grid-cols-2 px-[30px] h-[940px]">
       <SectionTitle title="OUR FOCUS" iconColor="#1C7FC1" topDistance="54px" />
-      <div className="grid gap-20 content-center">
+      <div className="grid gap-20 grid-rows-[auto_500px] content-center">
         <h1 className="font-integralCF text-purple500 text-[40px] leading-[130%] mt-[50px] w-[600px]">
           When Intelligent Tech Meets Business Process
         </h1>
         <div className="grid">
           {focusCards.map((card, index) => (
-            <div key={index} onClick={() => handleCardClick(index)}>
+            <div
+              key={index}
+              onClick={() => handleCardClick(index)}
+              className={`
+                transition-all duration-100 ease-out cursor-pointer
+                ${animatingCardIndex === index ? 'scale-105 opacity-50' : 'scale-100 opacity-100'}
+                ${openCardIndex === index ? 'z-10' : 'z-0'}
+              `}
+            >
               <FocusCard
                 open={index === openCardIndex}
                 title={card.title}

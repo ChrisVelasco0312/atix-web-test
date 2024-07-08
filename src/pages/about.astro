@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Section from "../components/shared/section";
 import Navbar from "../components/navbar";
 import InitialContent from "../components/about-components/initial-content";
+import WhoWeAreContent from "../components/about-components/whoweare-content";
 import WhyWeDoItContent from "../components/about-components/whywedoit-content";
 import TeamContent from "../components/about-components/team-content";
 import Footer from "../components/footer";
@@ -16,13 +17,22 @@ import Footer from "../components/footer";
       additionalBg="images/isotipos-1.svg"
       additionalStyles={{
         backgroundRepeat: "no-repeat",
-        backgroundPositionY: "-200px",
+        backgroundSize: "48%",
+        backgroundPositionY: "-140px",
         backgroundPositionX: "-200px"
       }}
       background="backgrounds/aboutus-background.png"
     >
       <Navbar mode="dark"/>
       <InitialContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      background="backgrounds/dots-clean.svg"
+      backgroundColor="white"
+    >
+      <WhoWeAreContent />
     </Section>
     <Section
       heightMode="h-auto"
