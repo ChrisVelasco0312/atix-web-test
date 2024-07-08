@@ -3,6 +3,7 @@ import ChevronsRightSolid from "../icons/chevrons-right-solid";
 
 interface ButtonProps {
   text: string;
+  type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"];
   style?: React.CSSProperties;
   styleType?: "dark" | "outline-white";
   goTo?: string;
@@ -10,6 +11,7 @@ interface ButtonProps {
 
 const Button = ({
   text,
+  type = "button",
   style = {},
   styleType = "dark",
   goTo = "",
@@ -21,6 +23,7 @@ const Button = ({
   return (
     <a href={goTo}>
       <button
+        type={type}
         style={style}
         className={`inline-flex justify-center items-center gap-5 rounded-[24px] px-6 py-3 ${selectedStyle}`}
       >

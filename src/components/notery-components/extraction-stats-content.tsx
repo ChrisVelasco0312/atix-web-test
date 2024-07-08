@@ -19,7 +19,7 @@ const Stat = ({
 };
 
 const ExtractionStatsContent = () => {
-  const [currentImage, setCurrentImage] = useState("notery-extract.png");
+  const [currentImage, setCurrentImage] = useState("notery-extract-1.png");
 
   const handleImageChange = (imageId: string) => {
     setCurrentImage(imageId);

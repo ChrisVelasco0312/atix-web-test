@@ -1,12 +1,15 @@
-const Navbar = () => {
+const Navbar = ({
+  mode = "dark"
+}: { mode?: "light" | "dark" }) => {
+  const textColor = mode === "dark" ? "text-white" : "text-purple500";
   return (
     <nav className="flex justify-between py-[22px]">
       <a href="/">
-        <img src="logos/logo-atix.svg" alt="logo" />
+        <img src={`logos/${mode === "dark" ? "logo-atix" : "logo-atix-dark"}.svg`} alt="logo" />
       </a>
-      <ul className="flex items-center gap-[23px] text-white">
+      <ul className={`flex items-center gap-[23px] ${textColor}`}>
         <li className="p-4">
-          <a className="text-white" href="#products">
+          <a className={`${textColor}`} href="/#products">
             Products
           </a>
         </li>
