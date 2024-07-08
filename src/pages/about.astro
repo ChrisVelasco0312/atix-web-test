@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/shared/section";
+import Navbar from "../components/navbar";
+import InitialContent from "../components/about-components/initial-content";
+import WhyWeDoItContent from "../components/about-components/whywedoit-content";
+import TeamContent from "../components/about-components/team-content";
+import Footer from "../components/footer";
+---
+
+<Layout title="Atix Digital">
+  <main>
+    <Section
+      heightMode="h-fit"
+      contentHeight="1203px"
+      additionalBg="images/isotipos-1.svg"
+      additionalStyles={{
+        backgroundRepeat: "no-repeat",
+        backgroundPositionY: "-200px",
+        backgroundPositionX: "-200px"
+      }}
+      background="backgrounds/aboutus-background.png"
+    >
+      <Navbar mode="dark"/>
+      <InitialContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="815px"
+      background="backgrounds/whywedoit-background.svg"
+    >
+      <WhyWeDoItContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="740px"
+      background=""
+      backgoundColor="#F8F8FA"
+    >
+      <TeamContent />
+    </Section>
+    <Footer />
+  </main>
+</Layout>
