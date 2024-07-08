@@ -9,6 +9,7 @@ const IntroContent = () => {
           backgroundRepeat: "no-repeat",
           backgroundPositionX: "120%",
           backgroundPositionY: "50%",
+          pointerEvents: "none"
         }}
       >
       </div>
