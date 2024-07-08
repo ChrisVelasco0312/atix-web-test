@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/shared/section";
+import Navbar from "../components/navbar";
+import ContactContent from "../components/contact-components/contact-content";
+import Footer from "../components/footer";
+---
+
+<Layout title="Atix Digital">
+  <main>
+    <Section
+      heightMode="h-screen"
+      contentHeight="100%"
+      background=""
+      additionalBg="backgrounds/contact-figure.svg"
+      additionalStyles={{
+        backgroundPosition: "-300px",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "65%",
+      }}
+    >
+      <Navbar mode="light"/>
+      <ContactContent client:load/>
+    </Section>
+    <Footer />
+  </main>
+</Layout>
