@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface TabContent {
   image: string;
@@ -12,6 +14,7 @@ interface ContentData {
 
 const DocumentTabDashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('Finance');
+  const [activeIndex, setActiveIndex] = useState<number>(0);
   const tabs: string[] = ['Finance', 'Government', 'Insurance'];
 
   const contentData: ContentData = {
@@ -40,10 +43,27 @@ const DocumentTabDashboard: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    setActiveIndex(tabs.indexOf(activeTab));
+  }, [activeTab]);
+
+  const tabWidth = 100 / tabs.length;
+  const springProps = useSpring({
+    left: `${activeIndex * tabWidth}%`,
+    width: `${tabWidth}%`,
+  });
+
   const renderContent = (): React.JSX.Element => {
     const content = contentData[activeTab];
     return (
-      <div className="grid grid-cols-2 gap-[51px] content-center items-center h-full px-[47px]">
+      <motion.div
+        key={activeTab}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        className="grid grid-cols-2 gap-[51px] content-center items-center h-full px-[47px]"
+      >
         <img
           src={content.image}
           alt={`${activeTab} dashboard`}
@@ -65,27 +85,34 @@ const DocumentTabDashboard: React.FC = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
     );
   };
 
   return (
     <div className="container w-[1155px] h-[591px] grid grid-rows-[72px_1fr] shadow-[2px_4px_20px_0px_rgba(181,199,21,0.15)]">
-      <div className="grid grid-cols-3 h-[72px] mb-4 w-full">
+      <div className="grid grid-cols-3 h-[72px] mb-4 w-full relative">
         {tabs.map((tab, index) => (
           <button
             key={tab}
-            className={`py-2 px-4 font-jakartaSansBold text-[20px] ${activeTab === tab
-              ? 'bg-green600 text-white'
-              : `${index === tabs.length - 1 ? 'bg-[#B5C71512]' : 'bg-[#B5C71520]'} text-gray-700`
-              }`}
+            className={`py-2 px-4 font-jakartaSansBold text-[20px] relative z-10 transition-colors duration-300 ${index === tabs.length - 1 ? 'bg-[#B5C71512]' : 'bg-[#B5C71520]'
+              } ${activeTab === tab ? 'text-white' : 'text-gray-700'}`}
             onClick={() => setActiveTab(tab)}
           >
             {tab}
           </button>
         ))}
+        <animated.div
+          className="absolute top-0 h-full bg-green600 z-0"
+          style={{
+            ...springProps,
+            zIndex: 5,
+          }}
+        />
       </div>
-      {renderContent()}
+      <AnimatePresence mode="wait">
+        {renderContent()}
+      </AnimatePresence>
     </div>
   );
 };
