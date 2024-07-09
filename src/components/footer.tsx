@@ -51,20 +51,40 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="hidden gap-[90px]">
+          <div className="flex gap-[90px]">
             <div className="flex flex-col gap-y-8">
               <h1 className="font-jakartaSansBold text-[20px]">Products</h1>
               <ul className="grid gap-y-8">
-                <li>SEIZ</li>
-                <li>Notery</li>
+                <li>
+                  <a href="/seiz">
+                    SEIZ
+                  </a>
+                </li>
+                <li>
+                  <a href="/notery">
+                    Notery
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="flex flex-col gap-y-8">
               <h1 className="font-jakartaSansBold text-[20px]">About</h1>
               <ul className="grid gap-y-8">
-                <li>Quienes somos</li>
-                <li>Por qué lo hacemos</li>
-                <li>Meet our team</li>
+                <li>
+                  <a href="/about#whoweare">
+                    Who we are?
+                  </a>
+                </li>
+                <li>
+                  <a href="/about#whywedoit">
+                    Why we do it?
+                  </a>
+                </li>
+                <li>
+                  <a href="/about#team">
+                    Meet our team
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

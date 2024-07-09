@@ -43,18 +43,23 @@ const TeamContent = () => {
       iconSrc: "team/Laura.png",
       title: "Laura Duran",
       role: "Product Designer"
+    },
+    {
+      iconSrc: "team/Juan-Carlos.png",
+      title: "Juan carlos PERDOMO",
+      role: "CRO"
     }
   ];
 
   return (
-    <article className="relative grid h-[740px]">
+    <article id="team" className="relative grid h-[740px]">
       <SectionTitle
-        title="TEAM"
+        title="MEET THE TEAM"
         iconColor="#9ADD19"
         topDistance="70px"
       />
       <div className="grid content-center items-center justify-items-center">
-        <div className="flex gap-4 w-[1304px] h-[461px]">
+        <div className="flex gap-8 w-[1304px] h-[461px]" >
           {
             teamCards.map((card, index) => (
               <TeamCard

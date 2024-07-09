@@ -2,7 +2,7 @@ import SectionTitle from "../shared/section-title";
 
 const WhoWeAreContent = () => {
   return (
-    <div className="relative h-[593px] grid grid-cols-2 items-center content-center">
+    <div id="whoweare" className="relative h-[593px] grid grid-cols-2 items-center content-center">
       <SectionTitle title="WHO WE ARE" iconColor="#00B1C6" topDistance="70px" />
       <img className="relative ml-[100px]" src="logos/logo-atix-dark.svg" width={239} height={99} alt="logo" />
       <div className="grid gap-4 text-[20px]">

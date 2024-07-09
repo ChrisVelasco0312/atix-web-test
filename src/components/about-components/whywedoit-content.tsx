@@ -46,7 +46,7 @@ const WhyWeDoItContent = () => {
 
 
   return (
-    <article className="relative h-[815px]">
+    <article id="whywedoit" className="relative h-[815px]">
       <SectionTitle textColor="text-white" title="WHY WE DO IT" iconColor="#00B1C6" topDistance="70px" />
       <div className="h-full mx-auto grid grid-cols-2 items-center content-center gap-y-20 justify-items-center w-[940px]">
         {
