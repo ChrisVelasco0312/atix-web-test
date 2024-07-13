@@ -1,4 +1,5 @@
 import SectionTitle from "../shared/section-title";
+import { useRef, useEffect } from "react";
 
 interface TeamCardProps {
   iconSrc: string;
@@ -23,6 +24,7 @@ const TeamCard = ({
 };
 
 const TeamContent = () => {
+  const teamRef = useRef<HTMLDivElement>(null);
   const teamCards: TeamCardProps[] = [
     {
       iconSrc: "team/Tomas.png",
@@ -51,6 +53,22 @@ const TeamContent = () => {
     }
   ];
 
+
+
+  useEffect(() => {
+    const teamContainer = teamRef.current;
+
+    const carouselInner = teamContainer?.querySelector(".team-cards-items");
+
+    const carouselContent = Array.from(carouselInner?.children || []);
+
+    carouselContent.forEach((card) => {
+      const duplicateCard = card.cloneNode(true);
+      carouselInner?.appendChild(duplicateCard);
+    });
+
+  }, [teamRef]);
+
   return (
     <article id="team" className="relative grid h-[740px]">
       <SectionTitle
@@ -58,8 +76,11 @@ const TeamContent = () => {
         iconColor="#9ADD19"
         topDistance="70px"
       />
-      <div className="grid content-center items-center justify-items-center">
-        <div className="flex gap-8 w-[1304px] h-[461px]" >
+      <div
+        ref={teamRef}
+        className="grid content-center w-full overflow-hidden items-center justify-items-center mask-gradient origin-center">
+        <div
+          className="team-cards-items animate-scroll flex gap-8 h-[461px]" >
           {
             teamCards.map((card, index) => (
               <TeamCard

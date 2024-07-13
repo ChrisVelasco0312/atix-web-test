@@ -1,0 +1,5 @@
+@keyframes move {
+  to {
+    translate(calc(-50% - 1.5em));
+  }
+}

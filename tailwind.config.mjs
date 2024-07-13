@@ -7,6 +7,14 @@ export default {
         green: '1px #B5C715',
         purple: '1.5px #25255C',
         white: '1px #FFFFFF'
+      },
+      animation: {
+        scroll: 'scroll 40s linear infinite'
+      },
+      keyframes: {
+        scroll: {
+          'to': { transform: 'translateX(calc(-50% - 1.5em))' },
+        }
       }
     },
     colors: {
@@ -68,7 +76,11 @@ export default {
           "-webkit-text-stroke": "1px #FFFFFF",
           "text-stroke": "1px #FFFFFF",
           "color": "transparent",
-        }
+        },
+        '.mask-gradient': {
+          mask: 'linear-gradient(90deg, transparent, white 10%, white 90%, transparent)',
+          '-webkit-mask': 'linear-gradient(90deg, transparent, white 10%, white 90%, transparent)',
+        },
       }
       addUtilities(newUtilities)
     }
