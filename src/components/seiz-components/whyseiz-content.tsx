@@ -28,7 +28,7 @@ const WhySeizContent = () => {
     <article className="grid items-center h-[471px] content-center gap-12">
       <div className="flex gap-4 items-center content-center justify-center pr-[100px]">
         <h1 className="font-integralCF  text-[40px]">WHY</h1>
-        <img className="w-[167px] h-[52px]" src="logos/logo-seiz-clean.svg" alt="logo" />
+        <img className="w-[167px] h-[52px]" src="../logos/logo-seiz-clean.svg" alt="logo" />
       </div>
 
       <div className="flex gap-[95px] items-center justify-center">

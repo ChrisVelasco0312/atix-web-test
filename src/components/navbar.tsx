@@ -5,7 +5,7 @@ const Navbar = ({
   return (
     <nav className="flex justify-between py-[22px]">
       <a href="/">
-        <img src={`logos/${mode === "dark" ? "logo-atix" : "logo-atix-dark"}.svg`} alt="logo" />
+        <img src={`../logos/${mode === "dark" ? "logo-atix" : "logo-atix-dark"}.svg`} alt="logo" />
       </a>
       <ul className={`flex items-center gap-[23px] ${textColor}`}>
         <li className="p-4">

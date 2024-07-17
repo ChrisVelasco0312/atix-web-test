@@ -35,7 +35,7 @@ const HowitworksContent = () => {
     {
       id: 3,
       info: <div className="flex gap-8 items-start">
-        <img src="logos/logo-seiz-white.svg" alt="seiz-logo" />
+        <img src="../logos/logo-seiz-white.svg" alt="seiz-logo" />
         <div className="grid gap-4">
           <p>Processes and analyzes the doc</p>
           <p>Extracts pertinent information</p>
@@ -51,7 +51,7 @@ const HowitworksContent = () => {
 
   return (
     <article className="h-[829px] flex">
-      <img height={800} src="/images/seiz-howitworks.png" alt="howitworks" />
+      <img height={800} src="../images/seiz-howitworks.png" alt="howitworks" />
       <div className="grid gap-4 content-center">
         <h4 className="text-[14px] text-white tracking-[2.8px]">HOW IT WORKS</h4>
         <h1 className="font-integralCF text-[40px] text-white mb-5 leading-[130%]">Forget about manual document processing</h1>

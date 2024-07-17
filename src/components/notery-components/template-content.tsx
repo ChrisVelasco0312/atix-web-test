@@ -10,7 +10,7 @@ const TemplateContent = () => {
         </div>
       </div>
       <div>
-        <img src="images/notery-template.png" alt="Notery Template" />
+        <img src="../images/notery-template.png" alt="Notery Template" />
       </div>
     </article>
   );

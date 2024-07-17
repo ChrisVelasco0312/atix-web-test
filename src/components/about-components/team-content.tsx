@@ -27,27 +27,27 @@ const TeamContent = () => {
   const teamRef = useRef<HTMLDivElement>(null);
   const teamCards: TeamCardProps[] = [
     {
-      iconSrc: "team/Tomas.png",
+      iconSrc: "../team/Tomas.png",
       title: "Tomas Velasco",
       role: "Innovation Manager & Co-founder"
     },
     {
-      iconSrc: "team/Camilo.png",
+      iconSrc: "../team/Camilo.png",
       title: "Camilo Medina",
       role: "CEO  & Co-founder"
     },
     {
-      iconSrc: "team/Anyi.png",
+      iconSrc: "../team/Anyi.png",
       title: "Anyi Ramirez",
       role: "COO"
     },
     {
-      iconSrc: "team/Laura.png",
+      iconSrc: "../team/Laura.png",
       title: "Laura Duran",
       role: "Product Designer"
     },
     {
-      iconSrc: "team/Juan-Carlos.png",
+      iconSrc: "../team/Juan-Carlos.png",
       title: "Juan carlos PERDOMO",
       role: "CRO"
     }

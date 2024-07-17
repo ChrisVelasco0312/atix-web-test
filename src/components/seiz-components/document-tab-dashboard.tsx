@@ -19,7 +19,7 @@ const DocumentTabDashboard: React.FC = () => {
 
   const contentData: ContentData = {
     Finance: {
-      image: "images/seiz_finance.png",
+      image: "../images/seiz_finance.png",
       title: "HOW SEIZ HELPS COMPANIES IN THE FINANCIAL INDUSTRY",
       points: [
         "Before, 100 decisions take 220 minutes. Now, with SEIZ, 100 decisions are made in just 1 minute!",
@@ -27,14 +27,14 @@ const DocumentTabDashboard: React.FC = () => {
       ]
     },
     Government: {
-      image: "images/seiz_government.png",
+      image: "../images/seiz_government.png",
       title: "HOW SEIZ HELPS COMPANIES IN THE GOVERNMENT INDUSTRY",
       points: [
         "Generated over 200,000 payment orders for tax collection, impacting a portfolio worth 100 billion pesos"
       ]
     },
     Insurance: {
-      image: "images/seiz_insurance.png",
+      image: "../images/seiz_insurance.png",
       title: "HOW SEIZ HELPS COMPANIES IN THE INSURANCE INDUSTRY",
       points: [
         "521,000 transactions processed per month.",
@@ -79,7 +79,7 @@ const DocumentTabDashboard: React.FC = () => {
           <ul className="grid gap-4 w-[420px]">
             {content.points.map((point, index) => (
               <li key={index} className="flex items-center gap-3">
-                <img src="icons/check-icon.svg" alt="check-icon" />
+                <img src="../icons/check-icon.svg" alt="check-icon" />
                 <span>{point}</span>
               </li>
             ))}

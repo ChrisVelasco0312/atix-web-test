@@ -2,22 +2,22 @@ const StepsContent = () => {
   const steps = [
     {
       id: 1,
-      img: "icons/seiz-read-icon.svg",
+      img: "../icons/seiz-read-icon.svg",
       name: "Read",
     },
     {
       id: 2,
-      img: "icons/seiz-interpret-icon.svg",
+      img: "../icons/seiz-interpret-icon.svg",
       name: "Interpret",
     },
     {
       id: 3,
-      img: "icons/seiz-decide-icon.svg",
+      img: "../icons/seiz-decide-icon.svg",
       name: "Decide",
     },
     {
       id: 4,
-      img: "icons/seiz-report-icon.svg",
+      img: "../icons/seiz-report-icon.svg",
       name: "Report",
     }
   ];
@@ -41,7 +41,7 @@ const StepsContent = () => {
                 index < steps.length - 1
                 && (
                   <div className="grid items-center justify-items-center">
-                    <img className="w-[60px]" src="icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
+                    <img className="w-[60px]" src="../icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
                   </div>
                 )
               }

@@ -65,7 +65,7 @@ const HowItWorksContent = () => {
           })
         }
       </div>
-      <img src="images/notery-howitworks.png" alt="Notery How It Works" />
+      <img src="../images/notery-howitworks.png" alt="Notery How It Works" />
     </article>
   );
 };

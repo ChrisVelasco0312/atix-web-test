@@ -89,7 +89,7 @@ const ExtractionStatsContent = () => {
         </div>
         <img
           className="relative max-w-none right-[200px] transition-opacity duration-300 ease-in-out"
-          src={`images/${currentImage}`}
+          src={`../images/${currentImage}`}
           alt="Notery Extraction"
         />
       </div>
@@ -100,7 +100,7 @@ const ExtractionStatsContent = () => {
               statNumber={stat.statNumber}
               statDescription={stat.statDescription}
             />
-            {index !== stats.length - 1 && <img src="images/notery-stats-divider.svg" alt="Notery Stats Separator" />}
+            {index !== stats.length - 1 && <img src="../images/notery-stats-divider.svg" alt="Notery Stats Separator" />}
           </React.Fragment>
         ))}
       </div>

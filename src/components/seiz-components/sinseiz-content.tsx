@@ -12,9 +12,9 @@ const SinseizContent = () => {
           </h1>
         </div>
         <div className="absolute left-[90px] flex w-[1198px] h-[718px]">
-          <img className="absolute top-[284px] left-[5px]" src="images/sinseiz-graph-1.svg" alt="graph-1" />
-          <img className="absolute right-[128px] top-[0px]" src="images/sinseiz-graph-2.png" alt="graph-2" />
-          <img className="absolute right-[0px] bottom-[0px]" src="images/sinseiz-graph-3.svg" alt="graph-3" />
+          <img className="absolute top-[284px] left-[5px]" src="../images/sinseiz-graph-1.svg" alt="graph-1" />
+          <img className="absolute right-[128px] top-[0px]" src="../images/sinseiz-graph-2.png" alt="graph-2" />
+          <img className="absolute right-[0px] bottom-[0px]" src="../images/sinseiz-graph-3.svg" alt="graph-3" />
         </div>
       </div>
     </article>

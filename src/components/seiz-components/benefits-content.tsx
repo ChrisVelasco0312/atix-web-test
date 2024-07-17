@@ -22,22 +22,22 @@ const BenefitsCard = ({
 const BenefitsContent = () => {
   const benefits = [
     {
-      iconSrc: "icons/seiz-benefits-reduce-icon.svg",
+      iconSrc: "../icons/seiz-benefits-reduce-icon.svg",
       title: "Reduce turnaround time by 60%",
       description: "Process documents in minutes, not hours!",
     },
     {
-      iconSrc: "icons/seiz-benefits-save-icon.svg",
+      iconSrc: "../icons/seiz-benefits-save-icon.svg",
       title: "Save up to 60% in operational costs",
       description: "Say goodbye to manual data entry. Cut down operational costs through automation.",
     },
     {
-      iconSrc: "icons/seiz-benefits-drive-icon.svg",
+      iconSrc: "../icons/seiz-benefits-drive-icon.svg",
       title: "Drive efficiencies",
       description: "Empower your team to accomplish more in less time through task automation.",
     },
     {
-      iconSrc: "icons/seiz-benefits-catch-icon.svg",
+      iconSrc: "../icons/seiz-benefits-catch-icon.svg",
       title: "Catch errors & ensure compliance",
       description: "Catch errors & ensure compliance",
     }

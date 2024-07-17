@@ -22,12 +22,12 @@ const ProblemCard = ({
 const ProblemContent = () => {
   const problems = [
     {
-      iconSrc: "icons/problem-icon-1.svg",
+      iconSrc: "../icons/problem-icon-1.svg",
       title: "A person can only review between 40 and 50 documents.",
       description: "Business Intelligence Associates (BIA)"
     },
     {
-      iconSrc: "icons/problem-icon-2.svg",
+      iconSrc: "../icons/problem-icon-2.svg",
       title: "Companies invest millions in hiring people",
       description: "Specifically for document review tasks"
     }
@@ -35,7 +35,7 @@ const ProblemContent = () => {
 
   return (
     <article className="h-[847px] grid grid-cols-2 content-center items-center justify-items-center">
-      <img src="images/notery-problem.png" alt="Notery Problem" />
+      <img src="../images/notery-problem.png" alt="Notery Problem" />
       <div className="grid gap-8">
         <div>
           <div className="relative top-[10px]">

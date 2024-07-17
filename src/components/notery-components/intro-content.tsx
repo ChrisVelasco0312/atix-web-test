@@ -4,7 +4,7 @@ const IntroContent = () => {
       <div
         className="absolute top-0 bottom-0 left-0 right-0"
         style={{
-          backgroundImage: "url(images/notery-intro.png)",
+          backgroundImage: "url(../images/notery-intro.png)",
           backgroundSize: "65%",
           backgroundRepeat: "no-repeat",
           backgroundPositionX: "120%",
