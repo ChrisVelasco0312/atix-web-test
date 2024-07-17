@@ -3,11 +3,11 @@ const Navbar = ({
 }: { mode?: "light" | "dark" }) => {
   const textColor = mode === "dark" ? "text-white" : "text-purple500";
   return (
-    <nav className="flex justify-between py-[22px]">
+    <nav className="flex justify-between py-[22px] lg:px-0 px-[30px]">
       <a href="/">
-        <img src={`../logos/${mode === "dark" ? "logo-atix" : "logo-atix-dark"}.svg`} alt="logo" />
+        <img className="lg:w-auto lg:h-auto w-[81px] h-[31px]" src={`../logos/${mode === "dark" ? "logo-atix" : "logo-atix-dark"}.svg`} alt="logo" />
       </a>
-      <ul className={`flex items-center gap-[23px] ${textColor}`}>
+      <ul className={`lg:flex items-center gap-[23px] ${textColor} hidden`}>
         <li className="p-4">
           <a className={`${textColor}`} href="/#products">
             Products

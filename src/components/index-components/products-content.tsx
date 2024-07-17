@@ -11,15 +11,15 @@ const ProductsContent = () => {
       />
       <div />
       <div className="grid gap-4 justify-items-center text-center mt-[168px] mb-[71px]">
-        <h1 className="font-integralCF text-purple500 text-[40px] leading-[98%]">
+        <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] lg:w-auto w-[300px] leading-[98%]">
           AUTOMATED DOCUMENT PROCESSING
         </h1>
-        <p className="w-[676px] text-[20px] text-purple500">
+        <p className="lg:w-[676px] w-[300px] lg:text-[20px] text-[14px] text-purple500">
           Empower your frontline workforce, minimize hiring requirements,
           maintain employee satisfaction and revolutionize customer experiences!
         </p>
       </div>
-      <div className="flex gap-8 justify-center pb-[118px]">
+      <div className="lg:flex grid gap-8 justify-center pb-[118px]">
         <ProductCard
           logoSrc="logos/logo-seiz.svg"
           title="easily automate any document processing workflow"
