@@ -11,6 +11,15 @@ import TemplateContent from "../components/notery-components/template-content";
 import ExtractionStatsContent from "../components/notery-components/extraction-stats-content";
 ---
 
+<style is:global>
+  .notery-intro-additional-bg {
+    background-size: 80% !important;
+    background-repeat: no-repeat;
+    background-position-x: -300px;
+    background-position-y: -250px;
+  }
+</style>
+
 <Layout title="Seiz">
   <main>
     <Section
@@ -18,12 +27,7 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
       contentHeight="100%"
       background="../backgrounds/notery-intro-background.png"
       additionalBg="../images/notery-intro-isotipo.svg"
-      additionalStyles={{
-        backgroundSize: "80%",
-        backgroundRepeat: "no-repeat",
-        backgroundPositionX: "-300px",
-        backgroundPositionY: "-250px"
-      }}
+      additionalBgClassName="notery-intro-additional-bg"
     >
       <Navbar />
       <IntroContent />

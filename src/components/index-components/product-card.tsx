@@ -16,7 +16,7 @@ const ProductCard = ({
   goTo = "",
 }: ProductCardProps) => {
   return (
-    <div className="grid gap-[24px] w-[515px] h-[737px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[16px] py-[47px] px-[48px]">
+    <div className="grid gap-[24px] lg:w-[515px] w-[308px] lg:h-[737px] h-[755px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[16px] lg:py-[47px] lg:px-[48px] p-[30px]">
       <img src={logoSrc} alt="product-logo" />
       <h1 className="font-integralCF text-petroleo500 text-[28px] leading-normal">
         {title}

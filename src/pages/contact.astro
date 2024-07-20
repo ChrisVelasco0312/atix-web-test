@@ -6,6 +6,22 @@ import ContactContent from "../components/contact-components/contact-content";
 import Footer from "../components/footer";
 ---
 
+<style is:global>
+  .contact-additional-bg {
+    background-position: "-300px";
+    background-repeat: no-repeat;
+    background-size: "65%";
+  }
+
+  @media (max-width: 768px) {
+    .contact-additional-bg {
+      background-size: 250% !important;
+      background-position-x: -540px;
+      background-position-y: -100px;
+    }
+  }
+</style>
+
 <Layout title="Atix Digital">
   <main>
     <Section
@@ -18,6 +34,7 @@ import Footer from "../components/footer";
         backgroundRepeat: "no-repeat",
         backgroundSize: "65%",
       }}
+      additionalBgClassName="contact-additional-bg"
     >
       <Navbar mode="light"/>
       <ContactContent client:load/>

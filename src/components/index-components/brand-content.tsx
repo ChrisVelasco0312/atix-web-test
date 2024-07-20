@@ -1,14 +1,37 @@
 const brandContent = () => {
+
+  const imgList = [
+    {
+      src: "logos/finesa-logo.png",
+      alt: "finesa-logo",
+    },
+    {
+      src: "logos/bayport-logo.png",
+      alt: "bayport-logo",
+    },
+    {
+      src: "logos/reval-logo.png",
+      alt: "reval-logo",
+    },
+    {
+      src: "logos/brinks-logo.png",
+      alt: "brinks-logo",
+    },
+    {
+      src: "logos/banco-w-logo.png",
+      alt: "banco-w-logo",
+    }
+  ];
+
   return (
-    <article className="h-[272px] relative grid grid-flow-col gap-8 items-center">
-      <img src="logos/finesa-logo.png" alt="finesa-logo" />
-      {/*
-        <img src="logos/davivienda-logo.png" alt="davivienda-logo" />
-      */}
-      <img src="logos/bayport-logo.png" alt="bayport-logo" />
-      <img src="logos/reval-logo.png" alt="reval-logo" />
-      <img src="logos/brinks-logo.png" alt="brinks-logo" />
-      <img src="logos/banco-w-logo.png" alt="banco-w-logo" />
+    <article className="h-[272px] lg:w-auto w-[375px] relative flex flex-wrap lg:grid lg:grid-flow-col lg:gap-8 gap-x-4 items-center justify-center">
+      {imgList.map((img) => (
+        <img
+          className="lg:w-[200px] w-[90px] h-auto"
+          src={img.src}
+          alt={img.alt}
+        />
+      ))}
     </article>
   );
 };

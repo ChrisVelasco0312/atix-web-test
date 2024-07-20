@@ -9,19 +9,34 @@ import TeamContent from "../components/about-components/team-content";
 import Footer from "../components/footer";
 ---
 
+<style is:global>
+  .about-additional-bg {
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-position-y: -140px;
+    background-position-x: -200px;
+  }
+
+  @media (max-width: 768px) {
+    .about-bg {
+      background-size: 251% !important;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      background-position-y: -1px !important;
+    }
+  }
+
+</style>
+
 <Layout title="Atix Digital">
   <main>
     <Section
       heightMode="h-fit"
       contentHeight="1203px"
       additionalBg="../images/isotipos-1.svg"
-      additionalStyles={{
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "48%",
-        backgroundPositionY: "-140px",
-        backgroundPositionX: "-200px"
-      }}
       background="../backgrounds/aboutus-background.png"
+      additionalBgClassName="about-additional-bg"
+      bgClassName="about-bg"
     >
       <Navbar mode="dark"/>
       <InitialContent />
@@ -36,7 +51,7 @@ import Footer from "../components/footer";
     </Section>
     <Section
       heightMode="h-auto"
-      contentHeight="815px"
+      contentHeight="100%"
       background="../backgrounds/whywedoit-background.svg"
     >
       <WhyWeDoItContent />

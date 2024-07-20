@@ -13,26 +13,46 @@ import PublicationsContent from "../components/index-components/publications-con
 import Footer from "../components/footer";
 ---
 
+<style is:global>
+ .welcome-additional-bg {
+   background-size: 80% !important;
+   background-repeat: no-repeat;
+   background-position-x: -300px;
+   background-position-y: -120px;
+ }
+
+ @media (max-width: 768px) {
+   .welcome-additional-bg {
+     background-size: 250% !important;
+     background-repeat: no-repeat;
+     background-position-x: -450px;
+     background-position-y: center;
+   }
+
+   .focus-background {
+     background-image: none !important;
+   }
+ }
+
+
+</style>
+
 <Layout title="Atix Digital">
-  <main>
+  <main id="viewport-wrapper">
     <Section
       heightMode="h-screen"
       contentHeight="100%"
       background="backgrounds/welcome-page-background.png"
       additionalBg="images/index-isotipo.svg"
-      additionalStyles={{
-        backgroundSize: "80%",
-        backgroundRepeat: "no-repeat",
-        backgroundPositionX: "-300px",
-        backgroundPositionY: "-120px",
-      }}
+      additionalBgClassName="welcome-additional-bg"
+      client:load
     >
       <Navbar />
       <WelcomeContent />
     </Section>
     <Section
       heightMode="h-auto"
-      contentHeight="409px"
+      contentHeight="100%"
       background="backgrounds/dots-background.png"
     >
       <AboutContent />
@@ -49,15 +69,16 @@ import Footer from "../components/footer";
       heightMode="h-auto"
       contentHeight="949px"
       background="backgrounds/focus-background.png"
+      bgClassName="focus-background"
     >
-      <FocusContent client:load/>
+      <FocusContent client:only/>
     </Section>
     <Section
       heightMode="h-auto"
       contentHeight="409px"
       background="images/CTA.png"
     >
-      <MagicalContent />
+      <MagicalContent client:only/>
     </Section>
     <Section heightMode="h-auto" contentHeight="270px" background="">
       <BrandContent />
@@ -76,3 +97,4 @@ import Footer from "../components/footer";
     <Footer />
   </main>
 </Layout>
+

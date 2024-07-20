@@ -40,10 +40,10 @@ const TrustedContent = () => {
         iconColor="#1C7FC1"
       />
       <div className="grid justify-center gap-10 pt-[170px] pb-[150px]">
-        <h1 className="font-integralCF text-purple500 text-[40px] text-center">
+        <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] lg:text-center lg:w-auto w-[284px]">
           Read what our clients say about us
         </h1>
-        <div className="grid grid-flow-col gap-8">
+        <div className="grid lg:grid-flow-col gap-8 justify-items-center">
           {trustedData.map((item, index) => (
             <TrustedStripCard
               key={index}

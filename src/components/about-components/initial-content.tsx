@@ -1,19 +1,19 @@
 const InitialContent = () => {
   return (
-    <article className="">
-      <div className="relative grid gap-6 items-end content-end  h-[610px] py-[100px]">
-        <div>
-          <h1 className="inline-block text-[76px] font-integralCF text-white">
+    <article className="p-4">
+      <div className="relative grid lg:gap-6 gap-2 items-end content-end h-[610px] py-[100px]">
+        <div className="lg:text-[76px] text-[40px] lg:leading-none leading-[110%]">
+          <h1 className="inline-block font-integralCF text-white">
             ABOUT
           </h1>
-          <h1 className="inline-block text-[76px] font-integralCF text-white">
-            &nbsp;ATIX DIGITAL
+          <h1 className="inline-block font-integralCF text-white">
+            ATIX DIGITAL
           </h1>
-          <h1 className="absolute left-[283px] top-[298px] inline-block text-[76px] font-integralCF text-white text-stroke-white opacity-10">
-            &nbsp;ATIX DIGITAL
+          <h1 className="absolute left-[5px] lg:left-[298px] lg:top-[332px] inline-block font-integralCF text-white text-stroke-white lg:opacity-10 opacity-20">
+            ATIX DIGITAL
           </h1>
         </div>
-        <p className="text-[24px] text-white w-[812px]">
+        <p className="lg:text-[24px] text-[16px] text-white lg:w-[812px]">
           We are a dynamic team that combines expertise in process automation,
           digital transformation, and innovative technology solutions.
         </p>

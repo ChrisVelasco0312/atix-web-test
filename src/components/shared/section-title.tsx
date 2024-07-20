@@ -5,15 +5,20 @@ const SectionTitle = ({
   textColor = "text-petroleo500",
   iconColor,
   topDistance = "0",
+  leftDistance = "0"
 }: {
   title: string;
   textColor?: string;
   iconColor: string;
   topDistance?: string;
+  leftDistance?: string;
 }) => {
   return (
     <div
-      style={{ top: topDistance }}
+      style={{
+        top: topDistance,
+        left: leftDistance
+      }}
       className="absolute flex gap-2 items-center select-none"
     >
       <ChevronsRight color={iconColor} />

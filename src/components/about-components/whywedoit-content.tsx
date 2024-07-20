@@ -12,10 +12,10 @@ const WhyCard = ({
   description
 }: WhyCardProps) => {
   return (
-    <div className="w-[436px] grid gap-4 text-white text-center items-center justify-items-center">
-      <img src={iconSrc} alt="icon" />
+    <div className="lg:w-[436px] grid lg:gap-4 gap-2 text-white text-center items-center justify-items-center">
+      <img className="lg:w-auto w-[54px]" src={iconSrc} alt="icon" />
       <h3 className="text-[18px] font-integralCF">{title}</h3>
-      <p className="text-[18px]">{description}</p>
+      <p className="lg:text-[18px] text-[14px] lg:w-auto w-[305px]">{description}</p>
     </div>
   );
 };
@@ -46,9 +46,9 @@ const WhyWeDoItContent = () => {
 
 
   return (
-    <article id="whywedoit" className="relative h-[815px]">
+    <article id="whywedoit" className="relative lg:h-[815px] lg:p-0 p-4">
       <SectionTitle textColor="text-white" title="WHY WE DO IT" iconColor="#00B1C6" topDistance="70px" />
-      <div className="h-full mx-auto grid grid-cols-2 items-center content-center gap-y-20 justify-items-center w-[940px]">
+      <div className="h-full mx-auto grid lg:grid-cols-2 items-center content-center lg:gap-y-20 gap-y-10 justify-items-center lg:w-[940px] lg:py-0 py-[100px]">
         {
           whyCards.map((card, index) => (
             <WhyCard

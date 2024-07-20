@@ -2,10 +2,14 @@ import SectionTitle from "../shared/section-title";
 
 const WhoWeAreContent = () => {
   return (
-    <div id="whoweare" className="relative h-[593px] grid grid-cols-2 items-center content-center">
+    <div id="whoweare" className="relative lg:h-[593px] h-[568px] grid lg:grid-cols-2 lg:gap-0 gap-4 items-center content-center justify-items-center">
       <SectionTitle title="WHO WE ARE" iconColor="#00B1C6" topDistance="70px" />
-      <img className="relative ml-[100px]" src="../logos/logo-atix-dark.svg" width={239} height={99} alt="logo" />
-      <div className="grid gap-4 text-[20px]">
+      <img
+        className="relative lg:ml-[100px] lg:w-[239px] lg:h-[99px]"
+        src="../logos/logo-atix-dark.svg"
+        alt="logo"
+      />
+      <div className="grid gap-4 lg:text-[20px] lg:text-left text-center lg:w-auto">
         <p>
           Atix Digital is a technology company dedicated to <br />
           transforming processes through <span className="font-jakartaSansBold text-[#9ADD19]">digital automation</span> <br />
