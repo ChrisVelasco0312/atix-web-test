@@ -1,6 +1,6 @@
 const WelcomeSeizContent = () => {
   return (
-    <article className="grid lg:grid-cols-2 items-center h-[85vh] lg:p-0 p-8">
+    <article className="grid lg:grid-cols-2 items-center lg:h-[85vh] lg:p-0 p-8">
       <div className="flex flex-col gap-4">
         <img className="w-[161px] lg:h-[42.393px]" src="../logos/logo-seiz-white.svg" alt="logo" />
         <h1 className="font-integralCF text-white text-[40px] leading-[140%]">

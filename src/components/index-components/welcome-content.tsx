@@ -4,13 +4,13 @@ const WelcomeContent = () => {
   return (
     <article className="grid lg:grid-cols-2 w-full content-center h-[90%]">
       <div />
-      <div className="relative p-[20px] lg:p-0">
+      <div className="relative lg:p-0">
         <h6 className="text-white mb-[10px] tracking-[2.8px]">
           WELCOME TO ATIX
         </h6>
         {/*ADD OUTLINE*/}
         <h1
-          className="absolute text-stroke-white opacity-20 lg:left-[10px] left-[25px] lg:top-[38px] font-integralCF text-white lg:text-[76px] text-[52px] leading-[98%]"
+          className="absolute text-stroke-white opacity-20 lg:left-[10px] left-[5px] lg:top-[38px] font-integralCF text-white lg:text-[76px] text-[52px] leading-[98%]"
         >
           SMART <br /> BUSINESS <br /> SOLUTIONS
         </h1>
