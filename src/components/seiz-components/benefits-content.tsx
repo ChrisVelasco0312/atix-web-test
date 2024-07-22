@@ -61,7 +61,7 @@ const BenefitsContent = () => {
         <h1 className="inline-block font-integralCF lg:text-[64px] text-[40px] text-stroke-green">WITH</h1>
         <img
           className="relative lg:top-2 top-[4px] inline-block lg:w-[180px] lg:h-[56px] w-[140px]"
-          src="logos/logo-seiz-clean.svg"
+          src="../logos/logo-seiz-clean.svg"
           alt="benefits"
         />
       </div>
