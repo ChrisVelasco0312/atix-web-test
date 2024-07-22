@@ -4,7 +4,7 @@ import DocumentTabDashboard from "./document-tab-dashboard";
 
 const DocumentContent = () => {
   const { width } = useViewportInfo();
-  return <article className="h-[934px] grid gap-12 items-center content-center justify-items-center">
+  return <article className="lg:h-[934px] grid gap-12 items-center content-center justify-items-center">
     <div className="lg:grid hidden gap-4">
       <h1 className="font-integralCF text-center text-[40px]">
         Document automation <span className="text-[#B5C715]">tailored to your needs</span>

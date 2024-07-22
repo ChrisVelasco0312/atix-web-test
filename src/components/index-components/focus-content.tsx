@@ -83,9 +83,9 @@ const FocusContent: React.FC = () => {
         )}
 
         {breakpoint === "xs" && (
-          <div className="relative overflow-visible"> {/* Changed from overflow-hidden */}
-            <div className="overflow-hidden"> {/* New wrapper div */}
-              <div className="pt-4 pb-8 px-4"> {/* Padding to prevent shadow cutoff */}
+          <div className="relative overflow-visible">
+            <div className="overflow-hidden">
+              <div className="pt-4 pb-8 px-4">
                 <motion.div
                   key={currentMobileCard}
                   initial={{ opacity: 0, x: 100 }}
