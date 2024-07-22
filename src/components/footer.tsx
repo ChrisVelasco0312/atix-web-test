@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="flex flex-col gap-10 lg:items-start items-center">
             <img
               className="w-[103px] h-[42px]"
-              src="logos/atix-logo-white.svg"
+              src="../logos/atix-logo-white.svg"
               alt="atix-logo"
             />
             <p className="w-[292px] leading-[150%]">
@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-x-4">
               <a href="https://www.linkedin.com/company/atix-digital" target="_blank">
-                <img src="icons/Linkedin.svg" alt="linkedin" />
+                <img src="../icons/Linkedin.svg" alt="linkedin" />
               </a>
             </div>
           </div>

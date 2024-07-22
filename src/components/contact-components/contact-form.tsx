@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import Button from '../shared/button';
 
 interface FormData {
@@ -15,7 +15,6 @@ interface ContactFormProps {
 }
 
 const ContactForm = ({ onSubmit }: ContactFormProps) => {
-  const textareaRef = useRef(null);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -24,20 +23,6 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
     message: '',
     consent: false,
   });
-
-  const resizeTextarea = () => {
-    const textarea = textareaRef.current as HTMLTextAreaElement;
-    if (textarea) {
-      textarea.style.height = 'auto';
-      textarea.style.height = `${textarea.scrollHeight}px`;
-    }
-  };
-
-  useEffect(() => {
-    resizeTextarea();
-    window.addEventListener('resize', resizeTextarea);
-    return () => window.removeEventListener('resize', resizeTextarea);
-  }, []);
 
   const handleChange = (event: any) => {
     const { name, value, type, checked } = event.target;
@@ -112,12 +97,11 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
         <div className="flex flex-col gap-2">
           <label className='font-jakartaSansBold' htmlFor="message">Message</label>
           <textarea
-            ref={textareaRef}
             name="message"
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
-            className="h-[48px] py-4 px-3 overflow-hidden box-border resize-none border-b border-solid border-[#C1C7CD] bg-gray100 w-full"
+            className="h-[48px] py-4 px-3 border-b border-solid border-[#C1C7CD] bg-gray100"
             rows={4}
             required
           ></textarea>

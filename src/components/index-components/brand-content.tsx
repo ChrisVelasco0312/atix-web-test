@@ -24,7 +24,7 @@ const brandContent = () => {
   ];
 
   return (
-    <article className="h-[272px] lg:w-auto w-[375px] relative flex flex-wrap lg:grid lg:grid-flow-col lg:gap-8 gap-x-4 items-center justify-center">
+    <article className="h-[272px] lg:w-auto relative flex flex-wrap lg:grid lg:grid-flow-col lg:gap-8 gap-x-4 items-center justify-center">
       {imgList.map((img) => (
         <img
           className="lg:w-[200px] w-[90px] h-auto"
