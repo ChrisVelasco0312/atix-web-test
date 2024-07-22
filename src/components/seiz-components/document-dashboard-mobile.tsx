@@ -54,8 +54,9 @@ const DocumentDashboardMobile = () => {
   ];
 
   return (
-    <div>
+    <div className="py-10">
       <ElementSlider
+        customSize="h-[520px]"
         index={currentIndex}
         onNext={() => {
           if (currentIndex === dashboardCards.length - 1) {

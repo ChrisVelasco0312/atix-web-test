@@ -52,11 +52,11 @@ const HowitworksContent = () => {
   ];
 
   return (
-    <article className="lg:h-[829px] lg:flex lg:p-0 p-8">
+    <article className="lg:h-[829px] grid lg:flex lg:p-0 p-8 gap-4">
       <img height={800} src="../images/seiz-howitworks.png" alt="howitworks" />
       <div className="grid gap-4 content-center">
         <h4 className="text-[14px] text-white tracking-[2.8px]">HOW IT WORKS</h4>
-        <h1 className="lg:block hidden font-integralCF text-[40px] text-white mb-5 leading-[130%]">Forget about manual document processing</h1>
+        <h1 className="font-integralCF lg:text-[40px] text-[28px] text-white mb-5 leading-[130%]">Forget about manual document processing</h1>
         <Stepper steps={steps} />
       </div>
     </article>

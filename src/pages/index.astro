@@ -71,14 +71,14 @@ import Footer from "../components/footer";
       background="backgrounds/focus-background.png"
       bgClassName="focus-background"
     >
-      <FocusContent client:only/>
+      <FocusContent client:only="react"/>
     </Section>
     <Section
       heightMode="h-auto"
       contentHeight="409px"
       background="images/CTA.png"
     >
-      <MagicalContent client:only/>
+      <MagicalContent client:only="react"/>
     </Section>
     <Section heightMode="h-auto" contentHeight="270px" background="">
       <BrandContent />
@@ -89,7 +89,7 @@ import Footer from "../components/footer";
       background=""
       backgroundColor="#F8F8FA"
     >
-      <TrustedContent />
+      <TrustedContent client:only="react" />
     </Section>
     <Section heightMode="h-auto" contentHeight="100%" background="">
       <PublicationsContent />

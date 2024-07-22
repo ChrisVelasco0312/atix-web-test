@@ -1,3 +1,5 @@
+import { useState } from "react";
+import ElementSlider from "../shared/element-slider";
 import SectionTitle from "../shared/section-title";
 import TrustedStripCard from "./trusted-strip-card";
 
@@ -32,6 +34,7 @@ const trustedData = [
 ];
 
 const TrustedContent = () => {
+  const [index, setIndex] = useState(0);
   return (
     <article className="relative grid">
       <SectionTitle
@@ -43,7 +46,7 @@ const TrustedContent = () => {
         <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] lg:text-center lg:w-auto w-[284px]">
           Read what our clients say about us
         </h1>
-        <div className="grid lg:grid-flow-col gap-8 justify-items-center">
+        <div className="lg:grid hidden lg:grid-flow-col gap-8 justify-items-center">
           {trustedData.map((item, index) => (
             <TrustedStripCard
               key={index}
@@ -52,6 +55,31 @@ const TrustedContent = () => {
               info={item.info}
             />
           ))}
+        </div>
+        <div className="lg:hidden grid lg:grid-flow-col gap-8 justify-items-center overflow-hidden">
+          <ElementSlider
+            index={index}
+            onNext={() => {
+              if (index < trustedData.length - 1) {
+                setIndex(index + 1);
+              } else {
+                setIndex(0);
+              }
+            }}
+            onPrev={() => {
+              if (index > 0) {
+                setIndex(index - 1);
+              } else {
+                setIndex(trustedData.length - 1);
+              }
+            }}
+          >
+            <TrustedStripCard
+              logoSrc={trustedData[index].logoSrc}
+              description={trustedData[index].description}
+              info={trustedData[index].info}
+            />
+          </ElementSlider>
         </div>
       </div>
     </article>

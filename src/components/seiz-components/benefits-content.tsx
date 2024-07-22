@@ -1,3 +1,7 @@
+import { useState } from "react";
+import { useViewportInfo } from "../hooks/useViewportInfo";
+import SliderDots from "../shared/slider-dots";
+
 const BenefitsCard = ({
   iconSrc,
   title,
@@ -20,6 +24,9 @@ const BenefitsCard = ({
 
 
 const BenefitsContent = () => {
+  const { width } = useViewportInfo();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const benefits = [
     {
       iconSrc: "../icons/seiz-benefits-reduce-icon.svg",
@@ -43,6 +50,10 @@ const BenefitsContent = () => {
     }
   ];
 
+  const handleDotClick = (index: number) => {
+    setCurrentIndex(index);
+  };
+
 
   return (
     <article className="lg:h-[644px] grid gap-10 pt-[81px] pb-[85px]">
@@ -55,14 +66,29 @@ const BenefitsContent = () => {
         />
       </div>
       <div className="flex flex-wrap justify-center gap-[34px]">
-        {benefits.map((benefit) => (
-          <BenefitsCard
-            key={benefit.title}
-            iconSrc={benefit.iconSrc}
-            title={benefit.title}
-            description={benefit.description}
-          />
-        ))}
+        {
+          width < 440 ? (
+            <SliderDots
+              itemIndex={currentIndex}
+              itemsLength={benefits.length}
+              handleDotClick={handleDotClick}
+            >
+              <BenefitsCard
+                iconSrc={benefits[currentIndex].iconSrc}
+                title={benefits[currentIndex].title}
+                description={benefits[currentIndex].description}
+              />
+            </SliderDots>
+
+          ) : benefits.map((benefit) => (
+            <BenefitsCard
+              key={benefit.title}
+              iconSrc={benefit.iconSrc}
+              title={benefit.title}
+              description={benefit.description}
+            />
+          ))
+        }
       </div>
     </article>
   );

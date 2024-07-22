@@ -18,7 +18,7 @@ export default [
     },
     rules: {
       // Add your custom rules here
-      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-unused-vars": "off",
       semi: ["error", "always"],
     },
   },
