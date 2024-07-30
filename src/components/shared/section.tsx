@@ -25,7 +25,7 @@ const Section = ({
 
   const container = (content: React.ReactNode) => (
     <section
-      className={`${bgClassName} w-full ${heightMode} lg:min-w-[1440px] flex flex-col items-center`}
+      className={`${bgClassName}  ${heightMode}`}
       style={{
         backgroundImage: background && `url(${background})`,
         backgroundSize: "cover",
@@ -37,13 +37,13 @@ const Section = ({
   );
 
   const content = (
-    <div className={`lg:w-[1440px] h-[${contentHeight}]`}>{children}</div>
+    <div className={`2xl:w-[1440px] md:w-full h-[${contentHeight}] m-auto lg:px-0 px-4`}>{children}</div>
   );
 
   if (additionalBg.length > 0) {
     return container(
       <div
-        className={`${additionalBgClassName} w-full ${heightMode} flex flex-col items-center`}
+        className={`${additionalBgClassName} w-full ${heightMode} m-auto`}
         style={{
           backgroundImage: `url(${additionalBg})`,
           backgroundSize: "contain",

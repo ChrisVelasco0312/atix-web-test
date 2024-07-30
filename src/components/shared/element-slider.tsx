@@ -16,7 +16,7 @@ const ElementSlider = (
     customSize?: string
   }) => {
   return (
-    <div className={`flex overflow-hidden ${customSize} items-center gap-4 px-2`}>
+    <div className={`flex overflow-hidden ${customSize} items-center gap-1.5 px-2`}>
       <img
         src="../icons/chevron-left.svg"
         alt="chevron-left"
