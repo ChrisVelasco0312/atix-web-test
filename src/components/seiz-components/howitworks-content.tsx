@@ -9,7 +9,7 @@ interface Step {
 const Stepper = ({ steps }: { steps: Step[] }) => {
   return (
     <div className="relative text-white grid gap-8">
-      <div className="absolute left-[20px] z-1 h-[90%] w-[1px] bg-white"></div>
+      <div className="absolute left-[20px] z-1 lg:h-[90%] h-[80%] w-[1px] bg-white"></div>
       {steps.map((step) => (
         <div key={step.id} className="grid grid-cols-[40px_1fr] items-start gap-4 relative z-2">
           <div className="relative w-[40px] h-[40px]">

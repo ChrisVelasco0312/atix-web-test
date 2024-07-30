@@ -12,7 +12,7 @@ const BenefitsCard = ({
   description: string;
 }) => {
   return (
-    <div className="flex lg:p-0 p-2 bg-white place-items-center justify-center lg:gap-[24px] gap-2 shadow-[8px_8px_26.5px_-8px_rgba(181,199,21,0.30)] rounded-[16px] lg:w-[576px] w-[340px] h-[161px]">
+    <div className="flex lg:p-0 p-2 bg-white place-items-center justify-center lg:gap-[24px] gap-2 shadow-[8px_8px_26.5px_-8px_rgba(181,199,21,0.30)] rounded-[16px] lg:w-[576px] h-[161px]">
       <img className="lg:w-[51px] lg:h-[51px] w-[38px]" src={iconSrc} alt="icon" />
       <div className="lg:w-[412px] w-fit">
         <h1 className="font-jakartaSansBold lg:text-[24px] text-[16px] lg:text-nowrap">{title}</h1>

@@ -4,7 +4,7 @@ const SinseizContent = () => {
       className="relative lg:h-[870px] h-[583px] overflow-hidden lg:overflow-visible">
       <div className="lg:absolute left-[100px] top-[76px] lg:h-[870px]">
         <div className="lg:absolute top-[20px] left-[-200px]">
-          <h1 className="lg:w-[567px] w-[320px] font-integralCF lg:text-[40px] text-[28px] text-[#0E2B3D] leading-[120%] lg:p-0 p-8">
+          <h1 className="lg:w-[567px] font-integralCF lg:text-[40px] text-[28px] text-[#0E2B3D] leading-[120%] lg:p-0 p-8">
             Wasting valuable
             <span className="text-green600 block"> 5 to 15 minutes </span>
             extracting data from

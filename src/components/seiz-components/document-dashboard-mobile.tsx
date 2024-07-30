@@ -9,7 +9,7 @@ const DocumentDashboardCard = ({
   points: string[]
 }) => {
   return (
-    <div className="grid gap-4 min-w-[286px] shadow-[2px_4px_20px_0px_rgba(181,199,21,0.15)] p-[38px]">
+    <div className="grid gap-4 shadow-[2px_4px_20px_0px_rgba(181,199,21,0.15)] p-[38px]">
       <h1 className="font-integralCF text-[24px]">{title}</h1>
       <div className="w-[182px] h-[5px] bg-green600" />
       <ul>
@@ -56,7 +56,7 @@ const DocumentDashboardMobile = () => {
   return (
     <div className="py-10">
       <ElementSlider
-        customSize="h-[520px]"
+        customSize="h-[600px]"
         index={currentIndex}
         onNext={() => {
           if (currentIndex === dashboardCards.length - 1) {
