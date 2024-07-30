@@ -4,12 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
-  mode: "light" | "dark";
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, mode }) => {
-  const textColor = mode === "dark" ? "text-white" : "text-purple500";
-  const bgColor = mode === "dark" ? "bg-[#25255CEE]" : "bg-white";
+const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
+  const textColor = "text-white";
+  const bgColor = "bg-[#25255CEE]";
 
   const menuVariants = {
     closed: {

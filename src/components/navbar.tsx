@@ -32,11 +32,11 @@ const Navbar = ({
         </ul>
         <div className="flex lg:hidden">
           <button onClick={toggleMenu}>
-            <img src="../icons/menu.svg" alt="menu" />
+            <img src={`../icons/${mode === "dark" ? "menu" : "menu-dark"}.svg`} alt="menu" />
           </button>
         </div>
       </nav>
-      <MobileMenu isOpen={isMenuOpen} onClose={toggleMenu} mode={mode} />
+      <MobileMenu isOpen={isMenuOpen} onClose={toggleMenu} />
     </>
   );
 };

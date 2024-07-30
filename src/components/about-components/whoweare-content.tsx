@@ -9,15 +9,15 @@ const WhoWeAreContent = () => {
         src="../logos/logo-atix-dark.svg"
         alt="logo"
       />
-      <div className="grid gap-4 lg:text-[20px] lg:text-left text-center lg:w-auto">
+      <div className="grid gap-4 lg:text-[20px] lg:text-left text-center ">
         <p>
-          Atix Digital is a technology company dedicated to <br />
-          transforming processes through <span className="font-jakartaSansBold text-[#9ADD19]">digital automation</span> <br />
+          Atix Digital is a technology company dedicated to
+          transforming processes through <span className="font-jakartaSansBold text-[#9ADD19]">digital automation</span>
           <span className="font-jakartaSansBold text-[#9ADD19]">and modern technologies.</span>
         </p>
         <p>
-          We empower organizations to achieve <span className="font-jakartaSansBold text-[#25255C]">greater</span> <br />
-          <span className="font-jakartaSansBold text-[#25255C]">efficiency and productivity</span> by reimagining workflows <br />
+          We empower organizations to achieve <span className="font-jakartaSansBold text-[#25255C]">greater</span>
+          <span className="font-jakartaSansBold text-[#25255C]">efficiency and productivity</span> by reimagining workflows
           and implementing intelligent solutions.
         </p>
         <p>

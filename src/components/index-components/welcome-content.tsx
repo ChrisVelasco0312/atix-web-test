@@ -19,7 +19,7 @@ const WelcomeContent = () => {
         >
           SMART <br /> BUSINESS <br /> SOLUTIONS
         </h1>
-        <p className="text-white text-[18px] mt-[26px] leading-[150%] lg:w-[449px] w-[350px]">
+        <p className="text-white text-[18px] mt-[26px] leading-[150%] lg:w-[449px]">
           We digitize & automate administrative processes with modern
           technologies, to help you enhance the effectiveness of your
           organization{" "}
