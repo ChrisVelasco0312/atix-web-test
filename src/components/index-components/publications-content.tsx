@@ -1,8 +1,9 @@
 import SectionTitle from "../shared/section-title";
+import { t } from "astro-i18n";
 
 const PublicationsContent = () => (
   <div className="relative lg:h-[481px] h-[718px] grid justify-center content-center">
-    <SectionTitle title="PUBLICATIONS" iconColor="#1C7FC1" topDistance="54px" />
+    <SectionTitle title={t("index.publications.sectionText")} iconColor="#1C7FC1" topDistance="54px" />
     <div className="grid lg:grid-flow-col gap-x-[130px] place-items-center">
       <div
         style={{

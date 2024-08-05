@@ -1,36 +1,36 @@
 import ProductCard from "./product-card";
 import SectionTitle from "../shared/section-title";
+import { t } from "astro-i18n";
 
 const ProductsContent = () => {
   return (
     <article id="products" className="relative grid">
       <SectionTitle
-        title="ATIX PRODUCTS"
+        title={t("index.products.sectionText")}
         iconColor="#1C7FC1"
         topDistance="54px"
       />
       <div />
       <div className="grid gap-4 justify-items-center text-center mt-[168px] mb-[71px]">
         <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] lg:w-auto w-[300px] leading-[98%]">
-          AUTOMATED DOCUMENT PROCESSING
+          {t("index.products.title")}
         </h1>
         <p className="lg:w-[676px] w-[300px] lg:text-[20px] text-[14px] text-purple500">
-          Empower your frontline workforce, minimize hiring requirements,
-          maintain employee satisfaction and revolutionize customer experiences!
+          {t("index.products.description")}
         </p>
       </div>
       <div className="lg:flex grid gap-8 justify-center pb-[118px]">
         <ProductCard
           logoSrc="logos/logo-seiz.svg"
-          title="easily automate any document processing workflow"
-          description="Boost efficiencies, unlock savings, and streamline operations with seamless AI-powered document workflow automation."
+          title={t('index.products.card1.title')}
+          description={t('index.products.card1.description')}
           exampleSrc="images/seiz-example.png"
           goTo="/seiz"
         />
         <ProductCard
           logoSrc="logos/logo-notery.svg"
-          title="the hero who reads and makes up to 200 DECISIONS PeR MINUTe"
-          description="Conquer the document chaos and achieve maximum efficiency with a digital administrative assistant by your side!"
+          title={t('index.products.card2.title')}
+          description={t('index.products.card2.description')}
           exampleSrc="images/notery-example.png"
           goTo="/notery"
         />

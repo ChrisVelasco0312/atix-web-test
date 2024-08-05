@@ -14,6 +14,68 @@
       },
       "description": "We digitize & automate administrative processes with modern technologies, to help you enhance the effectiveness of your organization",
       "learnMore": "Learn more"
+    },
+    "about": {
+      "sectionText": "ABOUT ATIX DIGITAL",
+      "title": "We are proud to be solution-oriented, not problem-oriented",
+      "button": "Get to know us"
+    },
+    "products": {
+      "sectionText": "ATIX PRODUCTS",
+      "title": "Automated document processing",
+      "description": "Empower your frontline workforce, minimize hiring requirements, maintain employee satisfaction and revolutionize customer experiences!",
+      "cardButton": "Learn more",
+      "card1": {
+        "title": "Easily automate any document processing workflow",
+        "description": "Boost efficiencies, unlock savings, and streamline operations with seamless AI-powered document workflow automation."
+      },
+      "card2": {
+        "title": "The hero who reads and makes up to 200 decisions per minute",
+        "description": "Conquer the document chaos and achieve maximum efficiency with a digital administrative assistant by your side!"
+      }
+    },
+    "focus": {
+      "sectionText": "OUR FOCUS",
+      "title": "When intelligent tech meets business process",
+      "card1": {
+        "title": "Machine learning",
+        "smallDescription": "Harness the power of data intelligence",
+        "description": "Using cutting-edge machine learning algorithms, we extract valuable insights from your data. Empower your business to make smart and accurate decisions with predictive analytics."
+      },
+      "card2": {
+        "title": "User Experience",
+        "smallDescription": "A commitment to exceptional user experience!",
+        "description": "We design our solutions with a user-centric approach, ensuring that every interaction is intuitive, seamless, and efficient. Our goal is to simplify complex processes, making them accessible and straightforward for everyone"
+      },
+      "card3": {
+        "title": "Research",
+        "smallDescription": "We are dedicated to continuous innovation!",
+        "description": "By collaborating closely with academic institutions, we stay at the forefront of advancements in our field. Our commitment to research drives us to explore new frontiers, develop cutting-edge solutions, and integrate the latest technologies into our products."
+      }
+    },
+    "magical": {
+      "line1": "Ready to go",
+      "line2": "from manual",
+      "line3": "to magical?"
+    },
+    "trusted": {
+      "sectionText" : "TRUSTED BY THOUSANDS",
+      "title": "Read what our clients say about us",
+      "card1": {
+        "text": "<With SEIZ, we've achieved an average payroll collection of 85.88% in 2023>. 85% of our credit applications are now processed by SEIZ, <generating quick reports and reducing operational errors.>",
+        "role": "Credit and Portfolio Operations Manager"
+      },
+      "card2": {
+        "text": "<SEIZ has allowed us to achieve a high processing speed.> Previously, we had a manual process requiring a team of 7 people to handle an average of 250 documents daily. Currently, <the processing of 1000 documents daily is managed by just 3 people.>",
+        "role": "Agreements and liabilities Coordinator"
+      },
+      "card3": {
+        "text": "<We've made significant improvements to our operational processes.> Integrating SEIZ has empowered us to compare information, enhance data quality, and streamline processing times.<As a result, our operation has grown 3X without requiring to modify our headcount.>",
+        "role": "Efficiency and Technology Manager "
+      }
+    },
+    "publications": {
+      "sectionText": "PUBLICATIONS"
     }
   }
 }

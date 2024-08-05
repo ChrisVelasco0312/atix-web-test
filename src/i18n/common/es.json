@@ -15,6 +15,68 @@
       },
       "description": "Digitalizamos y automatizamos procesos administrativos con tecnologías modernas, para ayudarte a mejorar la efectividad de tu organización.",
       "learnMore": "Saber más"
+    },
+    "about": {
+      "sectionText": "SOBRE ATIX DIGITAL",
+      "title": "Estamos orgullosos de pensar en soluciones, no en problemas.",
+      "button": "Conócenos"
+    },
+    "products": {
+      "sectionText": "PRODUCTOS DE ATIX",
+      "title": "Procesamiento automatizado de documentos",
+      "description": "Empodera a tu fuerza laboral de primera línea, minimiza los requisitos de contratación, mantiene la satisfacción de los empleados y revoluciona la experiencia del cliente!",
+      "cardButton": "Saber más",
+      "card1": {
+        "title": "Automatiza fácilmente cualquier flujo de trabajo de procesamiento de documentos",
+        "description": "Aumenta la eficiencia, desbloquea ahorros y optimiza operaciones con la automatización de flujos de trabajo de documentos impulsada por IA."
+      },
+      "card2": {
+        "title": "El héroe que lee y toma hasta 200 decisiones por minuto",
+        "description": "¡Conquista el caos de los documentos y logra la máxima eficiencia con un asistente administrativo digital a tu lado!"
+      }
+    },
+    "focus": {
+      "sectionText": "NUESTRO ENFOQUE",
+      "title": "Cuando la tecnología inteligente se encuentra con el proceso empresarial",
+      "card1": {
+        "title": "Aprendizaje automático",
+        "smallDescription": "Aprovecha el poder de la inteligencia de datos",
+        "description": "Usando algoritmos de aprendizaje automático de vanguardia, extraemos conocimientos valiosos de tus datos. Empodera a tu negocio para tomar decisiones inteligentes y precisas con análisis predictivos"
+      },
+      "card2": {
+        "title": "Experiencia del Usuario",
+        "smallDescription": "¡Un compromiso con una experiencia de usuario excepcional!",
+        "description": "Diseñamos nuestras soluciones con un enfoque centrado en el usuario, asegurando que cada interacción sea intuitiva, fluida y eficiente. Nuestro objetivo es simplificar los procesos complejos, haciéndolos accesibles y directos para todos."
+      },
+      "card3": {
+        "title": "Investigación",
+        "smallDescription": "¡Estamos dedicados a la innovación continua!",
+        "description": "Al colaborar estrechamente con instituciones académicas, nos mantenemos a la vanguardia de los avances en nuestro campo. Nuestro compromiso con la investigación nos impulsa a explorar nuevas fronteras, desarrollar soluciones innovadoras e integrar las últimas tecnologías en nuestros productos."
+      }
+    },
+    "magical": {
+      "line1": "¿Listo para pasar",
+      "line2": "de manual",
+      "line3": "a mágico?"
+    },
+    "trusted": {
+      "sectionText" : "CONFIADO POR MILES",
+      "title": "Lee lo que nuestros clientes dicen sobre nosotros",
+      "card1": {
+        "text": "Con SEIZ, hemos logrado una recaudación promedio de nómina del 85.88% en 2023. El 85% de nuestras solicitudes de crédito ahora se procesan con SEIZ, generando informes rápidos y reduciendo errores operativos.",
+        "role": "Gerente de Operaciones de Crédito y Cartera."
+      },
+      "card2": {
+        "text": "SEIZ nos ha permitido alcanzar una alta velocidad de procesamiento. Anteriormente, teníamos un proceso manual que requería un equipo de 7 personas para manejar un promedio de 250 documentos diarios. Actualmente, el procesamiento de 1000 documentos diarios es manejado por solo 3 personas.",
+        "role": "Coordinador de Acuerdos y Responsabilidades"
+      },
+      "card3": {
+        "text": "Hemos realizado mejoras significativas en nuestros procesos operativos. La integración de SEIZ nos ha permitido comparar información, mejorar la calidad de los datos y optimizar los tiempos de procesamiento. Como resultado, nuestra operación ha crecido 3X sin necesidad de modificar el equipo.",
+        "role": "Administrador de eficiencia y tecnología"
+      }
+    },
+    "publications": {
+      "sectionText": "PUBLICACIONES"
     }
   }
 }
