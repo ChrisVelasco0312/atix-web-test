@@ -29,6 +29,9 @@ dependencies:
   astro:
     specifier: ^4.10.2
     version: 4.11.5(typescript@5.5.3)
+  astro-i18n:
+    specifier: ^2.2.4
+    version: 2.2.4(esbuild@0.21.5)
   eslint:
     specifier: ^9.5.0
     version: 9.6.0
@@ -3763,6 +3766,15 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+    dev: false
+
+  /astro-i18n@2.2.4(esbuild@0.21.5):
+    resolution: {integrity: sha512-vhvxBtStNLLghtl63aGhBEtU1DqlYz0D3ggz5Nh2QZok36s9Ss3v9b4txN3mH/OZ90JUwkII13CYQL9wozjXBQ==}
+    hasBin: true
+    peerDependencies:
+      esbuild: 0.x
+    dependencies:
+      esbuild: 0.21.5
     dev: false
 
   /astro@4.11.5(typescript@5.5.3):
@@ -8048,7 +8060,7 @@ packages:
     dependencies:
       object-assign: 4.1.1
       react: 18.3.1
-      react-is: 16.13.1
+      react-is: 18.3.1
     dev: false
 
   /react-spring@9.7.3(@react-three/fiber@8.16.8)(konva@9.3.13)(react-dom@18.3.1)(react-konva@18.2.10)(react-native@0.74.3)(react-zdog@1.2.2)(react@18.3.1)(three@0.166.1)(zdog@1.1.3):

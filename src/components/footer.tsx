@@ -1,3 +1,4 @@
+import LanguageSwitcher from "./shared/language-switcher";
 const Footer = () => {
   return (
     <footer className="flex justify-center bg-petroleo500">
@@ -17,6 +18,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/atix-digital" target="_blank">
                 <img src="../icons/Linkedin.svg" alt="linkedin" />
               </a>
+              <LanguageSwitcher darkBackground />
             </div>
           </div>
           <div className="flex lg:gap-[90px] gap-8 justify-items-center">

@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import MobileMenu from './mobile-menu';
+import { t } from "astro-i18n";
 
 const Navbar = ({
   mode = "dark"
 }: { mode?: "light" | "dark" }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const textColor = mode === "dark" ? "text-white" : "text-purple500";
+  const navbar = {
+    products: t("navbar.products"),
+    about: t("navbar.about"),
+    contact: t("navbar.contact")
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -20,14 +26,18 @@ const Navbar = ({
         <ul className={`lg:flex items-center gap-[23px] ${textColor} hidden`}>
           <li className="p-4">
             <a className={`${textColor}`} href="/#products">
-              Products
+              {navbar.products}
             </a>
           </li>
           <li className="p-4">
-            <a href="/about">About</a>
+            <a href="/about">
+              {navbar.about}
+            </a>
           </li>
           <li className="p-4">
-            <a href="/contact">Contact</a>
+            <a href="/contact">
+              {navbar.contact}
+            </a>
           </li>
         </ul>
         <div className="flex lg:hidden">
@@ -36,7 +46,11 @@ const Navbar = ({
           </button>
         </div>
       </nav>
-      <MobileMenu isOpen={isMenuOpen} onClose={toggleMenu} />
+      <MobileMenu
+        isOpen={isMenuOpen}
+        onClose={toggleMenu}
+        texts={[navbar.products, navbar.about, navbar.contact]}
+      />
     </>
   );
 };

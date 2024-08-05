@@ -4,9 +4,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
+  texts: string[];
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, texts = [] }) => {
   const textColor = "text-white";
   const bgColor = "bg-[#25255CEE]";
 
@@ -76,7 +77,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             variants={listVariants}
             className={`flex flex-col items-center gap-[72px] font-integralCF text-[28px] ${textColor}`}
           >
-            {['Products', 'About', 'Contact'].map((item) => (
+            {texts.map((item) => (
               <motion.li key={item} variants={itemVariants}>
                 <a
                   className={`${textColor}`}
