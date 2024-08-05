@@ -3,5 +3,17 @@
     "products": "Products",
     "about": "About",
     "contact": "Contact"
+  },
+  "index": {
+    "welcome": {
+      "title": "WELCOME TO ATIX",
+      "slogan": {
+        "line1": "Smart",
+        "line2": "business",
+        "line3": "solutions"
+      },
+      "description": "We digitize & automate administrative processes with modern technologies, to help you enhance the effectiveness of your organization",
+      "learnMore": "Learn more"
+    }
   }
 }

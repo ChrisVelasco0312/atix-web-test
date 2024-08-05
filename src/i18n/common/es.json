@@ -4,5 +4,17 @@
     "products": "Productos",
     "about": "Acerca de atix",
     "contact": "Contacto"
+  },
+  "index": {
+    "welcome": {
+      "title": "BIENVENIDO A ATIX",
+      "slogan": {
+        "line1": "Soluciones",
+        "line2": "empresariales",
+        "line3": "inteligentes"
+      },
+      "description": "Digitalizamos y automatizamos procesos administrativos con tecnologías modernas, para ayudarte a mejorar la efectividad de tu organización.",
+      "learnMore": "Saber más"
+    }
   }
 }
