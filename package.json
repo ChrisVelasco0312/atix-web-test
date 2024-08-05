@@ -39,6 +39,7 @@
 		"typescript": "^5.4.5"
 	},
 	"devDependencies": {
+		"esbuild": "^0.23.0",
 		"prettier-plugin-astro": "^0.14.0"
 	}
 }
