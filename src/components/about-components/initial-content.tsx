@@ -1,7 +1,6 @@
-import { astroI18n, t } from "astro-i18n";
+import { t } from "astro-i18n";
 
 const InitialContent = () => {
-  const locale = astroI18n.locale === "es" ? "/es" : "";
   return (
     <article className="p-4">
       <div className="relative grid lg:gap-6 gap-2 items-end content-end h-[610px] py-[100px]">

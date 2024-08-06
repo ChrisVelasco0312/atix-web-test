@@ -11,7 +11,6 @@ import BrandContent from "../../components/index-components/brand-content";
 import TrustedContent from "../../components/index-components/trusted-content";
 import PublicationsContent from "../../components/index-components/publications-content";
 import Footer from "../../components/footer";
-const currentPath = new URL(Astro.request.url).pathname;
 ---
 
 <style is:global>
@@ -64,7 +63,7 @@ const currentPath = new URL(Astro.request.url).pathname;
       backgroundColor="#FCFCFC"
       background=""
     >
-      <ProductsContent currentPath={currentPath}/>
+      <ProductsContent />
     </Section>
     <Section
       heightMode="h-auto"
