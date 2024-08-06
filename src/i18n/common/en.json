@@ -77,5 +77,50 @@
     "publications": {
       "sectionText": "PUBLICATIONS"
     }
+  },
+  "about": {
+    "initial": {
+      "title": "About",
+      "description": "We are a dynamic team that combines expertise in process automation, digital transformation, and innovative technology solutions."
+    },
+    "whoweare": {
+      "sectionText": "WHO WE ARE",
+      "paragraph1": {
+        "line1": "Atix Digital is a technology company dedicated to transforming processes through",
+        "spanLine1": "digital automation and modern technologies."
+      },
+      "paragraph2": {
+        "line1": "We empower organizations to achieve",
+        "spanLine1": "greater efficiency and productivity",
+        "line2": "by reimagining workflows and implementing intelligent solutions."
+      },
+      "paragraph3": {
+        "line1": "We are committed to",
+        "spanLine1": "driving innovation and excellence",
+        "line2": "helping businesses navigate the complexities of digital transformation."
+      }
+    },
+    "whywedoit": {
+      "sectionText": "WHY WE DO IT",
+      "reason1": {
+        "title": "Enhance efficiency",
+        "description": "We believe that technology can simplify complex tasks and save valuable time, allowing organizations to focus on their core objectives."
+      },
+      "reason2": {
+        "title": "Increase productivity",
+        "description": "Automating administrative processes frees up resources and reduces errors, leading to a significant increase in productivity."
+      },
+      "reason3": {
+        "title": "Drive innovation",
+        "description": "We are committed to adopting cutting-edge technologies to provide innovative solutions that keep our client organizations at the forefront."
+      },
+      "reason4": {
+        "title": "Facilitate digital transformation",
+        "description": "We help businesses navigate the complexities of digital transformation, adapting to new market demands and enhancing their competitiveness."
+      }
+    },
+    "team": {
+      "sectionText": "MEET THE TEAM"
+    }
   }
 }

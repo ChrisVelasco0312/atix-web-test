@@ -1,10 +1,13 @@
+import { astroI18n, t } from "astro-i18n";
+
 const InitialContent = () => {
+  const locale = astroI18n.locale === "es" ? "/es" : "";
   return (
     <article className="p-4">
       <div className="relative grid lg:gap-6 gap-2 items-end content-end h-[610px] py-[100px]">
         <div className="lg:text-[76px] text-[40px] lg:leading-none leading-[110%]">
           <h1 className="inline-block font-integralCF text-white">
-            ABOUT
+            {t("about.initial.title")}
           </h1>
           <h1 className="inline-block font-integralCF text-white">
             ATIX DIGITAL
@@ -13,9 +16,8 @@ const InitialContent = () => {
             ATIX DIGITAL
           </h1>
         </div>
-        <p className="lg:text-[24px] text-[16px] text-white lg:w-[812px]">
-          We are a dynamic team that combines expertise in process automation,
-          digital transformation, and innovative technology solutions.
+        <p className="lg:text-[24px] text-[16px] text-white lg:w-[70%]">
+          {t("about.initial.description")}
         </p>
       </div>
     </article>

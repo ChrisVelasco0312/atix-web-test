@@ -1,5 +1,6 @@
 import SectionTitle from "../shared/section-title";
 import { useRef, useEffect } from "react";
+import { t } from "astro-i18n";
 
 interface TeamCardProps {
   iconSrc: string;
@@ -72,7 +73,7 @@ const TeamContent = () => {
   return (
     <article id="team" className="relative grid h-[740px]">
       <SectionTitle
-        title="MEET THE TEAM"
+        title={t("about.team.sectionText")}
         iconColor="#9ADD19"
         topDistance="70px"
       />

@@ -78,5 +78,50 @@
     "publications": {
       "sectionText": "PUBLICACIONES"
     }
+  },
+  "about": {
+    "initial": {
+      "title": "Sobre",
+      "description": "Somos un equipo dinámico que combina experiencia en automatización de procesos, transformación digital y soluciones tecnológicas innovadoras."
+    },
+    "whoweare": {
+      "sectionText": "QUIENES SOMOS",
+      "paragraph1": {
+        "line1": "Atix Digital es una empresa de tecnología dedicada a transformar procesos mediante",
+        "spanLine1": "la automatización digital y tecnologías modernas."
+      },
+      "paragraph2": {
+        "line1": "Empoderamos a las organizaciones para lograr",
+        "spanLine1": "una mayor eficiencia y productividad,",
+        "line2": "reimaginando los flujos de trabajo e implementando soluciones inteligentes."
+      },
+      "paragraph3": {
+        "line1": "Estamos comprometidos con",
+        "spanLine1": "impulsar la innovación y la excelencia,",
+        "line2": "ayudando a las empresas a navegar por las complejidades de la transformación digital."
+      }
+    },
+    "whywedoit": {
+      "sectionText": "POR QUE LO HACEMOS",
+      "reason1": {
+        "title": "Mejorar la eficiencia",
+        "description": "Creemos que la tecnología puede simplificar tareas complejas y ahorrar tiempo valioso, permitiendo a las organizaciones centrarse en sus objetivos principales."
+      },
+      "reason2": {
+        "title": "Aumentar la productividad",
+        "description": "La automatización de procesos administrativos libera recursos y reduce errores, lo que lleva a un aumento significativo de la productividad."
+      },
+      "reason3": {
+        "title": "Impulsar la innovación",
+        "description": "Estamos comprometidos con la adopción de tecnologías de vanguardia para ofrecer soluciones innovadoras que mantengan a nuestras organizaciones clientes a la vanguardia."
+      },
+      "reason4": {
+        "title": "Facilitar la transformación digital",
+        "description": "Ayudamos a las empresas a navegar por las complejidades de la transformación digital, adaptándose a las nuevas demandas del mercado y mejorando su competitividad."
+      }
+    },
+    "team": {
+      "sectionText": "CONOCE AL EQUIPO"
+    }
   }
 }
