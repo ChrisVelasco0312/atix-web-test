@@ -1,4 +1,5 @@
 import type React from "react";
+import { t } from "astro-i18n";
 
 interface Step {
   id: number;
@@ -28,26 +29,28 @@ const HowitworksContent = () => {
   const steps: Step[] = [
     {
       id: 1,
-      info: <p>Scan</p>,
+      info: <p>{t("seiz.howitworks.step1")}</p>,
     },
     {
       id: 2,
-      info: <p>Upload to seiz</p>,
+      info: <p>{t("seiz.howitworks.step2")}</p>,
     },
     {
       id: 3,
       info: <div className="flex gap-8 items-start">
         <img className="hidden lg:block" src="../logos/logo-seiz-white.svg" alt="seiz-logo" />
         <div className="grid gap-4">
-          <p>Processes and analyzes the doc</p>
-          <p>Extracts pertinent information</p>
-          <p>Empowers decision making process</p>
+          <p>{t("seiz.howitworks.step3.1")}</p>
+          <p>{t("seiz.howitworks.step3.2")}</p>
+          <p>{t("seiz.howitworks.step3.3")}</p>
         </div>
       </div>,
     },
     {
       id: 4,
-      info: <p className="lg:w-[380px]">Generate reports effortlessly, with the flexibility to personalize data in various formats.</p>
+      info: <p className="lg:w-[380px]">
+        {t("seiz.howitworks.step4")}
+      </p>
     }
   ];
 
@@ -55,8 +58,10 @@ const HowitworksContent = () => {
     <article className="lg:h-[829px] grid lg:flex lg:p-0 p-8 gap-4">
       <img height={800} src="../images/seiz-howitworks.png" alt="howitworks" />
       <div className="grid gap-4 content-center">
-        <h4 className="text-[14px] text-white tracking-[2.8px]">HOW IT WORKS</h4>
-        <h1 className="font-integralCF lg:text-[40px] text-[28px] text-white mb-5 leading-[130%]">Forget about manual document processing</h1>
+        <h4 className="text-[14px] text-white tracking-[2.8px]">{t("seiz.howitworks.sectionText")}</h4>
+        <h1 className="font-integralCF lg:text-[40px] text-[28px] text-white mb-5 leading-[130%]">
+          {t("seiz.howitworks.title")}
+        </h1>
         <Stepper steps={steps} />
       </div>
     </article>

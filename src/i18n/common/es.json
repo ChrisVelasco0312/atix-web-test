@@ -137,6 +137,59 @@
     "authorize": "Autorizo a Atix Digital a procesar mis datos personales según la política de privacidad",
     "send": "Enviar"
   },
+  "seiz": {
+    "welcome": {
+      "line1": "Automatiza fácilmente",
+      "line2": "cualquier flujo de trabajo",
+      "line3": "de procesamiento de documentos",
+      "description": "Aumenta la eficiencia, desbloquea ahorros y optimiza operaciones con la automatización de flujos de trabajo de documentos impulsada por IA."
+    },
+    "steps": {
+      "title1": "Ahorra hasta un",
+      "title2": "60%",
+      "title3": "en costos y tiempo dedicado a",
+      "read": "Leer",
+      "interpret": "Interpretar",
+      "decide": "Decidir",
+      "report": "Reportar"
+    },
+    "sinseiz": {
+      "title1": "¿Perdiendo valiosos",
+      "title2": "5 a 15 minutos",
+      "title3": "extrayendo datos de UN solo documento?"
+    },
+    "benefits": {
+      "with": "CON",
+      "card1": {
+        "title": "Reduce el tiempo de respuesta en un 60%",
+        "description": "¡Procesa documentos en minutos, no en horas!"
+      },
+      "card2": {
+        "title": "Ahorra hasta un 60% en costos operativos",
+        "description": "Di adiós a la entrada manual de datos. Reduce los costos operativos a través de la automatización."
+      },
+      "card3": {
+        "title": "Impulsa eficiencias",
+        "description": "Empodera a tu equipo para lograr más en menos tiempo mediante la automatización de tareas."
+      },
+      "card4": {
+        "title": "Detecta errores y asegura el cumplimiento",
+        "description": "Detecta errores e inconsistencias en los datos con precisión. Asegura el cumplimiento regulatorio."
+      }
+    },
+    "howitworks": {
+      "sectionText": "CÓMO FUNCIONA",
+      "title": "Olvídate del procesamiento manual de documentos",
+      "step1": "Escanear",
+      "step2": "Subir a Seiz",
+      "step3": {
+        "1": "Procesa y analiza el documento",
+        "2": "Extrae información pertinente",
+        "3": "Facilita el proceso de toma de decisiones"
+      },
+      "step4": "Genera informes sin esfuerzo, con la flexibilidad de personalizar los datos en varios formatos."
+    }
+  },
   "footer": {
     "description": "Nuestra misión es ayudar a mejorar la efectividad de tu negocio",
     "products": "Productos",

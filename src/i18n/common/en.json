@@ -136,6 +136,59 @@
     "authorize": "I authorize Atix Digital to process my personal data according to the privacy policy",
     "send": "Send"
   },
+  "seiz": {
+    "welcome": {
+      "line1": "Easily automate",
+      "line2": "any document",
+      "line3": "processing workflow",
+      "description": "Boost efficiencies, unlock savings, and streamline operations with seamless AI-powered document workflow automation."
+    },
+    "steps": {
+      "title1": "Save up to",
+      "title2": "60%",
+      "title3": "on costs and time spent on",
+      "read": "Read",
+      "interpret": "Interpret",
+      "decide": "Decide",
+      "report": "Report"
+    },
+    "sinseiz": {
+      "title1": "Wasting valuable",
+      "title2": "5 to 15 minutes",
+      "title3": "extracting data from ONE single document?"
+    },
+    "benefits": {
+      "with": "WITH",
+      "card1": {
+        "title": "Reduce turnaround time by 60%",
+        "description": "Process documents in minutes, not hours!"
+      },
+      "card2": {
+        "title": "Save up to 60% in operational costs",
+        "description": "Say goodbye to manual data entry. Cut down operational costs through automation."
+      },
+      "card3": {
+        "title": "Drive efficiencies",
+        "description": "Empower your team to accomplish more in less time through task automation."
+      },
+      "card4": {
+        "title": "Catch errors & ensure compliance",
+        "description": "Spot data errors and inconsistencies with precision. Ensure regulatory compliance."
+      }
+    },
+    "howitworks": {
+      "sectionText": "HOW IT WORKS",
+      "title": "Forget about manual document processing",
+      "step1": "Scan",
+      "step2": "Upload to Seiz",
+      "step3": {
+        "1": "Processes and analyzes the doc",
+        "2": "Extracts pertinent information",
+        "3": "Empowers decision making process"
+      },
+      "step4": "Generate reports effortlessly, with the flexibility to personalize data in various formats."
+    }
+  },
   "footer": {
     "description": "Our mission is to to help you enhance the effectiveness of your organization.",
     "products": "Products",

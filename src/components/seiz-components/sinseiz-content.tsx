@@ -1,3 +1,5 @@
+import { t } from "astro-i18n";
+
 const SinseizContent = () => {
   return (
     <article
@@ -5,10 +7,9 @@ const SinseizContent = () => {
       <div className="lg:absolute left-[100px] top-[76px] lg:h-[870px]">
         <div className="lg:absolute top-[20px] left-[-200px]">
           <h1 className="lg:w-[567px] font-integralCF lg:text-[40px] text-[28px] text-[#0E2B3D] leading-[120%] lg:p-0 p-8">
-            Wasting valuable
-            <span className="text-green600 block"> 5 to 15 minutes </span>
-            extracting data from
-            ONE single document?
+            {t("seiz.sinseiz.title1")}
+            <span className="text-green600 block"> {t("seiz.sinseiz.title2")} </span>
+            {t("seiz.sinseiz.title3")}
           </h1>
         </div>
         <div className="lg:absolute lg:left-[230px] flex lg:w-[1198px] lg:h-[718px]">
