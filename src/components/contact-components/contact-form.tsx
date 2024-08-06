@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Button from '../shared/button';
+import { t } from "astro-i18n";
 
 interface FormData {
   name: string;
@@ -41,12 +42,14 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
 
   return (
     <div className="text-purple500">
-      <h2 className="text-[40px] mb-6 font-integralCF">CONTACT US</h2>
-      <p className="mb-6 text-[#21272A]">Let's connect! Fill out the form below to get in touch with our team.</p>
+      <h2 className="text-[40px] mb-6 font-integralCF">{t('contact.title')}</h2>
+      <p className="mb-6 text-[#21272A]">
+        {t('contact.description')}
+      </p>
       <form onSubmit={handleSubmit} className="space-y-8">
         <div className="grid grid-cols-2 gap-4">
           <div className='flex flex-col gap-2'>
-            <label className='font-jakartaSansBold' htmlFor="name">Name</label>
+            <label className='font-jakartaSansBold' htmlFor="name">{t('contact.labels.name')}</label>
             <input
               type="text"
               name="name"
@@ -58,7 +61,9 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
             />
           </div>
           <div className='flex flex-col gap-2'>
-            <label className='font-jakartaSansBold' htmlFor="company">Company</label>
+            <label className='font-jakartaSansBold' htmlFor="company">
+              {t('contact.labels.company')}
+            </label>
             <input
               type="text"
               name="company"
@@ -71,7 +76,9 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">
-            <label className='font-jakartaSansBold' htmlFor="email">Email</label>
+            <label className='font-jakartaSansBold' htmlFor="email">
+              {t('contact.labels.email')}
+            </label>
             <input
               type="email"
               name="email"
@@ -83,7 +90,9 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className='font-jakartaSansBold' htmlFor="phoneNumber">Phone Number</label>
+            <label className='font-jakartaSansBold' htmlFor="phoneNumber">
+              {t('contact.labels.phone')}
+            </label>
             <input
               type="tel"
               name="phoneNumber"
@@ -95,7 +104,9 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <label className='font-jakartaSansBold' htmlFor="message">Message</label>
+          <label className='font-jakartaSansBold' htmlFor="message">
+            {t('contact.labels.message')}
+          </label>
           <textarea
             name="message"
             placeholder="Message"
@@ -117,7 +128,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
             required
           />
           <label htmlFor="consent" className="text-[#21272A]">
-            I authorize Atix Digital to process my personal data according to the privacy policy.
+            {t('contact.authorize')}
           </label>
         </div>
         <div className="flex justify-end">
@@ -128,7 +139,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
               cursor: formDataIsValid ? 'pointer' : 'not-allowed',
               pointerEvents: formDataIsValid ? 'auto' : 'none',
             }}
-            text="Send"
+            text={t('contact.send')}
             type='submit'
             styleType="dark"
           />

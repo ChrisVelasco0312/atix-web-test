@@ -122,5 +122,18 @@
     "team": {
       "sectionText": "MEET THE TEAM"
     }
+  },
+  "contact": {
+    "title": "CONTACT US",
+    "description": "Let's connect! Fill out the form below to get in touch with our team.",
+    "labels": {
+      "name": "Name",
+      "company": "Company",
+      "phone": "Phone number",
+      "email": "Email",
+      "message": "Message"
+    },
+    "authorize": "I authorize Atix Digital to process my personal data according to the privacy policy",
+    "send": "Send"
   }
 }

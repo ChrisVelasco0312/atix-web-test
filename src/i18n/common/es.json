@@ -123,5 +123,18 @@
     "team": {
       "sectionText": "CONOCE AL EQUIPO"
     }
+  },
+  "contact": {
+    "title": "CONTÁCTANOS",
+    "description": "Conectemos! Rellena el formulario a continuación para ponerte en contacto con nuestro equipo.",
+    "labels": {
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo electrónico",
+      "phone": "Número de contacto",
+      "message": "Mensaje"
+    },
+    "authorize": "Autorizo a Atix Digital a procesar mis datos personales según la política de privacidad",
+    "send": "Enviar"
   }
 }
