@@ -47,7 +47,7 @@ import Footer from "../components/footer";
       additionalBgClassName="welcome-additional-bg"
       client:load
     >
-      <Navbar client:load />
+      <Navbar client:only="react" />
       <WelcomeContent />
     </Section>
     <Section
@@ -63,7 +63,7 @@ import Footer from "../components/footer";
       backgroundColor="#FCFCFC"
       background=""
     >
-      <ProductsContent />
+      <ProductsContent/>
     </Section>
     <Section
       heightMode="h-auto"

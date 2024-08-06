@@ -5,7 +5,7 @@ const TemplateContent = () => {
         <h1 className="font-integralCF text-[40px]">COLLABORATIVE TEMPLATES</h1>
         <p className="text-[20px]">Enhance team efficiency</p>
         <div className="flex gap-2">
-          <img className="inline-block" src="images/notery-template-avatars.png" alt="Notery Template Avatars" />
+          <img className="inline-block" src="../images/notery-template-avatars.png" alt="Notery Template Avatars" />
           <p className="relative bottom-[15px] inline-block self-end">+15 others...</p>
         </div>
       </div>

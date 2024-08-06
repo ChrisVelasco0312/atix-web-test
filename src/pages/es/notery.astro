@@ -1,14 +1,14 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Section from "../components/shared/section";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import IntroContent from "../components/notery-components/intro-content";
-import ProblemContent from "../components/notery-components/problem-content";
-import WithNoteryContent from "../components/notery-components/withnotery-content";
-import HowItWorksContent from "../components/notery-components/howitworks-content";
-import TemplateContent from "../components/notery-components/template-content";
-import ExtractionStatsContent from "../components/notery-components/extraction-stats-content";
+import Layout from "../../layouts/Layout.astro";
+import Section from "../../components/shared/section";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import IntroContent from "../../components/notery-components/intro-content";
+import ProblemContent from "../../components/notery-components/problem-content";
+import WithNoteryContent from "../../components/notery-components/withnotery-content";
+import HowItWorksContent from "../../components/notery-components/howitworks-content";
+import TemplateContent from "../../components/notery-components/template-content";
+import ExtractionStatsContent from "../../components/notery-components/extraction-stats-content";
 ---
 
 <style is:global>
@@ -20,16 +20,16 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
   }
 </style>
 
-<Layout title="Seiz">
+<Layout title="Notery">
   <main>
     <Section
       heightMode="h-screen"
       contentHeight="100%"
-      background="../backgrounds/notery-intro-background.png"
-      additionalBg="../images/notery-intro-isotipo.svg"
+      background="../../backgrounds/notery-intro-background.png"
+      additionalBg="../../images/notery-intro-isotipo.svg"
       additionalBgClassName="notery-intro-additional-bg"
     >
-      <Navbar client:only="react"/>
+      <Navbar client:load/>
       <IntroContent />
     </Section>
     <Section

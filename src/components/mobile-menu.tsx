@@ -5,9 +5,10 @@ interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
   texts: string[];
+  locale?: string;
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, texts = [] }) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, texts = [], locale = '' }) => {
   const textColor = "text-white";
   const bgColor = "bg-[#25255CEE]";
 
@@ -60,6 +61,25 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, texts = [] }) 
     }
   };
 
+  const handleLinkTranslations = (text: string) => {
+    const translationsObject = {
+      "Productos": "Products",
+      "Acerca de atix": "About",
+      "Contacto": "Contact",
+    };
+    if (locale === '/es') {
+      text = `${translationsObject[text as keyof typeof translationsObject]}`;
+    }
+
+
+    if (text === 'Products' || text === 'Productos') {
+      return `${locale.includes('es') ? "/es#products" : "/#products"}`;
+    } else {
+      return `${locale}/${text.toLowerCase()}`;
+    }
+  };
+
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -81,7 +101,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, texts = [] }) 
               <motion.li key={item} variants={itemVariants}>
                 <a
                   className={`${textColor}`}
-                  href={item === 'Products' ? '/#products' : `/${item.toLowerCase()}`}
+                  href={handleLinkTranslations(item)}
                   onClick={onClose}
                 >
                   {item}

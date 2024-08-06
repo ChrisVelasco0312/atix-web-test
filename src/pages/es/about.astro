@@ -1,0 +1,69 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Section from "../../components/shared/section";
+import Navbar from "../../components/navbar";
+import InitialContent from "../../components/about-components/initial-content";
+import WhoWeAreContent from "../../components/about-components/whoweare-content";
+import WhyWeDoItContent from "../../components/about-components/whywedoit-content";
+import TeamContent from "../../components/about-components/team-content";
+import Footer from "../../components/footer";
+---
+
+<style is:global>
+  .about-additional-bg {
+    background-repeat: no-repeat;
+    background-size: 48%;
+    background-position-y: -140px;
+    background-position-x: -200px;
+  }
+
+  @media (max-width: 768px) {
+    .about-bg {
+      background-size: 251% !important;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      background-position-y: -1px !important;
+    }
+  }
+
+</style>
+
+<Layout title="Atix Digital">
+  <main>
+    <Section
+      heightMode="h-fit"
+      contentHeight="1203px"
+      additionalBg="../images/isotipos-1.svg"
+      background="../backgrounds/aboutus-background.png"
+      additionalBgClassName="about-additional-bg"
+      bgClassName="about-bg"
+    >
+      <Navbar mode="dark" client:load/>
+      <InitialContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      background="../backgrounds/dots-clean.svg"
+      backgroundColor="white"
+    >
+      <WhoWeAreContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
+      background="../backgrounds/whywedoit-background.svg"
+    >
+      <WhyWeDoItContent />
+    </Section>
+    <Section
+      heightMode="h-auto"
+      contentHeight="740px"
+      background=""
+      backgroundColor="#F8F8FA"
+    >
+      <TeamContent client:load />
+    </Section>
+    <Footer />
+  </main>
+</Layout>

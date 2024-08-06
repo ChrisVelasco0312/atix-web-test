@@ -17,7 +17,7 @@ const IntroContent = () => {
         className="relative w-full h-[85%] grid grid-cols-2 content-center items-center justify-center"
       >
         <div className="grid gap-4">
-          <img src="logos/logo-notery-white.svg" alt="Notery Logo" />
+          <img src="../logos/logo-notery-white.svg" alt="Notery Logo" />
           <div className="grid gap-4 text-white">
             <h1 className="font-integralCF text-[40px]">
               <span className="text-purple600">the hero</span> who reads <br />

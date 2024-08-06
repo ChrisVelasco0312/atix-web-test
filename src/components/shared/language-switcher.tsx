@@ -1,4 +1,3 @@
-import React from 'react';
 import { astroI18n, l } from "astro-i18n";
 
 const LanguageSwitcher = ({ darkBackground }: { darkBackground?: boolean }) => {
@@ -7,6 +6,7 @@ const LanguageSwitcher = ({ darkBackground }: { darkBackground?: boolean }) => {
 
   const handleLanguageChange = () => {
     const newPath = l(window.location.pathname, {}, { targetLocale });
+    console.log('NEW PATH >>>', newPath)
     window.location.href = newPath;
   };
 

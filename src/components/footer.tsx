@@ -1,5 +1,8 @@
-import LanguageSwitcher from "./shared/language-switcher";
+import { astroI18n } from "astro-i18n";
+
 const Footer = () => {
+  const locale = astroI18n.locale === "es" ? "/es" : "";
+
   return (
     <footer className="flex justify-center bg-petroleo500">
       <div className="grid items-center content-center gap-10 h-[480px] w-[1440px]">
@@ -18,17 +21,16 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/atix-digital" target="_blank">
                 <img src="../icons/Linkedin.svg" alt="linkedin" />
               </a>
-              <LanguageSwitcher darkBackground />
             </div>
           </div>
           <div className="flex lg:gap-[90px] gap-8 justify-items-center">
             <div className="flex flex-col gap-y-8">
-              <a href="/#products">
+              <a href={locale ? `${locale}#products` : `/#products`}>
                 <h1 className="font-jakartaSansBold lg:text-[20px]">Products</h1>
               </a>
               <ul className="lg:grid hidden gap-y-8">
                 <li>
-                  <a href="/seiz">
+                  <a href={`${locale}/seiz`}>
                     SEIZ
                   </a>
                 </li>
@@ -40,29 +42,29 @@ const Footer = () => {
               </ul>
             </div>
             <div className="lg:flex flex-col gap-y-8">
-              <a href="/about">
+              <a href={`${locale}/about`}>
                 <h1 className="font-jakartaSansBold lg:text-[20px]">About</h1>
               </a>
               <ul className="lg:grid hidden gap-y-8">
                 <li>
-                  <a href="/about#whoweare">
+                  <a href={`${locale}/about#whoweare`}>
                     Who we are?
                   </a>
                 </li>
                 <li>
-                  <a href="/about#whywedoit">
+                  <a href={`${locale}/about#whywedoit`}>
                     Why we do it?
                   </a>
                 </li>
                 <li>
-                  <a href="/about#team">
+                  <a href={`${locale}/about#team`}>
                     Meet our team
                   </a>
                 </li>
               </ul>
             </div>
             <div className="lg:hidden grid gap-y-8">
-              <a href="/contact">
+              <a href={`${locale}/contact`}>
                 <h1 className="font-jakartaSansBold lg:text-[20px]">Contact</h1>
               </a>
             </div>

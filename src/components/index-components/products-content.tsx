@@ -1,8 +1,10 @@
 import ProductCard from "./product-card";
 import SectionTitle from "../shared/section-title";
-import { t } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
 
 const ProductsContent = () => {
+  const locale = astroI18n.locale === "es" ? "/es" : "";
+
   return (
     <article id="products" className="relative grid">
       <SectionTitle
@@ -25,14 +27,14 @@ const ProductsContent = () => {
           title={t('index.products.card1.title')}
           description={t('index.products.card1.description')}
           exampleSrc="images/seiz-example.png"
-          goTo="/seiz"
+          goTo={`${locale}/seiz`}
         />
         <ProductCard
           logoSrc="logos/logo-notery.svg"
           title={t('index.products.card2.title')}
           description={t('index.products.card2.description')}
           exampleSrc="images/notery-example.png"
-          goTo="/notery"
+          goTo={`${locale}/notery`}
         />
       </div>
     </article>

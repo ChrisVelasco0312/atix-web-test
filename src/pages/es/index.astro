@@ -11,6 +11,7 @@ import BrandContent from "../../components/index-components/brand-content";
 import TrustedContent from "../../components/index-components/trusted-content";
 import PublicationsContent from "../../components/index-components/publications-content";
 import Footer from "../../components/footer";
+const currentPath = new URL(Astro.request.url).pathname;
 ---
 
 <style is:global>
@@ -47,7 +48,7 @@ import Footer from "../../components/footer";
       additionalBgClassName="welcome-additional-bg"
       client:load
     >
-      <Navbar client:load />
+      <Navbar client:load/>
       <WelcomeContent />
     </Section>
     <Section
@@ -63,7 +64,7 @@ import Footer from "../../components/footer";
       backgroundColor="#FCFCFC"
       background=""
     >
-      <ProductsContent />
+      <ProductsContent currentPath={currentPath}/>
     </Section>
     <Section
       heightMode="h-auto"
