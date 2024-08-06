@@ -136,5 +136,14 @@
     },
     "authorize": "Autorizo a Atix Digital a procesar mis datos personales según la política de privacidad",
     "send": "Enviar"
+  },
+  "footer": {
+    "description": "Nuestra misión es ayudar a mejorar la efectividad de tu negocio",
+    "products": "Productos",
+    "about": "Acerca de",
+    "whoweare": "¿Quiénes somos?",
+    "whywedoit": "¿Por que lo hacemos?",
+    "team": "Conoce al equipo",
+    "copyright": "© 2024 Atix Digital. Todos los derechos reservados."
   }
 }

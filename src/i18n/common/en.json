@@ -135,5 +135,14 @@
     },
     "authorize": "I authorize Atix Digital to process my personal data according to the privacy policy",
     "send": "Send"
+  },
+  "footer": {
+    "description": "Our mission is to to help you enhance the effectiveness of your organization.",
+    "products": "Products",
+    "about": "About",
+    "whoweare": "Who we are?",
+    "whywedoit": "Why we do it?",
+    "team": "Meet our team",
+    "copyright": "© 2024 Atix Digital. All rights reserved."
   }
 }
