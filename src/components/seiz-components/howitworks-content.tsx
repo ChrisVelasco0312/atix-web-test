@@ -38,7 +38,7 @@ const HowitworksContent = () => {
     {
       id: 3,
       info: <div className="flex gap-8 items-start">
-        <img className="hidden lg:block" src="../logos/logo-seiz-white.svg" alt="seiz-logo" />
+        <img className="hidden lg:block" src="../../logos/logo-seiz-white.svg" alt="seiz-logo" />
         <div className="grid gap-4">
           <p>{t("seiz.howitworks.step3.1")}</p>
           <p>{t("seiz.howitworks.step3.2")}</p>
@@ -56,7 +56,7 @@ const HowitworksContent = () => {
 
   return (
     <article className="lg:h-[829px] grid lg:flex lg:p-0 p-8 gap-4">
-      <img height={800} src="../images/seiz-howitworks.png" alt="howitworks" />
+      <img height={800} src="../../images/seiz-howitworks.png" alt="howitworks" />
       <div className="grid gap-4 content-center">
         <h4 className="text-[14px] text-white tracking-[2.8px]">{t("seiz.howitworks.sectionText")}</h4>
         <h1 className="font-integralCF lg:text-[40px] text-[28px] text-white mb-5 leading-[130%]">

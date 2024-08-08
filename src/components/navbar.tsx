@@ -23,7 +23,7 @@ const Navbar = ({
     <>
       <nav className="flex justify-between lg:py-[22px] py-[30px] lg:p-0 ">
         <a href={locale}>
-          <img className="lg:w-auto lg:h-auto w-[81px] h-[31px]" src={`../logos/${mode === "dark" ? "logo-atix" : "logo-atix-dark"}.svg`} alt="logo" />
+          <img className="lg:w-auto lg:h-auto w-[81px] h-[31px]" src={`../../logos/${mode === "dark" ? "logo-atix" : "logo-atix-dark"}.svg`} alt="logo" />
         </a>
         <ul className={`lg:flex items-center gap-[23px] ${textColor} hidden`}>
           <li className="p-4">
