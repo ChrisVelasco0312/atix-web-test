@@ -9,12 +9,12 @@ const TemplateContent = () => {
           Enhance team efficiency
         </p>
         <div className="flex gap-2">
-          <img className="inline-block" src="../images/notery-template-avatars.png" alt="Notery Template Avatars" />
+          <img className="inline-block" src="../../images/notery-template-avatars.png" alt="Notery Template Avatars" />
           <p className="relative bottom-[15px] inline-block self-end">+15 others...</p>
         </div>
       </div>
       <div>
-        <img src="../images/notery-template.png" alt="Notery Template" />
+        <img src="../../images/notery-template.png" alt="Notery Template" />
       </div>
     </article>
   );

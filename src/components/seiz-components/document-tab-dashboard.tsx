@@ -20,7 +20,7 @@ const DocumentTabDashboard: React.FC = () => {
 
   const contentData: ContentData = {
     Finance: {
-      image: "../images/seiz_finance.png",
+      image: "../../images/seiz_finance.png",
       title: t("seiz.document.finance.title"),
       points: [
         t("seiz.document.finance.points.1"),
@@ -28,14 +28,14 @@ const DocumentTabDashboard: React.FC = () => {
       ]
     },
     Government: {
-      image: "../images/seiz_government.png",
+      image: "../../images/seiz_government.png",
       title: t("seiz.document.government.title"),
       points: [
         t("seiz.document.government.points.1")
       ]
     },
     Insurance: {
-      image: "../images/seiz_insurance.png",
+      image: "../../images/seiz_insurance.png",
       title: t("seiz.document.insurance.title"),
       points: [
         t("seiz.document.insurance.points.1"),
@@ -80,7 +80,7 @@ const DocumentTabDashboard: React.FC = () => {
           <ul className="grid gap-4 w-[420px]">
             {content.points.map((point, index) => (
               <li key={index} className="flex items-center gap-3">
-                <img src="../icons/check-icon.svg" alt="check-icon" />
+                <img src="../../icons/check-icon.svg" alt="check-icon" />
                 <span>{point}</span>
               </li>
             ))}

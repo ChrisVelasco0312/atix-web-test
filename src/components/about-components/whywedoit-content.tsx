@@ -24,22 +24,22 @@ const WhyCard = ({
 const WhyWeDoItContent = () => {
   const whyCards: WhyCardProps[] = [
     {
-      iconSrc: "../logos/about-efficiency.svg",
+      iconSrc: "../../logos/about-efficiency.svg",
       title: t("about.whywedoit.reason1.title"),
       description: t("about.whywedoit.reason1.description")
     },
     {
-      iconSrc: "../logos/about-productivity.svg",
+      iconSrc: "../../logos/about-productivity.svg",
       title: t("about.whywedoit.reason2.title"),
       description: t("about.whywedoit.reason2.description")
     },
     {
-      iconSrc: "../logos/about-innovation.svg",
+      iconSrc: "../../logos/about-innovation.svg",
       title: t("about.whywedoit.reason3.title"),
       description: t("about.whywedoit.reason3.description")
     },
     {
-      iconSrc: "../logos/about-transformation.svg",
+      iconSrc: "../../logos/about-transformation.svg",
       title: t("about.whywedoit.reason4.title"),
       description: t("about.whywedoit.reason4.description")
     }

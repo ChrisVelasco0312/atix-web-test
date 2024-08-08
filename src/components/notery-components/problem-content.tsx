@@ -26,12 +26,12 @@ const ProblemContent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const problems = [
     {
-      iconSrc: "../icons/problem-icon-1.svg",
+      iconSrc: "../../icons/problem-icon-1.svg",
       title: "A person can only review between 40 and 50 documents.",
       description: "Business Intelligence Associates (BIA)"
     },
     {
-      iconSrc: "../icons/problem-icon-2.svg",
+      iconSrc: "../../icons/problem-icon-2.svg",
       title: "Companies invest millions in hiring people",
       description: "Specifically for document review tasks"
     }
@@ -39,7 +39,7 @@ const ProblemContent = () => {
 
   return (
     <article className="h-[847px] grid lg:grid-cols-2 content-center items-center justify-items-center">
-      <img className="hidden lg:block" src="../images/notery-problem.png" alt="Notery Problem" />
+      <img className="hidden lg:block" src="../../images/notery-problem.png" alt="Notery Problem" />
       <div className="grid gap-8 text-center lg:text-left">
         <div>
           <div className="relative top-[10px] grid justify-items-center gap-6 lg:block">

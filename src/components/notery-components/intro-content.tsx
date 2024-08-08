@@ -4,7 +4,7 @@ const IntroContent = () => {
       <div
         className="lg:block hidden absolute top-0 bottom-0 left-0 right-0"
         style={{
-          backgroundImage: "url(../images/notery-intro.png)",
+          backgroundImage: "url(../../images/notery-intro.png)",
           backgroundSize: "65%",
           backgroundRepeat: "no-repeat",
           backgroundPositionX: "120%",
@@ -17,7 +17,7 @@ const IntroContent = () => {
         className="relative w-full lg:h-screen h-[960px] grid lg:grid-cols-2 content-center items-center justify-center pl-[20px] lg:p-0"
       >
         <div className="grid gap-4">
-          <img className="w-[170px] lg:w-auto" src="../logos/logo-notery-white.svg" alt="Notery Logo" />
+          <img className="w-[170px] lg:w-auto" src="../../logos/logo-notery-white.svg" alt="Notery Logo" />
           <div className="grid gap-4 text-white">
             <h1 className="font-integralCF text-[40px] lg:w-auto w-[90%]">
               <span className="text-purple600">the hero</span> who reads <br className="hidden lg:block" />
@@ -29,7 +29,7 @@ const IntroContent = () => {
               with a digital administrative assistant by your side!
             </p>
           </div>
-          <img className="lg:hidden block" src="../images/notery-intro.png" alt="Notery Intro" />
+          <img className="lg:hidden block" src="../../images/notery-intro.png" alt="Notery Intro" />
         </div>
       </article>
     </>

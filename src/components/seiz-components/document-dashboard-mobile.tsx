@@ -17,7 +17,7 @@ const DocumentDashboardCard = ({
         {
           points.map((point, index) => (
             <li className="flex items-center gap-3" key={index}>
-              <img src="../icons/check-icon.svg" alt="check-icon" />
+              <img src="../../icons/check-icon.svg" alt="check-icon" />
               {point}
             </li>
           ))

@@ -7,7 +7,7 @@ const WhoWeAreContent = () => {
       <SectionTitle title={t("about.whoweare.sectionText")} iconColor="#00B1C6" topDistance="70px" />
       <img
         className="relative lg:ml-[100px] lg:w-[239px] lg:h-[99px]"
-        src="../logos/logo-atix-dark.svg"
+        src="../../logos/logo-atix-dark.svg"
         alt="logo"
       />
       <div className="grid gap-4 lg:text-[20px] lg:text-left text-center ">

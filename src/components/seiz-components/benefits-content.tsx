@@ -30,22 +30,22 @@ const BenefitsContent = () => {
 
   const benefits = [
     {
-      iconSrc: "../icons/seiz-benefits-reduce-icon.svg",
+      iconSrc: "../../icons/seiz-benefits-reduce-icon.svg",
       title: t('seiz.benefits.card1.title'),
       description: t('seiz.benefits.card1.description'),
     },
     {
-      iconSrc: "../icons/seiz-benefits-save-icon.svg",
+      iconSrc: "../../icons/seiz-benefits-save-icon.svg",
       title: t('seiz.benefits.card2.title'),
       description: t('seiz.benefits.card2.description'),
     },
     {
-      iconSrc: "../icons/seiz-benefits-drive-icon.svg",
+      iconSrc: "../../icons/seiz-benefits-drive-icon.svg",
       title: t('seiz.benefits.card3.title'),
       description: t('seiz.benefits.card3.description'),
     },
     {
-      iconSrc: "../icons/seiz-benefits-catch-icon.svg",
+      iconSrc: "../../icons/seiz-benefits-catch-icon.svg",
       title: t('seiz.benefits.card4.title'),
       description: t('seiz.benefits.card4.description'),
     }
@@ -64,7 +64,7 @@ const BenefitsContent = () => {
         </h1>
         <img
           className="relative lg:top-2 top-[4px] inline-block lg:w-[180px] lg:h-[56px] w-[140px]"
-          src="../logos/logo-seiz-clean.svg"
+          src="../../logos/logo-seiz-clean.svg"
           alt="benefits"
         />
       </div>

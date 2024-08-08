@@ -70,7 +70,7 @@ const HowItWorksContent = () => {
           })
         }
       </div>
-      <img className="lg:hidden block h-[214px]" src="../images/notery-howitworks.png" alt="Notery How It Works" />
+      <img className="lg:hidden block h-[214px]" src="../../images/notery-howitworks.png" alt="Notery How It Works" />
       <div className="lg:hidden grid gap-4 justify-items-center">
         <h2 className="text-purple500 text-[14px]">
           THIS IS HOW IT WORKS
@@ -99,7 +99,7 @@ const HowItWorksContent = () => {
           />
         </ElementSlider>
       </div>
-      <img className="lg:block hidden" src="../images/notery-howitworks.png" alt="Notery How It Works" />
+      <img className="lg:block hidden" src="../../images/notery-howitworks.png" alt="Notery How It Works" />
     </article>
   );
 };

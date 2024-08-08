@@ -7,22 +7,22 @@ const StepsContent = () => {
   const steps = [
     {
       id: 1,
-      img: "../icons/seiz-read-icon.svg",
+      img: "../../icons/seiz-read-icon.svg",
       name: t('seiz.steps.read'),
     },
     {
       id: 2,
-      img: "../icons/seiz-interpret-icon.svg",
+      img: "../../icons/seiz-interpret-icon.svg",
       name: t('seiz.steps.interpret'),
     },
     {
       id: 3,
-      img: "../icons/seiz-decide-icon.svg",
+      img: "../../icons/seiz-decide-icon.svg",
       name: t('seiz.steps.decide'),
     },
     {
       id: 4,
-      img: "../icons/seiz-report-icon.svg",
+      img: "../../icons/seiz-report-icon.svg",
       name: t('seiz.steps.report'),
     }
   ];
@@ -46,7 +46,7 @@ const StepsContent = () => {
                 index % 2 === 0 && width < 440
                 && (
                   <div className="grid items-center justify-items-center">
-                    <img className="w-[60px]" src="../icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
+                    <img className="w-[60px]" src="../../icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
                   </div>
                 )
               }
@@ -54,7 +54,7 @@ const StepsContent = () => {
                 index < steps.length - 1 && width > 440
                 && (
                   <div className="grid items-center justify-items-center">
-                    <img className="w-[60px]" src="../icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
+                    <img className="w-[60px]" src="../../icons/multiple-arrows-icon.svg" alt="multiple-arrows" />
                   </div>
                 )
               }
