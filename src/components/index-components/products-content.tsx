@@ -23,14 +23,14 @@ const ProductsContent = () => {
       </div>
       <div className="lg:flex grid gap-8 justify-center pb-[118px]">
         <ProductCard
-          logoSrc="logos/logo-seiz.svg"
+          logoSrc="../../logos/logo-seiz.svg"
           title={t('index.products.card1.title')}
           description={t('index.products.card1.description')}
           exampleSrc="images/seiz-example.png"
           goTo={`${locale}/seiz`}
         />
         <ProductCard
-          logoSrc="logos/logo-notery.svg"
+          logoSrc="../../logos/logo-notery.svg"
           title={t('index.products.card2.title')}
           description={t('index.products.card2.description')}
           exampleSrc="images/notery-example.png"
