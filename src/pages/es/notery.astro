@@ -38,7 +38,7 @@ import ExtractionStatsContent from "../../components/notery-components/extractio
       background="../backgrounds/notery-problem-background.png"
       backgroundColor="#8D8DA8"
     >
-      <ProblemContent />
+      <ProblemContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"
@@ -53,7 +53,7 @@ import ExtractionStatsContent from "../../components/notery-components/extractio
       background=""
       backgroundColor="#F9F8FE" 
     >
-      <HowItWorksContent />
+      <HowItWorksContent  client:only="react"/>
     </Section>
     <Section
       heightMode="h-auto"

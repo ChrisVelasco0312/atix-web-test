@@ -2,10 +2,10 @@ import { t } from "astro-i18n";
 
 const WelcomeSeizContent = () => {
   return (
-    <article className="grid lg:grid-cols-2 items-center lg:h-[85vh] lg:p-0 p-8">
+    <article className="grid lg:grid-cols-2 items-center lg:h-[85vh] h-[956px] lg:p-0 p-8">
       <div className="flex flex-col gap-4">
-        <img className="w-[161px] lg:h-[42.393px]" src="../logos/logo-seiz-white.svg" alt="logo" />
-        <h1 className="font-integralCF text-white text-[40px] leading-[140%]">
+        <img className="w-[105px] h-[30px] lg:w-[161px] lg:h-[42.393px]" src="../logos/logo-seiz-white.svg" alt="logo" />
+        <h1 className="font-integralCF text-white text-[40px] lg:leading-[140%] leading-[120%]">
           {t("seiz.welcome.line1")}
           <span className="block text-[#B5C715]">
             {t("seiz.welcome.line2")}

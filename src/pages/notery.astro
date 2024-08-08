@@ -23,9 +23,10 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
 <Layout title="Seiz">
   <main>
     <Section
-      heightMode="h-screen"
+      heightMode="h-auto"
       contentHeight="100%"
       background="../backgrounds/notery-intro-background.png"
+      bgClassName="notery-intro-bg"
       additionalBg="../images/notery-intro-isotipo.svg"
       additionalBgClassName="notery-intro-additional-bg"
     >
@@ -38,7 +39,7 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
       background="../backgrounds/notery-problem-background.png"
       backgroundColor="#8D8DA8"
     >
-      <ProblemContent />
+      <ProblemContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"
@@ -53,7 +54,7 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
       background=""
       backgroundColor="#F9F8FE" 
     >
-      <HowItWorksContent />
+      <HowItWorksContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"

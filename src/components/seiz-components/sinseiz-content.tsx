@@ -14,7 +14,7 @@ const SinseizContent = () => {
         </div>
         <div className="lg:absolute lg:left-[230px] flex lg:w-[1198px] lg:h-[718px]">
           <img className="lg:block hidden absolute lg:top-[284px] lg:left-[-380px]" src="../images/sinseiz-graph-1.svg" alt="graph-1" />
-          <img className="lg:absolute relative left-[0px] bottom-[65px] lg:right-[128px] lg:top-[0px] lg:w-auto w-[393px]" src="../images/sinseiz-graph-2.png" alt="graph-2" />
+          <img className="lg:absolute relative left-[0px] bottom-[65px] lg:left-[64px] lg:top-[0px] lg:w-auto w-[393px]" src="../images/sinseiz-graph-2.png" alt="graph-2" />
           <img className="lg:block hidden absolute right-[0px] bottom-[0px]" src="../images/sinseiz-graph-3.svg" alt="graph-3" />
         </div>
       </div>
