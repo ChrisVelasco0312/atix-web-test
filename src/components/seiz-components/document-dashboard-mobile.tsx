@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ElementSlider from "../shared/element-slider";
+import { t } from "astro-i18n";
 
 const DocumentDashboardCard = ({
   title,
@@ -32,23 +33,23 @@ const DocumentDashboardMobile = () => {
 
   const dashboardCards = [
     {
-      title: "How Seiz helps companies in the Financial industry",
+      title: t("seiz.document.finance.title"),
       points: [
-        "Before, 100 decisions take 220 minutes. Now, with SEIZ, 100 decisions are made in just 1 minute!",
-        "Over 1.5 billion documents processed, improving the banking liabilities process by 80%"
+        t("seiz.document.finance.points.1"),
+        t("seiz.document.finance.points.2")
       ]
     },
     {
-      title: "How Seiz helps companies in the Government industry",
+      title: t("seiz.document.government.title"),
       points: [
-        "Generated over 200,000 payment orders for tax collection, impacting a portfolio worth 100 billion pesos"
+        t("seiz.document.government.points.1")
       ]
     },
     {
-      title: "How Seiz helps companies in the Insurance industry",
+      title: t("seiz.document.insurance.title"),
       points: [
-        "521,000 transactions processed per month.",
-        "Extracted and classified 8 million data fields from insurance policies, increasing placement rates by 60% for the commercial sector."
+        t("seiz.document.insurance.points.1"),
+        t("seiz.document.insurance.points.2"),
       ]
     }
   ];

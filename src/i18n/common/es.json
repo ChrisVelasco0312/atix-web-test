@@ -188,12 +188,63 @@
         "3": "Facilita el proceso de toma de decisiones"
       },
       "step4": "Genera informes sin esfuerzo, con la flexibilidad de personalizar los datos en varios formatos."
+    },
+    "document": {
+      "title1": "Automatización de documentos",
+      "title2": "adaptada a tus necesidades",
+      "description1": "Utiliza SEIZ para la automatización del flujo de trabajo de documentos.",
+      "description2": "Descubre nuestros casos de uso en múltiples industrias.",
+      "finance": {
+        "tabTitle": "Finanzas",
+        "title": "Cómo Seiz ayuda a las empresas en la industria financiera",
+        "points": {
+          "1": "Antes, 100 decisiones tomaban 220 minutos. Ahora, con SEIZ, ¡100 decisiones se toman en solo 1 minuto!",
+          "2": "Más de 1.5 mil millones de documentos procesados, mejorando el proceso de pasivos bancarios en un 80%."
+        }
+      },
+      "government": {
+        "tabTitle": "Gobierno",
+        "title": "Cómo Seiz ayuda a las empresas en la industria gubernamental",
+        "points": {
+          "1": "Generó más de 200,000 órdenes de pago para la recaudación de impuestos, impactando un portafolio por valor de 100 mil millones de pesos"
+        }
+      },
+      "insurance":{
+        "tabTitle": "Seguros",
+        "title": "Cómo Seiz ayuda a las empresas en la industria de seguros",
+        "points": {
+          "1": "521,000 transacciones procesadas por mes.",
+          "2": "Extrajo y clasificó 8 millones de campos de datos de pólizas de seguros, aumentando las tasas de colocación en un 60% para el sector comercial."
+        }
+      }
+    },
+    "whyseiz": {
+      "why": "POR QUÉ",
+      "steps": {
+        "1": {
+          "title": "REDUCE", 
+          "description": "el tiempo de respuesta"
+        },
+        "2": {
+          "title": "Más de 150 millones",
+          "description": "de documentos procesados"
+        },
+        "3": {
+          "title": "99%",
+          "description": "de precisión en la extracción"
+        },
+        "4": {
+          "title": "5 a 15 segundos",
+          "description": "para procesar un documento"
+        }
+      }
     }
   },
   "footer": {
     "description": "Nuestra misión es ayudar a mejorar la efectividad de tu negocio",
     "products": "Productos",
     "about": "Acerca de",
+    "contact": "Contacto",
     "whoweare": "¿Quiénes somos?",
     "whywedoit": "¿Por que lo hacemos?",
     "team": "Conoce al equipo",

@@ -187,12 +187,63 @@
         "3": "Empowers decision making process"
       },
       "step4": "Generate reports effortlessly, with the flexibility to personalize data in various formats."
+    },
+    "document": {
+      "title1": "Document automation",
+      "title2": "tailored to your needs",
+      "description1": "Use SEIZ for document workflow automation.",
+      "description2": "Discover our use cases across multiple industries.",
+      "finance": {
+        "tabTitle": "Finance",
+        "title": "HOW SEIZ HELPS COMPANIES IN THE FINANCIAL INDUSTRY",
+        "points": {
+          "1": "Before, 100 decisions take 220 minutes. Now, with SEIZ, 100 decisions are made in just 1 minute!",
+          "2": "Over 1.5 billion documents processed, improving the banking liabilities process by 80%."
+        }
+      },
+      "government": {
+        "tabTitle": "Government",
+        "title": "How Seiz helps companies in the GOVERMENT INDUSTRY",
+        "points": {
+          "1": "Generated over 200,000 payment orders for tax collection, impacting a portfolio worth 100 billion pesos"
+        }
+      },
+      "insurance":{
+        "tabTitle": "Insurance",
+        "title": "How Seiz helps companies in the INSURANCE industry",
+        "points": {
+          "1": "521,000 transactions processed per month.",
+          "2": "Extracted and classified 8 million data fields from insurance policies, increasing placement rates by 60% for the commercial sector."
+        }  
+      }
+    },
+    "whyseiz": {
+      "why": "WHY",
+      "steps": {
+        "1": {
+          "title": "REDUCE", 
+          "description": "turnaround"
+        },
+        "2": {
+          "title": "150M+",
+          "description": "documents processed"
+        },
+        "3": {
+          "title": "99%",
+          "description": "extraction accuracy"
+        },
+        "4": {
+          "title": "5 to 15 secs",
+          "description": "to process a document"
+        }
+      }
     }
   },
   "footer": {
     "description": "Our mission is to to help you enhance the effectiveness of your organization.",
     "products": "Products",
     "about": "About",
+    "contact": "Contact",
     "whoweare": "Who we are?",
     "whywedoit": "Why we do it?",
     "team": "Meet our team",

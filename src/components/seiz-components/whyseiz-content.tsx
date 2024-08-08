@@ -1,3 +1,4 @@
+import { t } from "astro-i18n";
 
 interface InfoLine {
   title: string
@@ -7,20 +8,20 @@ interface InfoLine {
 const WhySeizContent = () => {
   const infoLines: InfoLine[] = [
     {
-      title: "REDUCE",
-      description: "turnaround time"
+      title: t("seiz.whyseiz.steps.1.title"),
+      description: t("seiz.whyseiz.steps.1.description")
     },
     {
-      title: "150M+",
-      description: "documents processed"
+      title: t("seiz.whyseiz.steps.2.title"),
+      description: t("seiz.whyseiz.steps.2.description")
     },
     {
-      title: "99%",
-      description: "extraction accuracy"
+      title: t("seiz.whyseiz.steps.3.title"),
+      description: t("seiz.whyseiz.steps.3.description")
     },
     {
-      title: "5 TO 15 SECS",
-      description: "to process a document"
+      title: t("seiz.whyseiz.steps.4.title"),
+      description: t("seiz.whyseiz.steps.4.description")
     }
   ];
 

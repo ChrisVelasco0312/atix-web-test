@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { motion, AnimatePresence } from 'framer-motion';
+import { t } from "astro-i18n";
 
 interface TabContent {
   image: string;
@@ -20,25 +21,25 @@ const DocumentTabDashboard: React.FC = () => {
   const contentData: ContentData = {
     Finance: {
       image: "../images/seiz_finance.png",
-      title: "HOW SEIZ HELPS COMPANIES IN THE FINANCIAL INDUSTRY",
+      title: t("seiz.document.finance.title"),
       points: [
-        "Before, 100 decisions take 220 minutes. Now, with SEIZ, 100 decisions are made in just 1 minute!",
-        "Over 1.5 billion documents processed, improving the banking liabilities process by 80%."
+        t("seiz.document.finance.points.1"),
+        t("seiz.document.finance.points.2")
       ]
     },
     Government: {
       image: "../images/seiz_government.png",
-      title: "HOW SEIZ HELPS COMPANIES IN THE GOVERNMENT INDUSTRY",
+      title: t("seiz.document.government.title"),
       points: [
-        "Generated over 200,000 payment orders for tax collection, impacting a portfolio worth 100 billion pesos"
+        t("seiz.document.government.points.1")
       ]
     },
     Insurance: {
       image: "../images/seiz_insurance.png",
-      title: "HOW SEIZ HELPS COMPANIES IN THE INSURANCE INDUSTRY",
+      title: t("seiz.document.insurance.title"),
       points: [
-        "521,000 transactions processed per month.",
-        "Extracted and classified 8 million data fields from insurance policies, increasing placement rates by 60% for the commercial sector."
+        t("seiz.document.insurance.points.1"),
+        t("seiz.document.insurance.points.2"),
       ]
     }
   };
@@ -99,7 +100,7 @@ const DocumentTabDashboard: React.FC = () => {
               } ${activeTab === tab ? 'text-white' : 'text-gray-700'}`}
             onClick={() => setActiveTab(tab)}
           >
-            {tab}
+            {t(`seiz.document.${tab.toLowerCase()}.tabTitle`)}
           </button>
         ))}
         <animated.div

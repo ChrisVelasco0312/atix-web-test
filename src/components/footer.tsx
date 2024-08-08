@@ -68,7 +68,9 @@ const Footer = () => {
             </div>
             <div className="lg:hidden grid gap-y-8">
               <a href={`${locale}/contact`}>
-                <h1 className="font-jakartaSansBold lg:text-[20px]">Contact</h1>
+                <h1 className="font-jakartaSansBold lg:text-[20px]">
+                  {t("footer.contact")}
+                </h1>
               </a>
             </div>
           </div>
