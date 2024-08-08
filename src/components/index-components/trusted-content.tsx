@@ -6,7 +6,7 @@ import { t } from "astro-i18n";
 
 const trustedData = [
   {
-    logoSrc: "logos/bayport-trusted.png",
+    logoSrc: "../../logos/bayport-trusted.png",
     description: t("index.trusted.card1.text"),
     info: {
       name: "Jorge Bernal",
@@ -15,7 +15,7 @@ const trustedData = [
     },
   },
   {
-    logoSrc: "logos/banco-w-trusted.png",
+    logoSrc: "../../logos/banco-w-trusted.png",
     description: t("index.trusted.card2.text"),
     info: {
       name: "Rodrigo Jaramillo",
@@ -24,7 +24,7 @@ const trustedData = [
     },
   },
   {
-    logoSrc: "logos/finesa-trusted.png",
+    logoSrc: "../../logos/finesa-trusted.png",
     description: t("index.trusted.card3.text"),
     info: {
       name: "Diana Lucia Muñoz",

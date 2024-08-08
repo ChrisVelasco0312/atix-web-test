@@ -13,7 +13,7 @@ const PublicationsContent = () => (
       >
         <img
           className="w-[351px] h-[126px] self-center"
-          src="logos/cience-direct-logo.png"
+          src="../../logos/cience-direct-logo.png"
           alt="cience-direct-logo"
         />
         <a
@@ -32,7 +32,7 @@ const PublicationsContent = () => (
       >
         <img
           className="w-[344px] h-[99px] self-center relative top-[15px]"
-          src="logos/springer-link-logo.png"
+          src="../../logos/springer-link-logo.png"
           alt="springer-link-logo"
         />
         <a

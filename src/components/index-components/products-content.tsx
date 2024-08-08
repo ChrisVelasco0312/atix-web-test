@@ -26,14 +26,14 @@ const ProductsContent = () => {
           logoSrc="../../logos/logo-seiz.svg"
           title={t('index.products.card1.title')}
           description={t('index.products.card1.description')}
-          exampleSrc="images/seiz-example.png"
+          exampleSrc="../../images/seiz-example.png"
           goTo={`${locale}/seiz`}
         />
         <ProductCard
           logoSrc="../../logos/logo-notery.svg"
           title={t('index.products.card2.title')}
           description={t('index.products.card2.description')}
-          exampleSrc="images/notery-example.png"
+          exampleSrc="../../images/notery-example.png"
           goTo={`${locale}/notery`}
         />
       </div>

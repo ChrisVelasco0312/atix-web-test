@@ -25,22 +25,22 @@ const FocusContent: React.FC = () => {
       title: t("index.focus.card1.title"),
       descriptionStrong: t("index.focus.card1.smallDescription"),
       description: t("index.focus.card1.description"),
-      iconSrcActive: "icons/machine-learning-icon-active.svg",
-      iconSrc: "icons/machine-learning-icon.svg"
+      iconSrcActive: "../../icons/machine-learning-icon-active.svg",
+      iconSrc: "../../icons/machine-learning-icon.svg"
     },
     {
       title: t("index.focus.card2.title"),
       descriptionStrong: t("index.focus.card2.smallDescription"),
       description: t("index.focus.card2.description"),
-      iconSrcActive: "icons/user-experience-icon-active.svg",
-      iconSrc: "icons/user-experience-icon.svg"
+      iconSrcActive: "../../icons/user-experience-icon-active.svg",
+      iconSrc: "../../icons/user-experience-icon.svg"
     },
     {
       title: t("index.focus.card3.title"),
       descriptionStrong: t("index.focus.card3.smallDescription"),
       description: t("index.focus.card3.description"),
-      iconSrcActive: "icons/research-icon-active.svg",
-      iconSrc: "icons/research-icon.svg"
+      iconSrcActive: "../../icons/research-icon-active.svg",
+      iconSrc: "../../icons/research-icon.svg"
     }
   ];
 

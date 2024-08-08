@@ -2,23 +2,23 @@ const brandContent = () => {
 
   const imgList = [
     {
-      src: "logos/finesa-logo.png",
+      src: "../../logos/finesa-logo.png",
       alt: "finesa-logo",
     },
     {
-      src: "logos/bayport-logo.png",
+      src: "../../logos/bayport-logo.png",
       alt: "bayport-logo",
     },
     {
-      src: "logos/reval-logo.png",
+      src: "../../logos/reval-logo.png",
       alt: "reval-logo",
     },
     {
-      src: "logos/brinks-logo.png",
+      src: "../../logos/brinks-logo.png",
       alt: "brinks-logo",
     },
     {
-      src: "logos/banco-w-logo.png",
+      src: "../../logos/banco-w-logo.png",
       alt: "banco-w-logo",
     }
   ];
