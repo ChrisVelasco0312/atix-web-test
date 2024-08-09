@@ -240,6 +240,31 @@
       }
     }
   },
+  "notery": {
+    "intro": {
+      "title1": "the hero",
+      "title2": "who reads",
+      "title3": "and makes up to",
+      "title4": "200",
+      "title5": "DECISIONS",
+      "title6": "PER MINUTE",
+      "description": "Conquer the document chaos and achieve maximum efficiency with a digital administrative assistant by your side!"
+    },
+    "problem": {
+      "title1": "REVIEWING DOCUMENTS",
+      "title2": "ONE BY ONE",
+      "title3": "is a waste of time & resources",
+      "description": "Free yourself from tedious and costly tasks, and save time and money with Notery",
+      "card1": {
+        "title": "A person can only review between 40 and 50 documents.",
+        "description": "Business Intelligence Associates (BIA)"
+      },
+      "card2": {
+        "title": "Companies invest millions in hiring people",
+        "description": "Specifically for document review tasks"
+      }
+    }
+  },
   "footer": {
     "description": "Nuestra misión es ayudar a mejorar la efectividad de tu negocio",
     "products": "Productos",

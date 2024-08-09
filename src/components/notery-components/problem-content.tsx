@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SliderDots from "../shared/slider-dots";
+import { t } from "astro-i18n";
 
 const ProblemCard = ({
   iconSrc,
@@ -27,13 +28,13 @@ const ProblemContent = () => {
   const problems = [
     {
       iconSrc: "../../icons/problem-icon-1.svg",
-      title: "A person can only review between 40 and 50 documents.",
-      description: "Business Intelligence Associates (BIA)"
+      title: t("notery.problem.card1.title"),
+      description: t("notery.problem.card1.description")
     },
     {
       iconSrc: "../../icons/problem-icon-2.svg",
-      title: "Companies invest millions in hiring people",
-      description: "Specifically for document review tasks"
+      title: t("notery.problem.card2.title"),
+      description: t("notery.problem.card2.description")
     }
   ];
 
@@ -44,17 +45,17 @@ const ProblemContent = () => {
         <div>
           <div className="relative top-[10px] grid justify-items-center gap-6 lg:block">
             <h1 className="relative top-[30px] font-integralCF lg:text-[40px] text-[26px] text-purple500 lg:w-auto w-[60%]">
-              REVIEWING DOCUMENTS
+              {t("notery.problem.title1")}
             </h1>
             <h1 className="font-integralCF lg:text-[76px] text-[52px] text-purple300 leading-[110%] lg:leading-normal">
-              ONE BY ONE
+              {t("notery.problem.title2")}
             </h1>
             <h1 className="relative bottom-[20px] font-integralCF lg:text-[40px] text-[26px] text-purple500 lg:text-nowrap">
-              is a waste of time & resources
+              {t("notery.problem.title3")}
             </h1>
           </div>
           <p className="lg:text-[20px] lg:max-w-[545px]">
-            Free yourself from tedious and costly tasks, and save time and money with Notery
+            {t("notery.problem.description")}
           </p>
         </div>
         <div className="hidden lg:flex gap-4">

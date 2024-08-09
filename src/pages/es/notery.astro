@@ -23,13 +23,13 @@ import ExtractionStatsContent from "../../components/notery-components/extractio
 <Layout title="Notery">
   <main>
     <Section
-      heightMode="h-screen"
+      heightMode="h-auto"
       contentHeight="100%"
       background="../../backgrounds/notery-intro-background.png"
       additionalBg="../../images/notery-intro-isotipo.svg"
       additionalBgClassName="notery-intro-additional-bg"
     >
-      <Navbar client:load/>
+      <Navbar client:only="react"/>
       <IntroContent />
     </Section>
     <Section

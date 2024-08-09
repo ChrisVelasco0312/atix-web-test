@@ -239,6 +239,31 @@
       }
     }
   },
+  "notery": {
+    "intro": {
+      "title1": "El héroe",
+      "title2": "que lee",
+      "title3": "y toma hasta",
+      "title4": "200",
+      "title5": "decisiones",
+      "title6": "por minuto",
+      "description": "¡Conquista el caos de los documentos y logra la máxima eficiencia con un asistente administrativo digital a tu lado!"
+    },
+    "problem": {
+      "title1": "Revisar documentos",
+      "title2": "uno por uno",
+      "title3": "es una pérdida de tiempo y recursos",
+      "description": "Free yourself from tedious and costly tasks, and save time and money with Notery",
+      "card1": {
+        "title": "Una persona solo puede revisar entre 40 y 50 documentos.",
+        "description": "Business Intelligence Associates (BIA)"
+      },
+      "card2": {
+        "title": "Las empresas invierten millones en la contratación de personas",
+        "description": "Específicamente para tareas de revisión de documentos"
+      }
+    }
+  },
   "footer": {
     "description": "Our mission is to to help you enhance the effectiveness of your organization.",
     "products": "Products",

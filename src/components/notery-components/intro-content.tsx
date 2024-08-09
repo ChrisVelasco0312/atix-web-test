@@ -1,3 +1,5 @@
+import { t } from "astro-i18n";
+
 const IntroContent = () => {
   return (
     <>
@@ -20,13 +22,12 @@ const IntroContent = () => {
           <img className="w-[170px] lg:w-auto" src="../../logos/logo-notery-white.svg" alt="Notery Logo" />
           <div className="grid gap-4 text-white">
             <h1 className="font-integralCF text-[40px] lg:w-auto w-[90%]">
-              <span className="text-purple600">the hero</span> who reads <br className="hidden lg:block" />
-              and makes up to <span className="text-purple600">200</span> <br className="hidden lg:block" />
-              <span className="text-purple600">DECISIONS</span> PeR MINUTe
+              <span className="text-purple600">{t("notery.intro.title1")}</span> {t("notery.intro.title2")} <br className="hidden lg:block" />
+              {t("notery.intro.title3")} <span className="text-purple600">{t("notery.intro.title4")}</span> <br className="hidden lg:block" />
+              <span className="text-purple600">{t("notery.intro.title5")}</span> {t("notery.intro.title6")}
             </h1>
             <p className="text-[18px] lg:w-[465px] w-[98%]">
-              Conquer the document chaos and achieve maximum efficiency
-              with a digital administrative assistant by your side!
+              {t("notery.intro.description")}
             </p>
           </div>
           <img className="lg:hidden block" src="../../images/notery-intro.png" alt="Notery Intro" />

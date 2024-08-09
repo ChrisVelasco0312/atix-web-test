@@ -26,9 +26,9 @@ const WhySeizContent = () => {
   ];
 
   return (
-    <article className="grid items-center lg:h-[471px] h-[814px] content-center gap-12">
+    <article className="grid items-center lg:h-[471px] content-center gap-12 py-20 lg:py-0">
       <div className="flex gap-4 items-center content-center justify-center lg:pr-[100px]">
-        <h1 className="font-integralCF  text-[40px]">WHY</h1>
+        <h1 className="font-integralCF lg:text-[40px] text-[28px]">{t("seiz.whyseiz.why")}</h1>
         <img className="w-[167px] h-[52px]" src="../../logos/logo-seiz-clean.svg" alt="logo" />
       </div>
       <div className="lg:flex grid lg:gap-[95px] gap-8 items-center justify-center justify-items-center">

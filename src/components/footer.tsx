@@ -36,7 +36,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/notery">
+                  <a href={`${locale}/notery`}>
                     Notery
                   </a>
                 </li>
