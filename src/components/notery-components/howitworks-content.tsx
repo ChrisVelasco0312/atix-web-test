@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ElementSlider from "../shared/element-slider";
+import { t } from "astro-i18n";
 
 const WorkStep = ({
   stepNumber,
@@ -31,23 +32,23 @@ const HowItWorksContent = () => {
   const steps = [
     {
       stepNumber: 1,
-      stepTitle: "Upload your file or batch of documents",
-      stepDescription: "In any file format"
+      stepTitle: t("notery.howitworks.step1.stepTitle"),
+      stepDescription: t("notery.howitworks.step1.stepDescription")
     },
     {
       stepNumber: 2,
-      stepTitle: "Create a template for Notery to analyze",
-      stepDescription: "You'll be able to share it with your coworkers"
+      stepTitle: t("notery.howitworks.step2.stepTitle"),
+      stepDescription: t("notery.howitworks.step2.stepDescription")
     },
     {
       stepNumber: 3,
-      stepTitle: "Notery analyzes your documents",
-      stepDescription: "Now Notery will read all your files"
+      stepTitle: t("notery.howitworks.step3.stepTitle"),
+      stepDescription: t("notery.howitworks.step3.stepDescription")
     },
     {
       stepNumber: 4,
-      stepTitle: "Download the extracted data",
-      stepDescription: "In Excel, XLSX, or JSON formats"
+      stepTitle: t("notery.howitworks.step4.stepTitle"),
+      stepDescription: t("notery.howitworks.step4.stepDescription")
     }
   ];
 
@@ -76,7 +77,7 @@ const HowItWorksContent = () => {
         alt="Notery How It Works" />
       <div className="lg:hidden grid gap-4 justify-items-center">
         <h2 className="text-purple500 text-[14px]">
-          THIS IS HOW IT WORKS
+          {t("notery.howitworks.title")}
         </h2>
         <ElementSlider
           index={currentIndex}

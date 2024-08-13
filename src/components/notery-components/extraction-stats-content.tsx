@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { t } from "astro-i18n";
 
 const Stat = ({
   statNumber,
@@ -34,7 +35,11 @@ const ExtractionStatsContent = () => {
       statNumber: "36K",
       statDescription: (
         <p className="lg:w-[295px]">
-          Processes <span className="text-[#583277]">over 36,000 documents</span> per month, regardless of their format.
+          {t("notery.extraction.stats.1.line1")}
+          <span className="text-[#583277]">
+            {" "}{t("notery.extraction.stats.1.line2")}
+          </span>
+          {" "}{t("notery.extraction.stats.1.line3")}
         </p>
       )
     },
@@ -42,7 +47,11 @@ const ExtractionStatsContent = () => {
       statNumber: "200",
       statDescription: (
         <p className="lg:w-[205px]">
-          Processes over <span className="text-[#583277]">200 documents</span> per minute
+          {t("notery.extraction.stats.2.line1")}
+          <span className="text-[#583277]">
+            {" "}{t("notery.extraction.stats.2.line2")}
+          </span>
+          {" "}{t("notery.extraction.stats.2.line3")}
         </p>
       )
     },
@@ -50,14 +59,23 @@ const ExtractionStatsContent = () => {
       statNumber: "500K",
       statDescription: (
         <p className="lg:w-[220px]">
-          Contributed in more than <span className="text-[#583277]">500,000 decisions</span> in two years
+          {t("notery.extraction.stats.3.line1")}
+          <span className="text-[#583277]">
+            {" "}{t("notery.extraction.stats.3.line2")}
+          </span>
+          {" "}{t("notery.extraction.stats.3.line3")}
         </p>
       )
     },
     {
       statNumber: "98%",
       statDescription: (
-        <p><span className="text-[#583277]">Accuracy beyond</span> 98%</p>
+        <p>
+          <span className="text-[#583277]">
+            {t("notery.extraction.stats.4.line1")}
+          </span>
+          {" "}{t("notery.extraction.stats.4.line2")}
+        </p>
       )
     }
   ];
@@ -66,31 +84,35 @@ const ExtractionStatsContent = () => {
     <article className="lg:h-[1130px] h-fit py-8 lg:p-0 grid justify-items-center content-center gap-8">
       <div className="grid lg:grid-cols-2 content-center items-center">
         <div className="relative lg:leading-[450%] lg:text-right text-center lg:right-[200px]">
-          <h2 className="relative lg:text-[30px] leading-[130%]">Extract any type of data</h2>
+          <h2 className="relative lg:text-[30px] leading-[130%]">
+            {t("notery.extraction.title")}
+          </h2>
           <h1
             onClick={() => handleImageChange("notery-extract-1.png")}
             className={`font-integralCF lg:text-[64px] text-[28px] cursor-pointer transition-colors duration-300 ${getTextColor("notery-extract-1.png")}`}
           >
-            TABLES
+            {t("notery.extraction.tables")}
           </h1>
           <h1
             onClick={() => handleImageChange("notery-extract-2.png")}
             className={`font-integralCF lg:text-[64px] text-[28px] cursor-pointer transition-colors duration-300 ${getTextColor("notery-extract-2.png")}`}
           >
-            TEXTS
+            {t("notery.extraction.texts")}
           </h1>
           <h1
             onClick={() => handleImageChange("notery-extract-3.png")}
             className={`font-integralCF lg:text-[64px] text-[28px] cursor-pointer transition-colors duration-300 ${getTextColor("notery-extract-3.png")}`}
           >
-            IMAGES
+            {t("notery.extraction.images")}
           </h1>
           <img
             className="lg:hidden block transition-opacity duration-300 ease-in-out"
             src={`../../images/${currentImage}`}
             alt="Notery Extraction"
           />
-          <h2 className="lg:text-[30px]">in seconds!</h2>
+          <h2 className="lg:text-[30px]">
+            {t("notery.extraction.description")}
+          </h2>
         </div>
         <img
           className="lg:block hidden relative max-w-none right-[200px] transition-opacity duration-300 ease-in-out"
@@ -105,7 +127,14 @@ const ExtractionStatsContent = () => {
               statNumber={stat.statNumber}
               statDescription={stat.statDescription}
             />
-            {index !== stats.length - 1 && <img className="lg:block hidden" src="../../images/notery-stats-divider.svg" alt="Notery Stats Separator" />}
+            {
+              index !== stats.length - 1 &&
+              <img
+                className="lg:block hidden"
+                src="../../images/notery-stats-divider.svg"
+                alt="Notery Stats Separator"
+              />
+            }
           </React.Fragment>
         ))}
       </div>

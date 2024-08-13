@@ -241,26 +241,83 @@
   },
   "notery": {
     "intro": {
-      "title1": "El héroe",
-      "title2": "que lee",
-      "title3": "y toma hasta",
+      "title1": "the hero",
+      "title2": "who reads",
+      "title3": "and makes up to",
       "title4": "200",
-      "title5": "decisiones",
-      "title6": "por minuto",
-      "description": "¡Conquista el caos de los documentos y logra la máxima eficiencia con un asistente administrativo digital a tu lado!"
+      "title5": "DECISIONS",
+      "title6": "PER MINUTE",
+      "description": "Conquer the document chaos and achieve maximum efficiency with a digital administrative assistant by your side!"
     },
     "problem": {
-      "title1": "Revisar documentos",
-      "title2": "uno por uno",
-      "title3": "es una pérdida de tiempo y recursos",
+      "title1": "REVIEWING DOCUMENTS",
+      "title2": "ONE BY ONE",
+      "title3": "is a waste of time & resources",
       "description": "Free yourself from tedious and costly tasks, and save time and money with Notery",
       "card1": {
-        "title": "Una persona solo puede revisar entre 40 y 50 documentos.",
+        "title": "A person can only review between 40 and 50 documents.",
         "description": "Business Intelligence Associates (BIA)"
       },
       "card2": {
-        "title": "Las empresas invierten millones en la contratación de personas",
-        "description": "Específicamente para tareas de revisión de documentos"
+        "title": "Companies invest millions in hiring people",
+        "description": "Specifically for document review tasks"
+      }
+    },
+    "withnotery": {
+      "text1": "Simply tell",
+      "text2":"your document management assistant,",
+      "text3": "which data it needs to collect from your documents"
+    },
+    "howitworks": {
+      "title": "THIS IS HOW IT WORKS",
+      "step1": {
+        "stepTitle": "Upload your file or batch of documents",
+        "stepDescription": "In any file format"
+      },
+      "step2": {
+        "stepTitle": "Create a template for Notery to analyze",
+        "stepDescription": "You'll be able to share it with your coworkers"
+      },
+      "step3": {
+        "stepTitle": "Notery analyzes your documents",
+        "stepDescription": "Now Notery will read all your files"
+      },
+      "step4": {
+        "stepTitle": "Download the extracted data",
+        "stepDescription": "In Excel, XLSX, or JSON formats"
+      }
+    },
+    "template": {
+      "title": "COLLABORATIVE TEMPLATES",
+      "description": "Enhance team efficiency",
+      "text": "+15 others..."
+    },
+    "extraction": {
+      "title": "Extract any type of data",
+      "tables": "TABLES",
+      "texts": "TEXTS",
+      "images": "IMAGES",
+      "description": "in seconds!",
+      "stats": {
+        "1": {
+          "line1": "Processes",
+          "line2": "over 36,000 documents",
+          "line3": "per month, regardless of their format."
+        },
+        "2": {
+          "line1": "Processes over",
+          "line2": "200 documents",
+          "line3": "per minute"
+        },
+        "3": {
+          "line1": "Contributed in more than",
+          "line2": "500,000 decisions",
+          "line3": "in two years"
+        },
+        "4": {
+          "line1": "Accuracy beyond",
+          "line2": "98%"
+        }
       }
     }
   },
