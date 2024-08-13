@@ -1,3 +1,4 @@
+import { useViewportInfo } from "../hooks/useViewportInfo";
 import SectionTitle from "../shared/section-title";
 import { t } from "astro-i18n";
 
@@ -22,6 +23,7 @@ const WhyCard = ({
 };
 
 const WhyWeDoItContent = () => {
+  const { width } = useViewportInfo();
   const whyCards: WhyCardProps[] = [
     {
       iconSrc: "../../logos/about-efficiency.svg",
@@ -47,8 +49,16 @@ const WhyWeDoItContent = () => {
 
 
   return (
-    <article id="whywedoit" className="relative lg:h-[815px] lg:p-0 p-4">
-      <SectionTitle textColor="text-white" title={t("about.whywedoit.sectionText")} iconColor="#00B1C6" topDistance="70px" />
+    <article
+      id="whywedoit"
+      className="relative lg:h-[815px] lg:p-0 p-4"
+    >
+      <SectionTitle
+        textColor="text-white"
+        title={t("about.whywedoit.sectionText")}
+        iconColor="#00B1C6"
+        topDistance={width < 768 ? "45px" : "70px"}
+      />
       <div className="h-full mx-auto grid lg:grid-cols-2 items-center content-center lg:gap-y-20 gap-y-10 justify-items-center lg:w-[940px] lg:py-0 py-[100px]">
         {
           whyCards.map((card, index) => (

@@ -47,14 +47,14 @@ import Footer from "../../components/footer";
       background="../../backgrounds/dots-clean.svg"
       backgroundColor="white"
     >
-      <WhoWeAreContent />
+      <WhoWeAreContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"
       contentHeight="100%"
       background="../../backgrounds/whywedoit-background.svg"
     >
-      <WhyWeDoItContent />
+      <WhyWeDoItContent client:only="react"/>
     </Section>
     <Section
       heightMode="h-auto"
@@ -62,7 +62,7 @@ import Footer from "../../components/footer";
       background=""
       backgroundColor="#F8F8FA"
     >
-      <TeamContent client:load />
+      <TeamContent client:only="react" />
     </Section>
     <Footer />
   </main>

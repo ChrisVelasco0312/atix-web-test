@@ -1,6 +1,7 @@
 import SectionTitle from "../shared/section-title";
 import { useRef, useEffect } from "react";
 import { t } from "astro-i18n";
+import { useViewportInfo } from "../hooks/useViewportInfo";
 
 interface TeamCardProps {
   iconSrc: string;
@@ -25,6 +26,7 @@ const TeamCard = ({
 };
 
 const TeamContent = () => {
+  const { width } = useViewportInfo();
   const teamRef = useRef<HTMLDivElement>(null);
   const teamCards: TeamCardProps[] = [
     {
@@ -75,7 +77,7 @@ const TeamContent = () => {
       <SectionTitle
         title={t("about.team.sectionText")}
         iconColor="#9ADD19"
-        topDistance="70px"
+        topDistance={width < 768 ? "45px" : "70px"}
       />
       <div
         ref={teamRef}

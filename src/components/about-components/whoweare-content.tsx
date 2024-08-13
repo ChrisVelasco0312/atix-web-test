@@ -1,10 +1,19 @@
 import SectionTitle from "../shared/section-title";
 import { t } from "astro-i18n";
+import { useViewportInfo } from "../hooks/useViewportInfo";
 
 const WhoWeAreContent = () => {
+  const { width } = useViewportInfo();
   return (
-    <div id="whoweare" className="relative lg:h-[593px] h-[568px] grid lg:grid-cols-2 lg:gap-0 gap-4 items-center content-center justify-items-center">
-      <SectionTitle title={t("about.whoweare.sectionText")} iconColor="#00B1C6" topDistance="70px" />
+    <div
+      id="whoweare"
+      className="relative lg:h-[593px] h-[568px] grid lg:grid-cols-2 lg:gap-0 gap-4 items-center content-center justify-items-center"
+    >
+      <SectionTitle
+        title={t("about.whoweare.sectionText")}
+        iconColor="#00B1C6"
+        topDistance={width < 768 ? "30px" : "70px"}
+      />
       <img
         className="relative lg:ml-[100px] lg:w-[239px] lg:h-[99px]"
         src="../../logos/logo-atix-dark.svg"
