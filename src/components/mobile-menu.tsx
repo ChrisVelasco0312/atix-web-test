@@ -91,7 +91,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, texts = [], lo
           className={`fixed inset-0 z-50 ${bgColor} flex flex-col justify-center items-center overflow-hidden`}
         >
           <button onClick={onClose} className="absolute top-[25px] right-[25px]">
-            <img src="../icons/Close.svg" alt="close" />
+            <img src="../../icons/Close.svg" alt="close" />
           </button>
           <motion.ul
             variants={listVariants}

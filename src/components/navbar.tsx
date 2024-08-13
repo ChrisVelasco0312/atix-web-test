@@ -44,7 +44,7 @@ const Navbar = ({
         </ul>
         <div className="flex lg:hidden">
           <button onClick={toggleMenu}>
-            <img src={`../icons/${mode === "dark" ? "menu" : "menu-dark"}.svg`} alt="menu" />
+            <img src={`../../icons/${mode === "dark" ? "menu" : "menu-dark"}.svg`} alt="menu" />
           </button>
         </div>
       </nav>
