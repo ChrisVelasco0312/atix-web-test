@@ -3,7 +3,7 @@ import { t } from "astro-i18n";
 
 const WelcomeContent = () => {
   return (
-    <article className="grid lg:grid-cols-2 w-full content-center h-[90%]">
+    <article className="grid lg:grid-cols-2 w-full content-center h-[100%]">
       <div />
       <div className="relative lg:p-0">
         <h6 className="text-white mb-[10px] tracking-[2.8px]">
