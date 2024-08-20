@@ -4,7 +4,7 @@ const Footer = () => {
   const locale = astroI18n.locale === "es" ? "/es" : "";
 
   return (
-    <footer className="flex justify-center bg-petroleo500">
+    <footer className="flex justify-center bg-petroleo500 px-[30px]">
       <div className="grid items-center content-center gap-10 h-[480px] w-[1440px]">
         <div className="flex lg:justify-between items-center lg:flex-row flex-col bg-petroleo500 text-white gap-y-8">
           <div className="flex flex-col gap-10 lg:items-start items-center">
