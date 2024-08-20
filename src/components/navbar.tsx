@@ -72,8 +72,8 @@ const Navbar = ({
 
   const navbarClasses = `
     fixed top-0 left-0 right-0 z-50
-    transition-opacity duration-1000 ease-in-out
-    ${isScrolled ? 'bg-white bg-opacity-90 shadow-md' : 'bg-transparent'}
+    transition-opacity duration-1000 ease-in-out 
+    ${isScrolled ? 'bg-white bg-opacity-90' : 'bg-transparent'}
     ${isScrolled ? 'text-purple500' : textColor}
     ${isHidden && !isHovering ? 'opacity-0 pointer-events-none' : 'opacity-100'}
   `;
@@ -81,11 +81,11 @@ const Navbar = ({
   return (
     <>
       <nav
-        className={`${navbarClasses} flex justify-between lg:py-[22px] py-[30px] px-[50px]`}
+        className={`${navbarClasses} flex justify-between lg:py-[22px] py-[20px] lg:px-[50px] px-[30px]`}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
-        <a href={`${locale.includes("es") ? "/es" : "/"}`}>
+        <a className="flex items-center" href={`${locale.includes("es") ? "/es" : "/"}`}>
           <img
             className="lg:w-auto lg:h-auto w-[81px] h-[31px]"
             src={`../../logos/${isScrolled || mode === "light" ? "logo-atix-dark" : "logo-atix"}.svg`}
