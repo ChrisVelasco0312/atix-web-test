@@ -23,13 +23,20 @@ const Navbar = ({
     let hideTimer: NodeJS.Timeout;
 
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-      setIsHidden(false); // Reset hiding if scrolling
-      clearTimeout(hideTimer);
+      const scrollPosition = window.scrollY;
 
-      hideTimer = setTimeout(() => {
-        setIsHidden(true); // Start hiding after 2 seconds of no scroll
-      }, 2000);
+      if (scrollPosition > 0) {
+        setIsScrolled(true);
+        setIsHidden(false); // Show navbar when scrolling
+        clearTimeout(hideTimer);
+
+        hideTimer = setTimeout(() => {
+          setIsHidden(true); // Hide navbar after 2 seconds of no scroll
+        }, 2000);
+      } else {
+        setIsScrolled(false);
+        setIsHidden(false); // Keep navbar visible at the top of the page
+      }
     };
 
     const handleMouseMove = (event: MouseEvent) => {
@@ -40,7 +47,7 @@ const Navbar = ({
     };
 
     const handleMouseLeaveTop = () => {
-      if (mouseTriggered) {
+      if (mouseTriggered && isScrolled) { // Only re-hide if the navbar was made visible by a mouse event and user has scrolled
         hideTimer = setTimeout(() => {
           setIsHidden(true);
         }, 2000); // Re-hide after 2 seconds if mouse leaves the top
@@ -57,7 +64,7 @@ const Navbar = ({
       window.removeEventListener('mouseleave', handleMouseLeaveTop);
       clearTimeout(hideTimer);
     };
-  }, [mouseTriggered]);
+  }, [mouseTriggered, isScrolled]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -66,7 +73,7 @@ const Navbar = ({
   const navbarClasses = `
     fixed top-0 left-0 right-0 z-50
     transition-opacity duration-1000 ease-in-out
-    ${isScrolled ? 'bg-white bg-opacity-90' : 'bg-transparent'}
+    ${isScrolled ? 'bg-white bg-opacity-90 shadow-md' : 'bg-transparent'}
     ${isScrolled ? 'text-purple500' : textColor}
     ${isHidden && !isHovering ? 'opacity-0 pointer-events-none' : 'opacity-100'}
   `;
