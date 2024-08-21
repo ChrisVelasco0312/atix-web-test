@@ -32,6 +32,11 @@ import Footer from "../components/footer";
     .focus-background {
       background-image: none !important;
     }
+
+    .about-additional-bg {
+      background-size: 100% !important;
+      background-repeat: no-repeat;
+    }
   }
 </style>
 
@@ -52,6 +57,7 @@ import Footer from "../components/footer";
       heightMode="h-auto"
       contentHeight="100%"
       background="backgrounds/dots-background.png"
+      additionalBgClassName="about-additional-bg"
     >
       <AboutContent />
     </Section>

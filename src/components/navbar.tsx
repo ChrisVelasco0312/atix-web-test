@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import MobileMenu from './mobile-menu';
 import { astroI18n, t } from "astro-i18n";
+import LanguageSwitcher from './shared/language-switcher';
 
 const Navbar = ({
   mode = "dark",
@@ -108,6 +109,7 @@ const Navbar = ({
               {navbar.contact}
             </a>
           </li>
+          <LanguageSwitcher darkBackground={isScrolled || mode === "light"} mode="link" />
         </ul>
         <div className="flex lg:hidden">
           <button onClick={toggleMenu}>
