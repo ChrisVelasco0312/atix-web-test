@@ -4,15 +4,12 @@ import { t } from "astro-i18n";
 const PublicationsContent = () => (
   <div className="relative lg:h-[481px] h-[718px] grid justify-center content-center">
     <SectionTitle title={t("index.publications.sectionText")} iconColor="#1C7FC1" topDistance="54px" />
-    <div className="grid lg:grid-flow-col gap-x-[130px] place-items-center">
+    <div className="grid lg:grid-flow-col gap-x-[130px] gap-y-[60px] place-items-center">
       <div
-        style={{
-          gridTemplateRows: "200px 1fr",
-        }}
-        className="grid justify-center w-[351px] gap-4 justify-items-center"
+        className="grid lg:grid-rows-[200px_1fr] justify-center w-[351px] gap-4 justify-items-center"
       >
         <img
-          className="w-[351px] h-[126px] self-center"
+          className="lg:w-[351px] lg:h-[126px] w-[291px] h-[104px] self-center"
           src="../../logos/cience-direct-logo.png"
           alt="cience-direct-logo"
         />
@@ -25,13 +22,10 @@ const PublicationsContent = () => (
         </a>
       </div>
       <div
-        style={{
-          gridTemplateRows: "200px 1fr",
-        }}
-        className="grid justify-center w-[351px] gap-4 justify-items-center"
+        className="grid lg:grid-rows-[200px_1fr] justify-center w-[351px] gap-8 justify-items-center"
       >
         <img
-          className="w-[344px] h-[99px] self-center relative top-[15px]"
+          className="lg:w-[344px] lg:h-[99px] w-[285px] h-[82px] self-center relative top-[15px]"
           src="../../logos/springer-link-logo.png"
           alt="springer-link-logo"
         />

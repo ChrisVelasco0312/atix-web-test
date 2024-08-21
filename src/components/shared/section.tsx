@@ -37,7 +37,7 @@ const Section = ({
   );
 
   const content = (
-    <div className={`2xl:w-[1440px] md:w-full h-[${contentHeight}] m-auto px-[30px]`}>{children}</div>
+    <div className={`2xl:w-[1440px] md:w-full h-[${contentHeight}] m-auto px-[20px]`}>{children}</div>
   );
 
   if (additionalBg.length > 0) {

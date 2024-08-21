@@ -16,11 +16,11 @@ const ElementSlider = (
     customSize?: string
   }) => {
   return (
-    <div className={`flex overflow-hidden ${customSize} items-center gap-1.5 px-2`}>
+    <div className={`flex overflow-hidden ${customSize} items-center justify-center gap-1.5`}>
       <img
         src="../icons/chevron-left.svg"
         alt="chevron-left"
-        className="w-[24px] h-[24px] cursor-pointer"
+        className="relative bottom-[70px] w-[8px] h-[13px] cursor-pointer"
         onClick={onPrev}
       />
       <motion.div
@@ -35,7 +35,7 @@ const ElementSlider = (
       <img
         src="../icons/chevron-right.svg"
         alt="chevron-right"
-        className="w-[24px] h-[24px] cursor-pointer"
+        className="relative bottom-[70px] w-[8px] h-[13px] cursor-pointer"
         onClick={onNext}
       />
     </div>

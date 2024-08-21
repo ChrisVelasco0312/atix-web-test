@@ -5,7 +5,7 @@ import { t } from "astro-i18n";
 const MagicalContent = () => {
   const { width } = useViewportInfo();
   return (
-    <div className="h-[409px] grid lg:grid-flow-col items-center justify-items-center lg:justify-items-start content-center lg:gap-0 gap-[45px]">
+    <div className="h-[409px] lg:px-[100px] grid lg:grid-flow-col items-center justify-items-center lg:justify-items-start content-center lg:gap-0 gap-[45px]">
       <div className="grid font-integralCF lg:text-[64px] text-[40px] leading-[1.2em] xs:items-center">
         <h1 className="p-0 m-0 text-white">
           {t("index.magical.line1")}

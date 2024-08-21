@@ -19,7 +19,7 @@ const WhoWeAreContent = () => {
         src="../../logos/logo-atix-dark.svg"
         alt="logo"
       />
-      <div className="grid gap-4 lg:text-[20px] lg:text-left text-center ">
+      <div className="grid gap-4 lg:text-[20px] lg:text-left text-center lg:w-[75%]">
         <p>
           {t("about.whoweare.paragraph1.line1")}
           <span className="font-jakartaSansBold text-[#9ADD19]">

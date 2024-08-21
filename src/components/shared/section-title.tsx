@@ -19,7 +19,7 @@ const SectionTitle = ({
         top: topDistance,
         left: leftDistance
       }}
-      className="absolute flex gap-2 items-center select-none lg:px-0 px-[30px]"
+      className="absolute flex gap-2 items-center select-none lg:px-0"
     >
       <ChevronsRight color={iconColor} />
       <h1 className={`${textColor} text-[14px] leading-[2.8px] tracking-[2.8px]`}>{title}</h1>

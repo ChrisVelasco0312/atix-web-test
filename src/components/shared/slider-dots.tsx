@@ -29,11 +29,11 @@ const SliderDots = ({
           </motion.div>
         </div>
       </div>
-      <div className="flex justify-center mt-4 overflow-visible">
+      <div className="flex justify-center overflow-visible">
         {Array.from({ length: itemsLength }).map((_, index) => (
           <motion.div
             key={index}
-            className={`w-3 h-3 rounded-full mx-1 cursor-pointer ${itemIndex === index ? 'bg-purple500' : 'bg-gray400'
+            className={`w-[5px] h-[5px] rounded-full mx-1 cursor-pointer ${itemIndex === index ? 'bg-purple500' : 'bg-gray400'
               }`}
             onClick={() => handleDotClick(index)}
             whileTap={{ scale: 0.9 }}

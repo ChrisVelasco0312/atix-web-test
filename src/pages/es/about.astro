@@ -12,20 +12,25 @@ import Footer from "../../components/footer";
 <style is:global>
   .about-additional-bg {
     background-repeat: no-repeat;
-    background-size: 48%;
+    background-size: 200% !important;
     background-position-y: -140px;
     background-position-x: -200px;
   }
 
   @media (max-width: 768px) {
     .about-bg {
-      background-size: 251% !important;
+      background-size: 500% !important;
       background-position-x: center;
       background-repeat: no-repeat;
       background-position-y: -1px !important;
     }
-  }
 
+    .about-additional-bg {
+      background-size: 250% !important;
+      background-position-x: -150px;
+      background-position-y: -100px;
+    }
+  }
 </style>
 
 <Layout title="Atix Digital">
@@ -38,7 +43,7 @@ import Footer from "../../components/footer";
       additionalBgClassName="about-additional-bg"
       bgClassName="about-bg"
     >
-      <Navbar mode="dark" client:load/>
+      <Navbar mode="dark" client:load />
       <InitialContent />
     </Section>
     <Section
@@ -54,7 +59,7 @@ import Footer from "../../components/footer";
       contentHeight="100%"
       background="../../backgrounds/whywedoit-background.svg"
     >
-      <WhyWeDoItContent client:only="react"/>
+      <WhyWeDoItContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"

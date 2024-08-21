@@ -37,14 +37,14 @@ const trustedData = [
 const TrustedContent = () => {
   const [index, setIndex] = useState(0);
   return (
-    <article className="relative grid">
+    <article className="relative grid h-[856px]">
       <SectionTitle
         title={t("index.trusted.sectionText")}
         topDistance="54px"
         iconColor="#1C7FC1"
       />
-      <div className="grid justify-center gap-10 pt-[170px] pb-[150px]">
-        <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] lg:text-center lg:w-auto w-[284px]">
+      <div className="grid grid-rows-[auto_600px] justify-center justify-items-center items-center lg:gap-10 lg:pt-[170px] lg:pb-[150px]">
+        <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] text-center lg:w-auto w-[284px] lg:self-start self-end">
           {t("index.trusted.title")}
         </h1>
         <div className="lg:grid hidden lg:grid-flow-col gap-8 justify-items-center">
@@ -57,9 +57,10 @@ const TrustedContent = () => {
             />
           ))}
         </div>
-        <div className="lg:hidden grid lg:grid-flow-col gap-8 justify-items-center overflow-hidden">
+        <div className="lg:hidden grid lg:grid-flow-col gap-8 justify-items-center overflow-hidden h-[550px]">
           <ElementSlider
             index={index}
+            customSize="w-[340px]"
             onNext={() => {
               if (index < trustedData.length - 1) {
                 setIndex(index + 1);
