@@ -30,7 +30,13 @@ const StepsContent = () => {
 
 
   return (
-    <article className="lg:h-[410px] grid pt-[70px] pb-[72px]">
+    <article className="lg:h-[1200px] grid pt-[58px] pb-[72px]">
+      <div className="mb-[90px]">
+        <video className="w-full" poster="../../videos/seiz-video-poster.png" controls>
+          <source src="../../videos/CAPSULE_SEIZ_EN.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div className="grid gap-4 justify-items-center">
         <h1 className="font-integralCF lg:text-[40px] text-[28px] lg:text-left text-center lg:w-auto w-[308px]">
           {t("seiz.steps.title1")} <span className="text-green600"> {t("seiz.steps.title2")} </span> {t("seiz.steps.title3")}
