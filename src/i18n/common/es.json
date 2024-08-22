@@ -63,15 +63,15 @@
       "sectionText" : "CONFIADO POR MILES",
       "title": "Lee lo que nuestros clientes dicen sobre nosotros",
       "card1": {
-        "text": "Con SEIZ, hemos logrado una recaudación promedio de nómina del 85.88% en 2023. El 85% de nuestras solicitudes de crédito ahora se procesan con SEIZ, generando informes rápidos y reduciendo errores operativos.",
+        "text": "<Con SEIZ, hemos logrado una recaudación promedio de nómina del 85.88% en 2023>. El 85% de nuestras solicitudes de crédito ahora se procesan con SEIZ, <generando informes rápidos y reduciendo errores operativos.>",
         "role": "Gerente de Operaciones de Crédito y Cartera."
       },
       "card2": {
-        "text": "SEIZ nos ha permitido alcanzar una alta velocidad de procesamiento. Anteriormente, teníamos un proceso manual que requería un equipo de 7 personas para manejar un promedio de 250 documentos diarios. Actualmente, el procesamiento de 1000 documentos diarios es manejado por solo 3 personas.",
+        "text": "<SEIZ nos ha permitido alcanzar una alta velocidad de procesamiento.> Anteriormente, teníamos un proceso manual que requería un equipo de 7 personas para manejar un promedio de 250 documentos diarios. Actualmente, <el procesamiento de 1000 documentos diarios es manejado por solo 3 personas.>",
         "role": "Coordinador de Acuerdos y Responsabilidades"
       },
       "card3": {
-        "text": "Hemos realizado mejoras significativas en nuestros procesos operativos. La integración de SEIZ nos ha permitido comparar información, mejorar la calidad de los datos y optimizar los tiempos de procesamiento. Como resultado, nuestra operación ha crecido 3X sin necesidad de modificar el equipo.",
+        "text": "<Hemos realizado mejoras significativas en nuestros procesos operativos.> La integración de SEIZ nos ha permitido comparar información, mejorar la calidad de los datos y optimizar los tiempos de procesamiento. <Como resultado, nuestra operación ha crecido 3X sin necesidad de modificar el equipo.>",
         "role": "Administrador de eficiencia y tecnología"
       }
     },
