@@ -3,7 +3,7 @@ const processDescription = (description: string) => {
   const parts = description.split(/(<[^>]+>)/);
   return parts.map((part, index) => {
     if (part.startsWith('<') && part.endsWith('>')) {
-      return <strong key={index}>{part.slice(1, -1)}</strong>;
+      return <strong className="font-jakartaSansBold" key={index}>{part.slice(1, -1)}</strong>;
     }
     return part;
   });

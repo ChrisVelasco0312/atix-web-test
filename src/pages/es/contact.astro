@@ -8,9 +8,9 @@ import Footer from "../../components/footer";
 
 <style is:global>
   .contact-additional-bg {
-    background-position: "-300px";
+    background-position: -324px -168px;
     background-repeat: no-repeat;
-    background-size: "65%";
+    background-size: 68% !important;
   }
 
   @media (max-width: 768px) {
@@ -29,15 +29,10 @@ import Footer from "../../components/footer";
       contentHeight="100%"
       background=""
       additionalBg="../../backgrounds/contact-figure.svg"
-      additionalStyles={{
-        backgroundPosition: "-300px",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "65%",
-      }}
       additionalBgClassName="contact-additional-bg"
     >
-      <Navbar mode="light" client:only="react"/>
-      <ContactContent client:only="react"/>
+      <Navbar mode="light" client:only="react" />
+      <ContactContent client:only="react" />
     </Section>
     <Footer />
   </main>
