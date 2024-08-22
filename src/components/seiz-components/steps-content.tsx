@@ -1,7 +1,8 @@
 import { useViewportInfo } from "../hooks/useViewportInfo";
-import { t } from "astro-i18n";
+import { t, astroI18n } from "astro-i18n";
 
 const StepsContent = () => {
+  const locale = astroI18n.locale;
 
   const { width } = useViewportInfo();
   const steps = [
@@ -27,13 +28,15 @@ const StepsContent = () => {
     }
   ];
 
+  const videoSource = (locale === "en") ? "../../videos/CAPSULE_SEIZ_EN.mp4" : "../../videos/CAPSULE_SEIZ_ES.mp4";
+
 
 
   return (
     <article className="lg:h-[1200px] grid pt-[58px] pb-[72px]">
       <div className="mb-[90px]">
         <video className="w-full" poster="../../videos/seiz-video-poster.png" controls>
-          <source src="../../videos/CAPSULE_SEIZ_EN.mp4" type="video/mp4" />
+          <source src={videoSource} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
