@@ -29,11 +29,11 @@ const HowitworksContent = () => {
   const steps: Step[] = [
     {
       id: 1,
-      info: <p>{t("seiz.howitworks.step1")}</p>,
+      info: <p className="h-full content-center">{t("seiz.howitworks.step1")}</p>,
     },
     {
       id: 2,
-      info: <p>{t("seiz.howitworks.step2")}</p>,
+      info: <p className="h-full content-center">{t("seiz.howitworks.step2")}</p>,
     },
     {
       id: 3,
@@ -55,13 +55,24 @@ const HowitworksContent = () => {
   ];
 
   return (
-    <article className="lg:h-[829px] grid lg:flex lg:p-0 p-8 gap-4">
-      <img height={800} src="../../images/seiz-howitworks.png" alt="howitworks" />
-      <div className="grid gap-4 content-center">
-        <h4 className="text-[14px] text-white tracking-[2.8px]">{t("seiz.howitworks.sectionText")}</h4>
-        <h1 className="font-integralCF lg:text-[40px] text-[28px] text-white mb-5 leading-[130%]">
+    <article className="lg:h-[829px] grid lg:flex lg:p-0 py-[45px] gap-4">
+      <img
+        className="hidden lg:block"
+        height={800}
+        src="../../images/seiz-howitworks.png"
+        alt="howitworks"
+      />
+      <div className="grid lg:gap-4 gap-[27px] content-center">
+        <h4 className="hidden lg:block text-[14px] text-white tracking-[2.8px]">{t("seiz.howitworks.sectionText")}</h4>
+        <h1 className="font-integralCF lg:text-[40px] text-[28px] text-white mb-5 leading-[130%] lg:text-left text-center">
           {t("seiz.howitworks.title")}
         </h1>
+        <img
+          className="lg:hidden block"
+          src="../../images/seiz-howitworks-complete.png"
+          alt="howitworks"
+        />
+        <h4 className="lg:hidden block text-[14px] text-white tracking-[2.8px]">{t("seiz.howitworks.sectionText")}</h4>
         <Stepper steps={steps} />
       </div>
     </article>

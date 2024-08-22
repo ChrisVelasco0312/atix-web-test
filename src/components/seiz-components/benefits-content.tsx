@@ -75,6 +75,10 @@ const BenefitsContent = () => {
               itemIndex={currentIndex}
               itemsLength={benefits.length}
               handleDotClick={handleDotClick}
+              dotColors={{
+                selected: "bg-[#B5C715]",
+                unselected: "bg-[#B5C7154D]",
+              }}
             >
               <BenefitsCard
                 iconSrc={benefits[currentIndex].iconSrc}

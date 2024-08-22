@@ -6,12 +6,17 @@ const SliderDots = ({
   itemsLength,
   handleDotClick,
   animationDuration = 0.1,
+  dotColors = { selected: "bg-purple500", unselected: "bg-gray400" },
   children
 }: {
   itemIndex: number,
   itemsLength: number,
   animationDuration?: number,
   handleDotClick: (index: number) => void,
+  dotColors?: {
+    selected: string,
+    unselected: string
+  }
   children: React.ReactNode
 }) => {
   return (
@@ -33,8 +38,7 @@ const SliderDots = ({
         {Array.from({ length: itemsLength }).map((_, index) => (
           <motion.div
             key={index}
-            className={`w-[5px] h-[5px] rounded-full mx-1 cursor-pointer ${itemIndex === index ? 'bg-purple500' : 'bg-gray400'
-              }`}
+            className={`w-[5px] h-[5px] rounded-full mx-1 cursor-pointer ${itemIndex === index ? dotColors.selected : dotColors.unselected}`}
             onClick={() => handleDotClick(index)}
             whileTap={{ scale: 0.9 }}
           />
