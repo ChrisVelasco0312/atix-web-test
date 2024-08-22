@@ -37,7 +37,7 @@ const trustedData = [
 const TrustedContent = () => {
   const [index, setIndex] = useState(0);
   return (
-    <article className="relative grid h-[856px]">
+    <article className="relative grid lg:h-[960px] h-[856px]">
       <SectionTitle
         title={t("index.trusted.sectionText")}
         topDistance="54px"
@@ -47,7 +47,7 @@ const TrustedContent = () => {
         <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] text-center lg:w-auto w-[284px] lg:self-start self-end">
           {t("index.trusted.title")}
         </h1>
-        <div className="lg:grid hidden lg:grid-flow-col gap-8 justify-items-center">
+        <div className="lg:grid hidden lg:grid-flow-col gap-[32px] justify-items-center">
           {trustedData.map((item, index) => (
             <TrustedStripCard
               key={index}

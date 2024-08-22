@@ -21,6 +21,13 @@ import Footer from "../components/footer";
     background-position-y: -120px;
   }
 
+  .about-figure-bg {
+    background-size: 80% !important;
+    background-position-x: 398px;
+    background-position-y: 87px;
+    background-repeat: no-repeat;
+  }
+
   @media (max-width: 768px) {
     .welcome-additional-bg {
       background-size: 250% !important;
@@ -33,8 +40,10 @@ import Footer from "../components/footer";
       background-image: none !important;
     }
 
-    .about-additional-bg {
-      background-size: 100% !important;
+    .about-figure-bg {
+      background-size: 304% !important;
+      background-position-x: -199px;
+      background-position-y: 117px;
       background-repeat: no-repeat;
     }
   }
@@ -56,8 +65,10 @@ import Footer from "../components/footer";
     <Section
       heightMode="h-auto"
       contentHeight="100%"
-      background="backgrounds/dots-background.png"
-      additionalBgClassName="about-additional-bg"
+      background="backgrounds/index-about-dots.png"
+      bgClassName="about-dots-background"
+      additionalBg="images/index-about-figure.svg"
+      additionalBgClassName="about-figure-bg"
     >
       <AboutContent />
     </Section>

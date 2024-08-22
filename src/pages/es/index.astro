@@ -14,27 +14,30 @@ import Footer from "../../components/footer";
 ---
 
 <style is:global>
- .welcome-additional-bg {
-   background-size: 80% !important;
-   background-repeat: no-repeat;
-   background-position-x: -300px;
-   background-position-y: -120px;
- }
+  .welcome-additional-bg {
+    background-size: 80% !important;
+    background-repeat: no-repeat;
+    background-position-x: -300px;
+    background-position-y: -120px;
+  }
 
- @media (max-width: 768px) {
-   .welcome-additional-bg {
-     background-size: 250% !important;
-     background-repeat: no-repeat;
-     background-position-x: -450px;
-     background-position-y: center;
-   }
+  @media (max-width: 768px) {
+    .welcome-additional-bg {
+      background-size: 250% !important;
+      background-repeat: no-repeat;
+      background-position-x: -450px;
+      background-position-y: center;
+    }
 
-   .focus-background {
-     background-image: none !important;
-   }
- }
+    .focus-background {
+      background-image: none !important;
+    }
 
-
+    .about-additional-bg {
+      background-size: 100% !important;
+      background-repeat: no-repeat;
+    }
+  }
 </style>
 
 <Layout title="Atix Digital">
@@ -47,13 +50,14 @@ import Footer from "../../components/footer";
       additionalBgClassName="welcome-additional-bg"
       client:load
     >
-      <Navbar client:load/>
+      <Navbar client:load />
       <WelcomeContent />
     </Section>
     <Section
       heightMode="h-auto"
       contentHeight="100%"
       background="../../backgrounds/dots-background.png"
+      additionalBgClassName="about-additional-bg"
     >
       <AboutContent />
     </Section>
@@ -71,14 +75,14 @@ import Footer from "../../components/footer";
       background="../../backgrounds/focus-background.png"
       bgClassName="focus-background"
     >
-      <FocusContent client:only="react"/>
+      <FocusContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"
       contentHeight="409px"
       background="../../images/CTA.png"
     >
-      <MagicalContent client:only="react"/>
+      <MagicalContent client:only="react" />
     </Section>
     <Section heightMode="h-auto" contentHeight="270px" background="">
       <BrandContent />
@@ -94,7 +98,6 @@ import Footer from "../../components/footer";
     <Section heightMode="h-auto" contentHeight="100%" background="">
       <PublicationsContent />
     </Section>
-    <Footer client:load/>
+    <Footer client:load />
   </main>
 </Layout>
-

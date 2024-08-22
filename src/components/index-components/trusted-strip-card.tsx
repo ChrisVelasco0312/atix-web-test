@@ -31,7 +31,7 @@ const TrustedStripCard = ({
   const processedDescription = processDescription(description);
 
   return (
-    <div className="grid gap-10 justify-items-center w-[300px]">
+    <div className="grid gap-10 justify-items-center lg:w-auto w-[300px]">
       <div className="relative bg-white lg:w-[360px] w-[280px] h-[411px] rounded-[16px] p-[30px] text-center">
         <img className="absolute top-[40px] left-0" src="../../icons/trusted-sign.svg" alt="trusted-sign" />
         <img className="absolute bottom-[10px] right-0 rotate-180" src="../../icons/trusted-sign.svg" alt="trusted-sign" />
