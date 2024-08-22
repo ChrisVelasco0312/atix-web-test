@@ -11,7 +11,7 @@ const AboutContent = () => {
         topDistance="54px"
       />
       <div />
-      <div className="relative top-[38px] w-[330px] lg:w-[606px] lg:h-[147px]">
+      <div className="relative top-[38px] w-[330px] lg:w-[606px]">
         <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] lg:leading-[98%] leading-[115%]">
           {t("index.about.title")}
         </h1>

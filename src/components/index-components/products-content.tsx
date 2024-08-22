@@ -21,7 +21,7 @@ const ProductsContent = () => {
           {t("index.products.description")}
         </p>
       </div>
-      <div className="lg:flex grid gap-8 justify-center pb-[118px]">
+      <div className="lg:flex grid gap-8 justify-center lg:pb-[118px] pb-[64px]">
         <ProductCard
           logoSrc="../../logos/logo-seiz.svg"
           title={t('index.products.card1.title')}

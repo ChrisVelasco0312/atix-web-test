@@ -59,7 +59,7 @@ const FocusContent: React.FC = () => {
   return (
     <div className="relative grid lg:grid-cols-2 lg:px-[30px] lg:h-[940px] h-[530px]">
       <SectionTitle title={t("index.focus.sectionText")} iconColor="#1C7FC1" topDistance={width < 720 ? "30px" : "54px"} />
-      <div className="grid gap-4 lg:grid-rows-[auto_500px] content-center justify-items-center relative top-[30px]">
+      <div className="grid gap-4 lg:grid-rows-[auto_500px] content-center justify-items-center relative top-[20px]">
         <h1 className="font-integralCF text-purple500 lg:text-[40px] text-[28px] leading-[130%] lg:mt-[50px] lg:w-[600px] w-[285px] lg:text-left text-center">
           {t("index.focus.title")}
         </h1>
@@ -92,7 +92,7 @@ const FocusContent: React.FC = () => {
             <FocusMobileCard
               title={focusCards[currentMobileCard].title}
               descriptionStrong={focusCards[currentMobileCard].descriptionStrong}
-              iconSrc={focusCards[currentMobileCard].iconSrc}
+              iconSrc={focusCards[currentMobileCard].iconSrcActive}
             />
           </SliderDots>
         )}
