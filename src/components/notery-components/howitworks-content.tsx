@@ -80,6 +80,7 @@ const HowItWorksContent = () => {
           {t("notery.howitworks.title")}
         </h2>
         <ElementSlider
+          customPosition="bottom-0"
           index={currentIndex}
           onNext={() => {
             if (currentIndex < steps.length - 1) {

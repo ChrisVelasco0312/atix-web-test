@@ -95,7 +95,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose, texts = [], lo
           animate="open"
           exit="closed"
           variants={menuVariants}
-          className={`fixed inset-0 z-50 ${bgColor} flex flex-col justify-center items-center overflow-hidden`}
+          onClick={(e) => e.stopPropagation()}
+          className={`fixed inset-0 z-[200] ${bgColor} flex flex-col justify-center items-center overflow-hidden`}
         >
           <button onClick={onClose} className="absolute top-[25px] right-[25px]">
             <img src="../../icons/Close.svg" alt="close" />

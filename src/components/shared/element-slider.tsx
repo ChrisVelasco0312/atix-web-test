@@ -7,20 +7,22 @@ const ElementSlider = (
     customSize = "w-full h-full",
     children,
     onNext,
-    onPrev
+    onPrev,
+    customPosition = "bottom-[70px]"
   }: {
     index: number,
     onNext: () => void,
     onPrev: () => void,
     children: React.ReactNode,
     customSize?: string
+    customPosition?: string
   }) => {
   return (
     <div className={`flex overflow-hidden ${customSize} items-center justify-center gap-1.5`}>
       <img
-        src="../icons/chevron-left.svg"
+        src="../../icons/chevron-left.svg"
         alt="chevron-left"
-        className="relative bottom-[70px] w-[8px] h-[13px] cursor-pointer"
+        className={`relative ${customPosition} w-[8px] h-[13px] cursor-pointer`}
         onClick={onPrev}
       />
       <motion.div
@@ -33,9 +35,9 @@ const ElementSlider = (
         {children}
       </motion.div>
       <img
-        src="../icons/chevron-right.svg"
+        src="../../icons/chevron-right.svg"
         alt="chevron-right"
-        className="relative bottom-[70px] w-[8px] h-[13px] cursor-pointer"
+        className={`relative ${customPosition} w-[8px] h-[13px] cursor-pointer`}
         onClick={onNext}
       />
     </div>
