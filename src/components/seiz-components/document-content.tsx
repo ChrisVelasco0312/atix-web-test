@@ -16,7 +16,7 @@ const DocumentContent = () => {
       </p>
     </div>
     {
-      width > 440 ? <DocumentTabDashboard /> : <DocumentDashboardMobile />
+      width > 1024 ? <DocumentTabDashboard /> : <DocumentDashboardMobile />
     }
   </article >;
 };

@@ -13,11 +13,31 @@ import WhySeizContent from "../components/seiz-components/whyseiz-content";
 ---
 
 <style is:global>
+  .seiz-welcome-bg {
+    background-repeat: no-repeat;
+  }
+
+  .welcome-additional-bg {
+    background-repeat: no-repeat;
+    background-position-x: -600px;
+    background-size: 100% !important;
+    background-position-y: -180px;
+  }
+
   .sinseiz-additional-bg {
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: initial !important;
-    backgroundPositionY: center;
+    background-position-y: center;
+  }
+
+  @media (max-width: 768px) {
+    .welcome-additional-bg {
+      background-size: 280% !important;
+      background-position-x: -435px;
+      background-position-y: -84px;
+      background-repeat: no-repeat;
+    }
   }
 </style>
 
@@ -26,10 +46,13 @@ import WhySeizContent from "../components/seiz-components/whyseiz-content";
     <Section
       heightMode="h-auto"
       contentHeight="100%"
-      background="../backgrounds/seiz-background.png"
+      background="../backgrounds/seiz-welcome-background.png"
+      bgClassName="seiz-welcome-bg"
+      additionalBg="../images/seiz-welcome-figure.svg"
+      additionalBgClassName="welcome-additional-bg"
     >
-      <Navbar client:only="react"/>
-      <WecomeContent />
+      <Navbar client:only="react" />
+      <WecomeContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"
@@ -37,11 +60,11 @@ import WhySeizContent from "../components/seiz-components/whyseiz-content";
       background="../backgrounds/seiz-dots-background.png"
       backgroundColor="#F4F4F4"
     >
-      <StepsContent client:only="react"/>
+      <StepsContent client:only="react" />
     </Section>
-    <Section 
-      heightMode="h-auto" 
-      contentHeight="100%" 
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
       background=""
       additionalBg="../backgrounds/x-iso.png"
       additionalBgClassName="sinseiz-additional-bg"
@@ -54,7 +77,7 @@ import WhySeizContent from "../components/seiz-components/whyseiz-content";
       background=""
       backgroundColor="#CCCCCC36"
     >
-      <BenefitsContent client:only="react"/>
+      <BenefitsContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"

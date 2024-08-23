@@ -139,9 +139,9 @@
   },
   "seiz": {
     "welcome": {
-      "line1": "Automatiza fácilmente",
-      "line2": "cualquier flujo de trabajo",
-      "line3": "de procesamiento de documentos",
+      "line1": "Automatiza tu",
+      "line2": "gestión documental",
+      "line3": "",
       "description": "Aumenta la eficiencia, desbloquea ahorros y optimiza operaciones con la automatización de flujos de trabajo de documentos impulsada por IA."
     },
     "steps": {

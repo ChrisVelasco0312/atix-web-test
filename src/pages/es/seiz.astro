@@ -17,7 +17,13 @@ import WhySeizContent from "../../components/seiz-components/whyseiz-content";
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: initial !important;
-    backgroundPositionY: center;
+    background-position-y: center;
+  }
+
+  @media (max-width: 768px) {
+    .seiz-welcome-bg {
+      background-position-x: left !important;
+    }
   }
 </style>
 
@@ -27,9 +33,10 @@ import WhySeizContent from "../../components/seiz-components/whyseiz-content";
       heightMode="h-auto"
       contentHeight="100%"
       background="../../backgrounds/seiz-background.png"
+      bgClassName="seiz-welcome-bg"
     >
-      <Navbar client:only="react"/>
-      <WecomeContent />
+      <Navbar client:only="react" />
+      <WecomeContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"
@@ -37,11 +44,11 @@ import WhySeizContent from "../../components/seiz-components/whyseiz-content";
       background="../../backgrounds/seiz-dots-background.png"
       backgroundColor="#F4F4F4"
     >
-      <StepsContent client:only="react"/>
+      <StepsContent client:only="react" />
     </Section>
-    <Section 
-      heightMode="h-auto" 
-      contentHeight="100%" 
+    <Section
+      heightMode="h-auto"
+      contentHeight="100%"
       background=""
       additionalBg="../../backgrounds/x-iso.png"
       additionalBgClassName="sinseiz-additional-bg"
@@ -54,7 +61,7 @@ import WhySeizContent from "../../components/seiz-components/whyseiz-content";
       background=""
       backgroundColor="#CCCCCC36"
     >
-      <BenefitsContent client:only="react"/>
+      <BenefitsContent client:only="react" />
     </Section>
     <Section
       heightMode="h-auto"
