@@ -18,6 +18,14 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
     background-position-x: -300px;
     background-position-y: -250px;
   }
+
+  @media (max-width: 768px) {
+    .notery-intro-additional-bg {
+      background-size: 250% !important;
+      background-position-y: 80px;
+      background-position-x: -400px;
+    }
+  }
 </style>
 
 <Layout title="Seiz">
@@ -30,7 +38,7 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
       additionalBg="../images/notery-intro-isotipo.svg"
       additionalBgClassName="notery-intro-additional-bg"
     >
-      <Navbar client:only="react"/>
+      <Navbar client:only="react" />
       <IntroContent />
     </Section>
     <Section
@@ -52,7 +60,7 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
       heightMode="h-auto"
       contentHeight="100%"
       background=""
-      backgroundColor="#F9F8FE" 
+      backgroundColor="#F9F8FE"
     >
       <HowItWorksContent client:only="react" />
     </Section>
@@ -68,7 +76,7 @@ import ExtractionStatsContent from "../components/notery-components/extraction-s
       contentHeight="100%"
       background="../backgrounds/notery-problem-background.png"
     >
-      <ExtractionStatsContent client:load/>
+      <ExtractionStatsContent client:load />
     </Section>
     <Footer />
   </main>
