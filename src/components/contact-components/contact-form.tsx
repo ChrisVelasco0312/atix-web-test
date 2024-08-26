@@ -90,7 +90,7 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label className='font-jakartaSansBold' htmlFor="phoneNumber">
+            <label className='font-jakartaSansBold text-nowrap' htmlFor="phoneNumber">
               {t('contact.labels.phone')}
             </label>
             <input

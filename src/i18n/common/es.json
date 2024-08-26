@@ -27,7 +27,7 @@
       "description": "Empodera a tu fuerza laboral de primera línea, minimiza los requisitos de contratación, mantiene la satisfacción de los empleados y revoluciona la experiencia del cliente!",
       "cardButton": "Saber más",
       "card1": {
-        "title": "Automatiza fácilmente cualquier flujo de trabajo de procesamiento de documentos",
+        "title": "AUTOMATIZA TU GESTIÓN DOCUMENTAL",
         "description": "Aumenta la eficiencia, desbloquea ahorros y optimiza operaciones con la automatización de flujos de trabajo de documentos impulsada por IA."
       },
       "card2": {
@@ -81,7 +81,7 @@
   },
   "about": {
     "initial": {
-      "title": "Sobre",
+      "title": "Sobre ",
       "description": "Somos un equipo dinámico que combina experiencia en automatización de procesos, transformación digital y soluciones tecnológicas innovadoras."
     },
     "whoweare": {

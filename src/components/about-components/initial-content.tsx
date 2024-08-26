@@ -5,10 +5,10 @@ const InitialContent = () => {
     <article className="lg:p-4">
       <div className="relative grid lg:gap-6 gap-2 items-end content-end lg:h-[610px] h-[608px] py-[100px]">
         <div className="lg:text-[76px] text-[40px] lg:leading-none leading-[110%]">
-          <h1 className="inline-block font-integralCF text-white">
+          <h1 className="inline font-integralCF text-white">
             {t("about.initial.title")}
           </h1>
-          <h1 className="inline-block font-integralCF text-white">
+          <h1 className={`lg:inline inline-block font-integralCF text-white`}>
             ATIX DIGITAL
           </h1>
           <h1 className="absolute left-[5px] lg:left-[298px] lg:top-[332px] inline-block font-integralCF text-white text-stroke-white lg:opacity-10 opacity-20">
