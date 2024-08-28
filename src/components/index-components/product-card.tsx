@@ -1,3 +1,4 @@
+import type React from "react";
 import Button from "../shared/button";
 import { t } from "astro-i18n";
 
@@ -16,11 +17,15 @@ const ProductCard = ({
   logoSrc,
   goTo = "",
 }: ProductCardProps) => {
+  let titleRender: string | React.ReactNode = title;
+  if (title.toLowerCase() === "automatiza tu gestión documental") {
+    titleRender = (<>AUTOMATIZA TU<br />GESTIÓN DOCUMENTAL</>);
+  }
   return (
-    <div className="grid gap-[24px] lg:w-[515px] w-[308px] h-auto shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[16px] lg:py-[47px] lg:px-[48px] p-[30px]">
+    <div className="grid gap-[24px] lg:grid-rows-[50px_128px_75px_47px_260px] lg:w-[515px] w-[308px] h-auto shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[16px] lg:py-[47px] lg:px-[48px] p-[30px]">
       <img src={logoSrc} alt="product-logo" />
       <h1 className="font-integralCF text-petroleo500 text-[28px] leading-normal">
-        {title}
+        {titleRender}
       </h1>
       <p className="text-petroleo500 text-[16px] leading-[150%]">
         {description}
