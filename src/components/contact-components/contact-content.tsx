@@ -3,7 +3,8 @@ import useElementAppearance from '../hooks/useElementAppeareance';
 import ContactForm from './contact-form';
 
 const ContactContent = () => {
-
+  const [loading, setLoading] = useState(false);
+  const [sended, setSended] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -18,9 +19,12 @@ const ContactContent = () => {
   const isFormWrapperVisible = useElementAppearance('#freshworks-frame-wrapper');
 
   useEffect(() => {
-    window.FreshworksWidget('open');
-    const launcherFrame = document.getElementById('launcher-frame');
-    launcherFrame.style.visibility = 'hidden';
+    const FreshworksWidget = window.FreshworksWidget;
+    if (typeof FreshworksWidget === 'function') {
+      FreshworksWidget('open');
+      const launcherFrame = document.getElementById('launcher-frame');
+      launcherFrame.style.visibility = 'hidden';
+    }
   }, [isWidgetVisible]);
 
   useEffect(() => {
@@ -43,25 +47,29 @@ const ContactContent = () => {
   useEffect(() => {
     const FreshworksWidget = window.FreshworksWidget;
 
-    FreshworksWidget('prefill', 'ticketForm', {
-      name: `name:${formData.name} | company:${formData.company}`,
-      email: formData.email,
-      subject: formData.message.split(' ').slice(0, 3).join(' '),
-      description: formData.message
-    });
+    if (typeof FreshworksWidget === 'function') {
+      FreshworksWidget('prefill', 'ticketForm', {
+        name: `name:${formData.name} | company:${formData.company}`,
+        email: formData.email,
+        subject: formData.message.split(' ').slice(0, 3).join(' '),
+        description: formData.message
+      });
 
 
-    const widgetForm = document.getElementById('widget-frame');
-    const button = widgetForm?.contentDocument.querySelector('#form-button');
+      const widgetForm = document.getElementById('widget-frame');
+      const button = widgetForm?.contentDocument.querySelector('#form-button');
 
-    if (button) {
-      setTimeout(() => {
-        button.click();
-        //refresh page
+      if (button) {
         setTimeout(() => {
-          window.location.reload();
+          button.click();
+          //refresh page
+          setLoading(true);
+          setTimeout(() => {
+            setLoading(false);
+            setSended(true);
+          }, 3000);
         }, 3000);
-      }, 3000);
+      }
     }
   }, [formData]);
 
@@ -69,7 +77,11 @@ const ContactContent = () => {
   return (
     <article className="grid lg:grid-cols-2 lg:p-0 p-8 content-center items-center lg:h-[90vh] gap-8">
       <div />
-      <ContactForm onSubmit={(formData) => setFormData(formData)} />
+      {!sended ? (
+        <ContactForm onSubmit={(formData) => setFormData(formData)} loading={loading} />
+      ) : (
+        <p className="text-[#21272A]">Thanks for your message, we will get back to you soon.</p>
+      )}
     </article>
   );
 };

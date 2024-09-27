@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from '../shared/button';
 import { t } from "astro-i18n";
+import LoadingCircle from '../shared/loading-circle';
 
 interface FormData {
   name: string;
@@ -13,9 +14,10 @@ interface FormData {
 
 interface ContactFormProps {
   onSubmit: (formData: FormData) => void;
+  loading: boolean;
 }
 
-const ContactForm = ({ onSubmit }: ContactFormProps) => {
+const ContactForm = ({ onSubmit, loading }: ContactFormProps) => {
   const [formData, setFormData] = useState({
     name: '',
     company: '',
@@ -132,17 +134,21 @@ const ContactForm = ({ onSubmit }: ContactFormProps) => {
           </label>
         </div>
         <div className="flex justify-end">
-          <Button
-            style={{
-              width: '160px',
-              opacity: formDataIsValid ? 1 : 0.5,
-              cursor: formDataIsValid ? 'pointer' : 'not-allowed',
-              pointerEvents: formDataIsValid ? 'auto' : 'none',
-            }}
-            text={t('contact.send')}
-            type='submit'
-            styleType="dark"
-          />
+          {loading ? (
+            <LoadingCircle />
+          ) : (
+            <Button
+              style={{
+                width: '160px',
+                opacity: formDataIsValid ? 1 : 0.5,
+                cursor: formDataIsValid ? 'pointer' : 'not-allowed',
+                pointerEvents: formDataIsValid ? 'auto' : 'none',
+              }}
+              text={t('contact.send')}
+              type='submit'
+              styleType="dark"
+            />
+          )}
         </div>
       </form>
     </div>
