@@ -19,11 +19,16 @@ const ContactContent = () => {
   const isFormWrapperVisible = useElementAppearance('#freshworks-frame-wrapper');
 
   useEffect(() => {
-    const FreshworksWidget = window.FreshworksWidget;
-    if (typeof FreshworksWidget === 'function') {
-      FreshworksWidget('open');
-      const launcherFrame = document.getElementById('launcher-frame');
-      launcherFrame.style.visibility = 'hidden';
+    if ('FreshworksWidget' in window) {
+      const FreshworksWidget = window.FreshworksWidget;
+      if (typeof FreshworksWidget === 'function') {
+        FreshworksWidget('open');
+        const launcherFrame = document.getElementById('launcher-frame');
+
+        if (launcherFrame) {
+          launcherFrame.style.visibility = 'hidden';
+        }
+      }
     }
   }, [isWidgetVisible]);
 
@@ -31,7 +36,10 @@ const ContactContent = () => {
     if (isFormVisible) {
       const widgetForm = document.getElementById('widget-frame');
       console.log("widgetForm", widgetForm);
-      widgetForm.style.visibility = 'hidden';
+
+      if (widgetForm) {
+        widgetForm.style.visibility = 'hidden';
+      }
     }
   }, [isFormVisible]);
 
@@ -40,7 +48,9 @@ const ContactContent = () => {
     if (isFormWrapperVisible) {
       const formWrapper = document.getElementById('freshworks-frame-wrapper');
       console.log(formWrapper);
-      formWrapper.style.visibility = 'hidden';
+      if (formWrapper) {
+        formWrapper.style.visibility = 'hidden';
+      }
     }
   }, [isFormWrapperVisible]);
 
@@ -56,20 +66,25 @@ const ContactContent = () => {
       });
 
 
-      const widgetForm = document.getElementById('widget-frame');
-      const button = widgetForm?.contentDocument.querySelector('#form-button');
+      const widgetForm = document.getElementById('widget-frame') as HTMLIFrameElement;
+      const widgetContentDocument = widgetForm?.contentDocument;
 
-      if (button) {
-        setTimeout(() => {
-          button.click();
-          //refresh page
-          setLoading(true);
+      if (widgetContentDocument) {
+        const button = widgetForm?.contentDocument.querySelector('#form-button') as HTMLButtonElement;
+
+        if (button) {
           setTimeout(() => {
-            setLoading(false);
-            setSended(true);
+            button.click();
+            //refresh page
+            setLoading(true);
+            setTimeout(() => {
+              setLoading(false);
+              setSended(true);
+            }, 3000);
           }, 3000);
-        }, 3000);
+        }
       }
+
     }
   }, [formData]);
 
